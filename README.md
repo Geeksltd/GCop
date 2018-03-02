@@ -21,7 +21,12 @@ GCop is a set up code analysis rules for improving C# code.
 2. Under the *Browse* tab, search for *"Gcop"* and select **Gcop.All**
 3. Install it on all projects in your solution (or the ones that you need analysed)
 
+
+
 ## Running GCop
-1. After adding GCop to a project, *build* that project in Visual Studio in the normal way.
-2. 
-When you add the nuget packages to a project, and then build that project, 
+1. After adding GCop to a project, **build** that project in Visual Studio in the normal way.
+2. Open the *Error List* window
+   - Ensure *Errors*, *Warnings* and *Messages* tabs are all selected
+   - Ensure the last drop down is selected as **Build + IntelliSense**
+3. Make sure you see items in the *Error List* window whose Code starts with *GCop*.
+   - If you don't see any GCop warnings, right click on each project and select **Properties** > **Code Analysis** and ensure **Run Code Analysis on Build** is ticked.
