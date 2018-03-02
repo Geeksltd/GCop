@@ -31,10 +31,10 @@ GCop is a set up code analysis rules for improving C# code.
 3. Make sure you see items in the *Error List* window whose Code starts with *GCop*.
    - If you don't see any GCop warnings, right click on each project and select **Properties** > **Code Analysis** and ensure **Run Code Analysis on Build** is ticked.
 
-## Customising GCop Rules
+## Disabling specific GCop rules
 If you disagree with any of the GCop rules, or if you believe they are not applicable to your project, you can disable them using any of the following methods.
 
-### Disabling a rule at the project level.
+### For the whole project
 Unfortunately Visual Studio doesn't allow you to disable analysis rules at the solution level. But you can disable them for every project in your solution.
 
 1. Right click on the project and select **Properties**
@@ -43,3 +43,20 @@ Unfortunately Visual Studio doesn't allow you to disable analysis rules at the s
    - You should seperate multiple warning codes with semicolon (***;***) character.
    - The following example will disable the specified three rules: *GCop316; GCop140; GCop179*
    
+### [EscapeGCop] attribute.
+You can disable GCop for specific **.cs** files, or **even specific methods** by adding an attribute on top of it. You can optionally provide a reason description as well.
+For example:
+```csharp
+[EscapeGCop("It's not applicable because ....")]
+public class MyClass
+{
+    ...
+}
+```
+
+You should use it in the following scenarios:
+- For auto-generated code
+- In cases GCop is giving you a false alarm
+- Where a rule is not applicable in a particular scenario in your opinion.
+
+In this way you can only escape all GCop rules as opposed to specific ones. 
