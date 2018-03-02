@@ -15,3 +15,6 @@ GCop is a set up code analysis rules for improving C# code.
 7. Install it on all projects in your solution (or the ones that you need analysed)
 
 
+## How to use?
+1. After adding GCop to a project, build that project in Visual Studio.
+When you add the nuget packages to a project, and then build that project, 
