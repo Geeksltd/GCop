@@ -5,7 +5,10 @@
 
 ## Rule description
 
-Because this method simply returns the current string unchanged, there is no need to call it.
+String.ToString Method() Returns this instance of String; no actual conversion is performed.
+Because this method simply returns the current string unchanged, there is no need to call it.  
+also You'll get a Null Reference Exception if your string is NULL and you use .ToString();
+
 
 ## Example 1
 **Violating code:**
