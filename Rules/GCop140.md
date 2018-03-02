@@ -1,7 +1,9 @@
 # GCop140
-(...rule description here)
+Error message:
+## *"This public method doesn't seem to be used in the solution. Consider removing it."*
 
-## Reason
+---
+## Rule description
 ...
 
 ## Example 1
