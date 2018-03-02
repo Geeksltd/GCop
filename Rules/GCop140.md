@@ -1,4 +1,4 @@
-# GCop Rule 140
+# GCop140
 (...rule description here)
 
 ## Reason
