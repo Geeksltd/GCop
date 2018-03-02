@@ -6,7 +6,7 @@ GCop is a set up code analysis rules for improving C# code.
 1. Open a solution in Visual Studio 2017.
 2. Right click on the solution, and select **Manage Nuget Packages...**
 3. At the top right corner of the window, click on the ⚙ icon.
-4. Click the **+** icon
+4. Click the ➕ icon
    - Set Name to *GCop*
    - Set source to *http://nuget.gcop.co/nuget*
    - Click OK
