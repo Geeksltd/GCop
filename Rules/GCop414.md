@@ -10,12 +10,12 @@ Because this method simply returns the current string unchanged, there is no nee
 ## Example 1
 **Violating code:**
 ```csharp
-("BlaBlaBla" + myObject.ToString())
+var result = "someText" + myObject.ToString() + " ...";
 ```
 🡻
 
 **Compliant code**
 ```csharp
-("BlaBlaBla" + myObject)
+var result = "someText" + myObject + " ...";
 ```
  
