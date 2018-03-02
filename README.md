@@ -30,3 +30,16 @@ GCop is a set up code analysis rules for improving C# code.
    - Ensure the last drop down is selected as **Build + IntelliSense**
 3. Make sure you see items in the *Error List* window whose Code starts with *GCop*.
    - If you don't see any GCop warnings, right click on each project and select **Properties** > **Code Analysis** and ensure **Run Code Analysis on Build** is ticked.
+
+## Customising GCop Rules
+If you disagree with any of the GCop rules, or if you believe they are not applicable to your project, you can disable them using any of the following methods.
+
+### Disabling a rule at the project level.
+Unfortunately Visual Studio doesn't allow you to disable analysis rules at the solution level. But you can disable them for every project in your solution.
+
+1. Right click on the project and select **Properties**
+2. Select the **Build** tab
+3. Update the **Suppress warnings** field to include the warning codes you want to disable. 
+   - You should seperate multiple warning codes with semicolon (***;***) character.
+   - The following example will disable the specified three rules: *GCop316; GCop140; GCop179*
+   
