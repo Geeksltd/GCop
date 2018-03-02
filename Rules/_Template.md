@@ -1,4 +1,4 @@
-# GCop Rule ###
+# GCop###
 (...rule description here)
 
 ## Reason
