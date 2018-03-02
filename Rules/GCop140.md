@@ -1,6 +1,6 @@
 # GCop140
 Error message:
-## *"This public method doesn't seem to be used in the solution. Consider removing it."*
+> *"This public method doesn't seem to be used in the solution. Consider removing it."*
 
 ---
 ## Rule description
