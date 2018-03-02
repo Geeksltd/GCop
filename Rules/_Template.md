@@ -1,7 +1,9 @@
 # GCop###
-(...rule description here)
 
-## Reason
+> *"Error message pattern"*
+
+
+## Rule description
 ...
 
 ## Example 1
