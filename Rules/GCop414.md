@@ -19,3 +19,15 @@ var result = "someText" + myObject.ToString() + " ...";
 var result = "someText" + myObject + " ...";
 ```
  
+## Example 2
+**Violating code:**
+```csharp
+public string SomeMethod() => "This year is " + DateTime.Today.Year.ToString();
+```
+🡻
+
+**Compliant code**
+```csharp
+public string SomeMethod() => "This year is " + DateTime.Today.Year;
+```
+ 
