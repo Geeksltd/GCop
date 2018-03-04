@@ -91,3 +91,14 @@ public string SomeMethod() => "This year is " + DateTime.Today.Year.ToString();
 public string SomeMethod() => "This year is " + DateTime.Today.Year;
 ```
  
+## Example 3
+**Violating code:**
+```csharp
+var result = "someText".ToString();
+```
+🡻
+
+**Compliant code**
+```csharp
+var result = "someText";
+```
