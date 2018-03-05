@@ -5,20 +5,10 @@
 
 ## Rule description
 
-It is not necessory to call ToString method in this case because:
+In many cases it is not necessory to call ToString method when using the + operator, as the C# compiler is smart enough to automatically do that. The benefits of not calling it unnecessarily are: 
 
-1.  To avoid String.ToString()
-
-    Imagine myObj in myObj.ToString() is a string. String.ToString() Returns this instance of String. Because this method simply returns the current string unchanged, there is no need to call it.  
-
-2.  To avoid null reference exception
-
-    Imagine myObj in myObj.ToString() is a null reference.In this case it would throw exception.But "someText" + myObj.ToString() will not throw exception.
-
-3.  To avoid use unnecessary method
-
-    The + concatenation "arg0" + myObj compiles to a call to String.Concat(object arg0, object arg1). The method concatenates arg0 and arg1 by calling the ToString() method of arg0 and arg1 and String.Empty is used in place of any null argument, so there is no need to use .ToString method in this case.
-    
+1.  Avoid unnecessary clutter in your code. 
+2.  To avoid null reference exception (in case the object is null)   
 
 ## Example 1
 
