@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GCop.All</id>
+    <version>1.0.1</version>
+    <authors>Geeks</authors>
+    <owners>Geeks</owners>
+    <licenseUrl>https://www.geeks.ltd.uk/</licenseUrl>
+    <projectUrl>https://www.geeks.ltd.uk/</projectUrl>
+    <iconUrl>https://www.geeks.ltd.uk/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contains all GCop packages</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>GCop analyzers</tags>
+    <dependencies>
+      <dependency id="GCop.Collections" version="1.0.1" />
+	  <dependency id="GCop.Common" version="1.0.1" />
+	  <dependency id="GCop.Conditional" version="1.0.1" />
+	  <dependency id="GCop.ErrorHandling" version="1.0.1" />
+	  <dependency id="GCop.IO" version="1.0.1" />
+	  <dependency id="GCop.Linq" version="1.0.1" />
+	  <dependency id="GCop.MSharp" version="1.0.1" />
+	  <dependency id="GCop.String" version="1.0.1" />
+	  <dependency id="GCop.Thread" version="1.0.1" />
+    </dependencies>
+  </metadata>
+</package>

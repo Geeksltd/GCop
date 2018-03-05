@@ -1,0 +1,13 @@
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\bin\Debug\netstandard2.0\GCop.Thread.deps.json
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\bin\Debug\netstandard2.0\GCop.Thread.dll
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\bin\Debug\netstandard2.0\GCop.Thread.pdb
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.csprojResolveAssemblyReference.cache
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.Resources.resources
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.dll
+C:\Users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard2.0\GCop.Thread.pdb

@@ -1,0 +1,13 @@
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\bin\Debug\netstandard2.0\GCop.Collections.deps.json
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\bin\Debug\netstandard2.0\GCop.Collections.dll
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\bin\Debug\netstandard2.0\GCop.Collections.pdb
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.csprojResolveAssemblyReference.cache
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.Resources.resources
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.dll
+C:\Users\msade\source\repos\GCop.Collections\GCop.Collections\GCop.Collections\obj\Debug\netstandard2.0\GCop.Collections.pdb

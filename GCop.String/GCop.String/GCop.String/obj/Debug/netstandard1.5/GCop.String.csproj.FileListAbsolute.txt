@@ -1,0 +1,5 @@
+C:\Users\msade\source\repos\GCop.String\GCop.String\GCop.String\obj\Debug\netstandard1.5\GCop.String.Resources.resources
+C:\Users\msade\source\repos\GCop.String\GCop.String\GCop.String\obj\Debug\netstandard1.5\GCop.String.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.String\GCop.String\GCop.String\obj\Debug\netstandard1.5\GCop.String.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.String\GCop.String\GCop.String\obj\Debug\netstandard1.5\GCop.String.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.String\GCop.String\GCop.String\obj\Debug\netstandard1.5\GCop.String.AssemblyInfo.cs
