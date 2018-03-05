@@ -7,13 +7,11 @@
 ...
 
 ## Example 1
-**Violating code:**
 ```csharp
 (...some violating rule)
 ```
-🡻
+*should be* 🡻
 
-**Compliant code**
 ```csharp
 (...corrected version)
 ```
