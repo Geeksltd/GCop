@@ -1,5 +1,0 @@
-c:\users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard1.3\GCop.Thread.Resources.resources
-c:\users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard1.3\GCop.Thread.csproj.GenerateResource.Cache
-c:\users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard1.3\GCop.Thread.csproj.CoreCompileInputs.cache
-c:\users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard1.3\GCop.Thread.AssemblyInfoInputs.cache
-c:\users\msade\source\repos\GCop.Thread\GCop.Thread\GCop.Thread\obj\Debug\netstandard1.3\GCop.Thread.AssemblyInfo.cs
