@@ -1,0 +1,10 @@
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard1.3\tools\install.ps1
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard1.3\tools\uninstall.ps1
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard1.3\GCop.Common.deps.json
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard1.3\GCop.Common.dll
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard1.3\GCop.Common.Resources.resources
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard1.3\GCop.Common.csproj.GenerateResource.Cache
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard1.3\GCop.Common.csproj.CoreCompileInputs.cache
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard1.3\GCop.Common.AssemblyInfoInputs.cache
+c:\users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard1.3\GCop.Common.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard1.3\GCop.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\bin\Debug\netstandard2.0\GCop.ErrorHandling.deps.json
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\bin\Debug\netstandard2.0\GCop.ErrorHandling.dll
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\bin\Debug\netstandard2.0\GCop.ErrorHandling.pdb
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.csprojResolveAssemblyReference.cache
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.Resources.resources
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.dll
+C:\Users\msade\source\repos\GCop.ErrorHandling\GCop.ErrorHandling\GCop.ErrorHandling\obj\Debug\netstandard2.0\GCop.ErrorHandling.pdb

@@ -1,0 +1,13 @@
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\bin\Debug\netstandard2.0\GCop.Linq.deps.json
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\bin\Debug\netstandard2.0\GCop.Linq.dll
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\bin\Debug\netstandard2.0\GCop.Linq.pdb
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.csprojResolveAssemblyReference.cache
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.Resources.resources
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.dll
+C:\Users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard2.0\GCop.Linq.pdb

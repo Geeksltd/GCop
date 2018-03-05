@@ -1,0 +1,5 @@
+c:\users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard1.3\GCop.Linq.Resources.resources
+c:\users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard1.3\GCop.Linq.csproj.GenerateResource.Cache
+c:\users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard1.3\GCop.Linq.csproj.CoreCompileInputs.cache
+c:\users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard1.3\GCop.Linq.AssemblyInfoInputs.cache
+c:\users\msade\source\repos\GCop.Linq\GCop.Linq\GCop.Linq\obj\Debug\netstandard1.3\GCop.Linq.AssemblyInfo.cs

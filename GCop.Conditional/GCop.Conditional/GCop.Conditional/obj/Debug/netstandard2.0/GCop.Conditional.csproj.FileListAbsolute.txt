@@ -1,0 +1,13 @@
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\bin\Debug\netstandard2.0\GCop.Conditional.deps.json
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\bin\Debug\netstandard2.0\GCop.Conditional.dll
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\bin\Debug\netstandard2.0\GCop.Conditional.pdb
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.csprojResolveAssemblyReference.cache
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.Resources.resources
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.dll
+C:\Users\msade\source\repos\GCop.Conditional\GCop.Conditional\GCop.Conditional\obj\Debug\netstandard2.0\GCop.Conditional.pdb

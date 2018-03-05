@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GCop.Common</id>
+    <version>1.0.0.1</version>
+    <authors>Geeks</authors>
+    <owners>Geeks</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>GCop.Common</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <tags>GCop.Common, analyzers</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.CSharp" version="4.4.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\tools\install.ps1" target="tools\install.ps1" />
+    <file src="C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\tools\uninstall.ps1" target="tools\uninstall.ps1" />
+    <file src="C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard2.0\GCop.Common.dll" target="analyzers\dotnet\cs\GCop.Common.dll" />
+  </files>
+</package>

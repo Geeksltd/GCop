@@ -1,0 +1,13 @@
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard2.0\tools\install.ps1
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard2.0\tools\uninstall.ps1
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard2.0\GCop.Common.deps.json
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard2.0\GCop.Common.dll
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\bin\Debug\netstandard2.0\GCop.Common.pdb
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.csprojResolveAssemblyReference.cache
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.Resources.resources
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.csproj.GenerateResource.Cache
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.csproj.CoreCompileInputs.cache
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.AssemblyInfoInputs.cache
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.AssemblyInfo.cs
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.dll
+C:\Users\msade\source\repos\GCop.Common\GCop.Common\GCop.Common\obj\Debug\netstandard2.0\GCop.Common.pdb
