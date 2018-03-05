@@ -1,6 +1,6 @@
 # GCop201
 
-> *"Use camelCasing when declaring local variables."*
+> *"Use camelCasing when declaring local variables / a parameter."*
 
 
 ## Rule description
@@ -40,8 +40,8 @@ System.Web.UI
 | Interface|Pascal|	IDisposable <br> **Note**   Always begins with the prefix I.|
 | Method|Pascal|ToString|
 | Namespace|Pascal|System.Drawing|
-| Parameter|Camel|typeName|
 | Property|	Pascal|BackColor|
-| Protected instance field|Camel|redValue <br> **Note**   Rarely used. A property is preferable to using a protected instance field.|
 | Public instance field|Pascal|RedValue <br> **Note**   Rarely used. A property is preferable to using a public instance field.|
+| Protected instance field|Camel|redValue <br> **Note**   Rarely used. A property is preferable to using a protected instance field.|
+| Parameter|Camel|typeName|
  
