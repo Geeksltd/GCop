@@ -16,7 +16,7 @@ CamelCasing is used for these identifires :
 ## Example 1
 
 ```csharp
-void myMethod(int MyParameter)
+void MyMethod(int MyParameter)
 {  
     ...
 }
@@ -24,7 +24,7 @@ void myMethod(int MyParameter)
 *should be* 🡻
 
 ```csharp
-void myMethod(int myParameter)
+void MyMethod(int myParameter)
 {  
     ...
 }
