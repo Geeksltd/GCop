@@ -5,7 +5,7 @@
 
 ## Rule description
 
-PascalCase is a naming convention where he first letter in of each word in the phrase are upper case, and the rest are lower case.
+PascalCase is a naming convention where the first letter in of each word in the phrase are upper case, and the rest are lower case.
 You do not use under_score in PascalCased identifiers.
 
 In C#, PascalCasing is used for these identifires:
