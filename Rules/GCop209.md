@@ -5,45 +5,177 @@
 
 ## Rule description
 
-Use the following three conventions for capitalizing identifiers.
+PascalCase convention is used to capitalize some kind of identifiers in C#. In PascalCase capitalization,The first letter in the identifier and the first letter of each subsequent concatenated word are capitalized.
 
-##### Pascal case
+PascalCasing is used for these identifires :
 
-The first letter in the identifier and the first letter of each subsequent concatenated word are capitalized.For example:
-```
-BackColor
-```
-##### Camel case
-
-The first letter of an identifier is lowercase and the first letter of each subsequent concatenated word is capitalized. For example:
-```
-backColor
-```
-##### Uppercase
-
-All letters in the identifier are capitalized. Use this convention only for identifiers that consist of two or fewer letters. For example:
-```
-System.IO
-System.Web.UI
-```
+* Classes
+* Interfaces
+* Enums
+* Delegates 
+* Namespaces
+* Events
+* Methods
+* Enum values
+* Fields 
+* Properties
 
 ## Example 1
-For these identifiers we should use PascalCasing :
+```csharp
+public class sampleClassName
+{
+    ...
+}
+```
+*should be* 🡻
 
+```csharp
+public class SampleClassName
+{
+    ...
+}
+```
 
-|Identifier|Violating code|Compliant code|
-|---|---|---|
-| Class |appDomain|AppDomain|
-| Interface|iDisposable|IDisposable <br> **Note**   Always begins with the prefix I.|
-| Enum type|errorLevel|ErrorLevel|
-| delegate|performCalculation|PerformCalculation|
-| Namespace|system.Drawing|System.Drawing|
-| Event|valueChange|ValueChange|
-| Method|toString|ToString|
-| Enum values|fatalError|FatalError|
-| Read-only Static field|redValue|RedValue|
-| Public instance field|redValue|RedValue <br> **Note**   Rarely used. A property is preferable to using a public instance field.|
-| Property|backColor|BackColor|
-| Exception class|webException|WebException <br> **Note**   Always ends with the suffix Exception.|
+## Example 2
+```csharp
+interface iSampleInterface
+{
+    ...
+}
+```
+*should be* 🡻
 
+```csharp
+interface ISampleInterface
+{
+    ...
+}
+```
+ 
+
+## Example 3
+```csharp
+enum sampleEnum
+{
+    ...
+}
+```
+*should be* 🡻
+
+```csharp
+enum SampleEnum
+{
+    ...
+}
+```
+ 
+
+## Example 4
+```csharp
+delegate void sampleDelegateName(string str);
+```
+*should be* 🡻
+
+```csharp
+delegate void SampleDelegateName(string str);
+
+```
+ 
+
+## Example 5
+```csharp
+using sampleNameSpace;
+using system.drawing;
+```
+*should be* 🡻
+
+```csharp
+using SampleNameSpace;
+using System.Drawing;
+```
+ 
+
+## Example 6
+```csharp
+private void sampleButton_Click(Object sender, EventArgs e)
+{
+    ...
+}
+```
+*should be* 🡻
+
+```csharp
+private void SampleButton_Click(Object sender, EventArgs e)
+{
+    ...
+}
+```
+ 
+
+## Example 7
+```csharp
+public void sampleMethod()
+{
+    ...
+}
+```
+*should be* 🡻
+
+```csharp
+public void SampleMethod()
+{
+    ...
+}
+```
+
+## Example 8
+```csharp
+enum SampleEnum
+{
+    sampleEnumValue
+}
+```
+*should be* 🡻
+
+```csharp
+enum SampleEnum
+{
+    SampleEnumValue
+}
+```
+ 
+
+## Example 9
+```csharp
+public class SampleClassName
+{
+    public static readonly string sampleStaticField = "someText";
+    public string samplePublicInstanceField = "someText";
+}
+```
+*should be* 🡻
+
+```csharp
+public class SampleClassName
+{
+    public static readonly string SampleStaticField = "someText";
+    public string SamplePublicInstanceField = "someText";
+}
+```
+ 
+## Example 10
+```csharp
+public class SampleClassName
+{
+    public string myProperty { get; set; }
+}
+```
+*should be* 🡻
+
+```csharp
+public class SampleClassName
+{
+    public string MyProperty { get; set; }
+}
+```
  
