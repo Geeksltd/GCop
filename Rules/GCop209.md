@@ -10,16 +10,9 @@ You do not use under_score in PascalCased identifiers.
 
 In C#, PascalCasing is used for these identifires:
 
-* Classes
-* Interfaces
-* Enums
-* Delegates 
-* Namespaces
-* Events
-* Methods
-* Enum values
-* Fields
-* Properties
+* Classes, Interfaces, Delegates, Namespaces
+* Events, Methods, Fields, Properties
+* Enums and Enum values
 
 ## Example 1
 ```csharp
@@ -125,7 +118,7 @@ public class SampleClassName
 }
 ```
  
-## Example 10
+## Example 8
 ```csharp
 public class SampleClassName
 {
