@@ -5,9 +5,10 @@
 
 ## Rule description
 
-PascalCase convention is used to capitalize some kind of identifiers in C#. In PascalCase capitalization,The first letter in the identifier and the first letter of each subsequent concatenated word are capitalized.
+PascalCase is a naming convention where he first letter in of each word in the phrase are upper case, and the rest are lower case.
+You do not use under_score in PascalCased identifiers.
 
-PascalCasing is used for these identifires :
+In C#, PascalCasing is used for these identifires:
 
 * Classes
 * Interfaces
@@ -17,7 +18,7 @@ PascalCasing is used for these identifires :
 * Events
 * Methods
 * Enum values
-* Fields 
+* Fields
 * Properties
 
 ## Example 1
@@ -51,51 +52,27 @@ interface ISampleInterface
     ...
 }
 ```
- 
 
-## Example 3
-```csharp
-enum sampleEnum
-{
-    ...
-}
-```
-*should be* 🡻
-
-```csharp
-enum SampleEnum
-{
-    ...
-}
-```
- 
 
 ## Example 4
 ```csharp
-delegate void sampleDelegateName(string str);
+public void sampleMethod()
+{
+    ...
+}
 ```
 *should be* 🡻
 
 ```csharp
-delegate void SampleDelegateName(string str);
-
+public void SampleMethod()
+{
+    ...
+}
 ```
  
 
 ## Example 5
-```csharp
-using sampleNameSpace;
-using system.drawing;
-```
-*should be* 🡻
-
-```csharp
-using SampleNameSpace;
-using System.Drawing;
-```
- 
-
-## Example 6
+There is one exception where you are allowed to use underscore, and that's for event handlers.
 ```csharp
 private void sampleButton_Click(Object sender, EventArgs e)
 {
@@ -112,23 +89,8 @@ private void SampleButton_Click(Object sender, EventArgs e)
 ```
  
 
-## Example 7
-```csharp
-public void sampleMethod()
-{
-    ...
-}
-```
-*should be* 🡻
 
-```csharp
-public void SampleMethod()
-{
-    ...
-}
-```
-
-## Example 8
+## Example 6
 ```csharp
 enum SampleEnum
 {
@@ -145,7 +107,7 @@ enum SampleEnum
 ```
  
 
-## Example 9
+## Example 7
 ```csharp
 public class SampleClassName
 {
