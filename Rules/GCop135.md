@@ -2,7 +2,7 @@
 
 > *"Add a 'default' block after the last case in a switch statement. For example if you don't support anything other than your specified 'cases' throw a NotSupportedException"*
 
-> *"Add descriptive comment if the default block is supposed to be empty or throw an InvalidOperationException if that block is not supposed to be reached"*
+> *"Add descriptive comment if the default block is supposed to be empty or throw an NotSupportedException if that block is not supposed to be reached"*
 
 
 ## Rule description
@@ -22,14 +22,17 @@ It is prefered to use default statement :
 
 
 ## Example 1
+In this example we don't expect **myVar** to be anything other than the cases we handle. Just in case a different value is passed at runtime, it should explicitly throw a Not Supported Exception to prevent hard-to-find bugs.
 ```csharp
 int myVar = 3;
 switch(myVar)
 {
     case 1:
         //something
+        break;
     case 2:
         //something else 
+        break;
 }
 ```
 *should be* 🡻
@@ -39,50 +42,43 @@ switch(myVar)
 {
     case 1:
         //something
+        break;
     case 2:
         //something else
+        break;
     default:
-        throw new InvalidOperationException();        
+        throw new NotSupportedException();        
 }
 ```
  
 
 ## Example 2
+If the default case doesn't matter and should be ignored (for when you don't have an exclusive-per-case logic) you should still add a default block to show that you have thought about it and know that it's fine if the switch results in any other unhandled case.
 ```csharp
-int myVar;
-switch(expression)
+switch(someEnumValue)
 {
-    case 1:
-        myVar = 1;
+    case SomeEnum.ValueA:
+        // E.g. Send a notification in this particular case;
         break;
-    case 2:
-        myVar = 2;
+    case SomeEnum.ValueB:
+        // E.g. Do something in this special case too;
         break;
 }
-if(myVar == 3)
-{
-    //do something
-}
+// ... Some logic applicable to all cases
 ```
 *should be* 🡻
 
 ```csharp
-int myVar;
-switch(expression)
+switch(someEnumValue)
 {
-    case 1:
-        myVar = 1;
+    case SomeEnum.ValueA:
+        // E.g. Send a notification in this particular case;
         break;
-    case 2:
-        myVar = 2;
+    case SomeEnum.ValueB:
+        // E.g. Do something in this special case too;
         break;
-    default:
-        myVar = 3;
-        break;
+    default: break;
 }
-if(myVar == 3)
-{
-    //do something
-}
+// ... Some logic applicable to all cases
 ```
  
