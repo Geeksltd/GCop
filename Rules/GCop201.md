@@ -11,12 +11,12 @@ CamelCasing is used for these identifires :
 
 * Parameters
 * Local variables
-
+* Class fields (only where a property or method already exists with the PascalCased version of that name)
 
 ## Example 1
 
 ```csharp
-private void myMethod(int MyParameter)
+void myMethod(int MyParameter)
 {  
     ...
 }
@@ -24,7 +24,7 @@ private void myMethod(int MyParameter)
 *should be* 🡻
 
 ```csharp
-private void myMethod(int myParameter)
+void myMethod(int myParameter)
 {  
     ...
 }
@@ -33,7 +33,7 @@ private void myMethod(int myParameter)
 ## Example 2
 
 ```csharp
-private void myMethod()
+void myMethod()
 {
     int MyLocalVar = 3;
     ...
@@ -42,10 +42,30 @@ private void myMethod()
 *should be* 🡻
 
 ```csharp
-private void myMethod()
+void myMethod()
 {
     int myLocalVar = 3;
     ...
 }
 ```
 
+## Example 4
+
+```csharp
+int _SomeName;
+public int SomeName
+{ 
+    get => _SomeName;
+    set => _SomeName = value;
+}
+```
+*should be* 🡻
+
+```csharp
+int someName;
+public int SomeName
+{ 
+    get => someName;
+    set => someName = value;
+}
+```
