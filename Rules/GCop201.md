@@ -5,7 +5,7 @@
 
 ## Rule description
 
-To capitalize some kind of identifiers in C#, we should use the CamelCasing convention.
+To capitalize some kind of identifiers in C#, we should use the CamelCase convention.
 in CamelCase capitalization, the first letter of an identifier is lowercase and the first letter of each subsequent concatenated word is capitalized. For example : backColor
 
 We should use CamelCasing for these identifires :
