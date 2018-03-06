@@ -6,32 +6,28 @@
 
 
 ## Rule description
-Underscore used only when defining the underlying private member variable for a public property. Other variables or classes would not have an underscore.
-
-MSDN Class Naming Guidlines page mentions not to use the underscore character (_) for classes.
- 
+Underscore should be avoided in most cases. The only exception where it's allowed (but not recommended) is for naming private class fields that back a property. 
 
 ## Example 1
 ```csharp
-private void MyMethod()
+void MyMethod()
 {
-    string _myVariable = "someText";
+    var _myVariable = "someText";
 }
 ```
 *should be* 🡻
 
 ```csharp
-private void MyMethod()
+void MyMethod()
 {
-    string myVariable = "someText";
+    var myVariable = "someText";
 }
 ```
  
- 
 
-## Example 1
+## Example 2
 ```csharp
-public class _MyClass
+public class Some_Class
 {
     ...
 }
@@ -39,7 +35,7 @@ public class _MyClass
 *should be* 🡻
 
 ```csharp
-public class MyClass
+public class SomeClass
 {
     ...
 }
