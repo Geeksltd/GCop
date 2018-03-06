@@ -2,7 +2,6 @@
 
 > *"Rename the variable 'variable name' to something clear and meaningful."*
 
-
 ## Rule description
 This error will be shown when your variable or parameter name is a single character. Variable and method parameter names should be descriptive engough to reveal their meaning, purpose and role in that context.
 
