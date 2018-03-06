@@ -4,43 +4,52 @@
 
 
 ## Rule description
- Variable and parameter names should be descriptive enough that the name of the parameter and its type can be used to determine its meaning and the role of its contained data in most scenarios.
-Science a single character is not meaningful at all ,this error will happen.
+This error will be shown when your variable or parameter name is a single character. Variable and method parameter names should be descriptive engough to reveal their meaning, purpose and role in that context.
 
 There are some exception in this rule:
  
-  * When the parameter is type of EventArgs it can be a single character.
-  * When defining the underlying private member variable for a public property.
+  * When the parameter is of type *EventArgs* it can be a single character (usually 'e') for historic reasons.
+  * Lambda expression variables
+  * Iterator variable in small for loops
+  
 
 ## Example 1
 ```csharp
-private void MyMethod(int d, EventArgs e)
+void MyMethod(DateTime d)
 {
-    int m = d;
+    ...
 }
 ```
 *should be* 🡻
 
 ```csharp
-private void MyMethod(int date, EventArgs e)
+void MyMethod(DateTime date)
 {
-    int myDate = date;
+    ...
 }
 ```
- 
- 
 
 ## Example 2
 ```csharp
+void SomeMethod()
+{
+    var d = ...;
+}
+```
+*should be* 🡻
+
+```csharp
+void MyMethod()
+{
+    var date = ...;
+}
+``` 
+
+## Example 3
+```csharp
 public class SampleClass
 {
-    public string f;
-    private string _n;
-    public string Name
-    {
-        get { return this._n; }
-        set { this._n = value; }
-    }
+    public string F;    
 }
 ```
 *should be* 🡻
@@ -48,15 +57,7 @@ public class SampleClass
 ```csharp
 public class SampleClass
 {
-    public string Family;
-    private string _n;
-    public string Name
-    {
-        get { return this._n; }
-        set { this._n = value; }
-    }
+    public string Family;   
 }
 ```
  
- 
-
