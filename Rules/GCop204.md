@@ -39,7 +39,7 @@ void SomeMethod()
 *should be* 🡻
 
 ```csharp
-void MyMethod()
+void SomeMethod()
 {
     var date = ...;
 }
