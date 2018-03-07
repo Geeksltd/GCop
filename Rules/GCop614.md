@@ -5,11 +5,12 @@
 
 ## Rule description
 Every time new Random() is called, it is initialized using the clock. This means that in a tight loop it returns same value lots of times. So keep a single Random instance and keep using Next on the same instance is a best practice.
+
 ## Example 1
 ```csharp
 public class MyClass
 {
-    private void MyMethod()
+    void MyMethod()
     {
         var rnd = new Random();
         rnd.Next(1,100);
@@ -21,10 +22,10 @@ public class MyClass
 ```csharp
 public class MyClass
 {
-    private static Random rnd = new Random();
-    private void MyMethod()
+    static Random Random = new Random();
+    void MyMethod()
     {
-        rnd.Next(1,100);
+        Random.Next(1,100);
     }
 }
 ```
