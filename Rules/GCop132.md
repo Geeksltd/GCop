@@ -4,13 +4,10 @@
 
 
 ## Rule description
-The potential benefit of using var instead of type is in readability . when the type of the variable is clear on the RHS of the assignment (e.g. via a cast or a constructor call), there is no benefit of also having it on the LHS.
+The potential benefit of using var instead of type is in readability and brevity. When the type of the variable is clear on the right side of the assignment (e.g. via a cast or a constructor call), there is no benefit of also having it on the left side.
 
-There are some exception in this rule:
-
- * If the left hand side type is any of (Boolean, Decimal, Int32, String, Int64, Char)
- * If the left hand side type is any of (Action, Func)
- * If the left or right hand side type is null.
+There is one exception which is where the type is a delegate type such as Action or Func.
+ 
 
 ## Example 1
 ```csharp
