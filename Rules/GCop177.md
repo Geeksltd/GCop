@@ -22,4 +22,7 @@ public int MyMethod(int myParam)
     return myParam * 200; 
 }
 ```
-
+*which, in this case, allows it to get even shorter* 🡻
+```csharp
+public int MyMethod(int myParam)=> myParam * 200; 
+```
