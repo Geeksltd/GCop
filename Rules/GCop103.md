@@ -4,9 +4,9 @@
 
 
 ## Rule description
-You should always return an empty list instead of null.In this way you eliminate the risk of a NullReferenceException and You don't have to check for null in client code, so your code becomes shorter, more readable and easier to maintain
+You should always return an empty list instead of null. In this way you eliminate the risk of a NullReferenceException and You don't have to check for null in client code, so your code becomes shorter, more readable and easier to maintain.
 
-This rule should not be effected when method returntype is not assignable from IEnumerable.
+This rule applies when the return type implements IEnumerable.
 
 ## Example 1
 ```csharp
