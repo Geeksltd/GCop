@@ -10,11 +10,11 @@ This rule should not be effected when method returntype is not assignable from I
 
 ## Example 1
 ```csharp
-public static List<Payment> MyMethod()
+public static IEnumerable<Payment> MyMethod()
 {
     if()
     {
-        //return List<Payment>
+        //return IEnumerable<Payment>
     }
     else
         return null;
@@ -23,11 +23,11 @@ public static List<Payment> MyMethod()
 *should be* 🡻
 
 ```csharp
-public static List<Payment> MyMethod()
+public static IEnumerable<Payment> MyMethod()
 {
     if()
     {
-        //return List<Payment>
+        //return IEnumerable<Payment>
     }
     else
         return Enumerable.Empty<Payment>;
