@@ -4,15 +4,7 @@
 
 
 ## Rule description
-Using assignment within conditional statements would decrease readability.
-
-This error happens while Using the expressions below within conditional statement :
-
-* EqualsExpression
-* GreaterThanExpression
-* LessThanExpression
-* GreaterThanOrEqualExpression
-* LessThanOrEqualExpression
+Using assignment within conditional statements would decrease readability. Instead you should use seperate statements for the assignment, and the comparison.
 
 ## Example 1
 ```csharp
@@ -27,12 +19,9 @@ public void MyMethod()
 ```csharp
 public void MyMethod()
 {
-    if (CountMethod(Query, out TotalRows) < 1)
-    //do something
-}
-public void CountMethod(IQueryable<Ticket> query, out int totalRows)
-{
-    return totalRows = query.Count();
+    TotalRows = Query.Count();
+    if (TotalRows < 1)
+        //do something
 }
 ```
  
@@ -41,17 +30,16 @@ public void CountMethod(IQueryable<Ticket> query, out int totalRows)
 ```csharp
 public void MyMethod()
 {
-    if ((TotalRows = Query.Count()) < 1)
+    if ((TotalRows = Query.Count() == 2)
         //do something
 }
 ```
 *should be* 🡻
-
 ```csharp
 public void MyMethod()
 {
-    TotalRows = Query.Count();
-    if ( TotalRows < 1)
+    TotalRows = Query.Count(); 
+    if (TotalRows == 2)
         //do something
 }
 ```
