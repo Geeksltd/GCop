@@ -4,7 +4,7 @@
 
 
 ## Rule description
-There is no need to use .Value to get the value of nullable Value types parameters, unless we use this parameter in a binary expression like :
+There is no need to use .Value to get the value of nullable Value types parameters, unless we use these parameters in a binary expression like :
 
 * AddExpression
 * DivideExpression
