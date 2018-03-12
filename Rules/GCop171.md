@@ -4,14 +4,7 @@
 
 
 ## Rule description
-There is no need to use .Value to get the value of nullable Value types parameters, unless we use these parameters in a binary expression like :
-
-* AddExpression
-* DivideExpression
-* MultiplyExpression
-* SubtractExpression
-* ModuloExpression
-* ExclusiveOrExpression
+In some situations, there is no need to use .Value from nullable Value types. In those cases, for cleanness of the code, the code should be simplified.
 
 ## Example 1
 ```csharp
