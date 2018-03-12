@@ -23,7 +23,7 @@ if(myObj == null)
 ```
 ## Example 2
 ```csharp
-if(!data.Any(d=>d.ProductCode == 120))
+if(!data.Any(d => d.ProductCode == 120))
 {
     //some code
 }                    
@@ -31,7 +31,7 @@ if(!data.Any(d=>d.ProductCode == 120))
 *should be* 🡻
 
 ```csharp
-if(data.None(d=>d.ProductCode == 120))
+if(data.None(d => d.ProductCode == 120))
 {
     //some code
 } 
