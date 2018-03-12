@@ -4,16 +4,24 @@
 
 
 ## Rule description
-If foreach loop is used on IEnumerable  object, there would be a cast in each loop that is time consuming.So its better to call .Tolist() on the object so there wouldnt be any need to cast .
+An object of type IEnumerable can be resource consuming every time that it's iterated in foreach loops or Linq methods that evaluate the result such as ToList(), ToArray(), Count(), Any(), ...
+
+If you need the result of an IEnumerable object more than once, it's better to call .ToArray() or .Tolist() on it once to prepare the final result, and then use that directly.
 
 ## Example 1
 ```csharp
 private void MyMethod()
 {
-    var children = allcategories.Where(lai => lai.ParentID == Parent.CategoryID);
-    foreach (var Child in children)
+    var children = categories.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
+    
+    if (children.Count() == ...) // Running Count() requires the above lambda expression to get executed for every item.
     {
-        //do somethings
+        ...
+    }
+    
+    foreach (var Child in children) // Again the lambda expression is executed for every item.
+    {
+        ...
     }
 }
 ```
@@ -22,10 +30,17 @@ private void MyMethod()
 ```csharp
 private void MyMethod()
 {
-    var children = allcategories.Where(lai => lai.ParentID == Parent.CategoryID).ToList();
+    var children = allcategories.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
+                   .ToArray(); // the lambda expression is executed only once per item and the result is stored.
+    
+    if (children.Count() == ...)
+    {
+        ...
+    }
+    
     foreach (var Child in children)
     {
-        //do somethings
+        ...
     }
 }
 ```
