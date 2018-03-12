@@ -43,7 +43,7 @@ public void MyMethod()
 public static List<ShopProduct> FetchProducts()
 {   
     var result = db.ShopProducts.Where(p => p.IsActive).ToList(); 
-    var myVar = new ShopProduct();
+    var myVar = result.FirstOrDefault();
     ...
 }
 ```
