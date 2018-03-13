@@ -11,7 +11,7 @@ The using statement automatically disposes the object while dispose method shoul
 ## Example 1
 ```csharp
 var font = new Font(pfcoll.Families[0], 58, FontStyle.Bold, GraphicsUnit.Pixel);
-//some other codes
+//several lines of code
 font.Dispose();
 ```
 *should be* 🡻
@@ -19,11 +19,7 @@ font.Dispose();
 ```csharp
 using(var font = new Font(pfcoll.Families[0], 58, FontStyle.Bold, GraphicsUnit.Pixel))
 {
-    //some other codes
+    //several lines of code
 }
 
 ```
- 
- 
- ## Controversy
-...
