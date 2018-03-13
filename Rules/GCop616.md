@@ -12,7 +12,7 @@ foreach (var item in myList)
 {
     if(item != null)
     {
-        //write lots of codes
+        // Several lines of code
     }
 }
 ```
@@ -21,9 +21,9 @@ foreach (var item in myList)
 ```csharp
 foreach (var item in myList)
 {
-    if(item == null)
-        continue;
-    //write lots of codes
+    if(item == null) continue;
+    
+    // Several lines of code
 }
 ```
 
