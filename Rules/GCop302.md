@@ -4,9 +4,9 @@
 
 
 ## Rule description
-When you finish using an object that implements IDisposable, you should call the object's IDisposable.Dispose implementation.You can do this by **using** statement or calls the **Dispose** method.
+When you finish using an object that implements IDisposable, you should call the object's IDisposable.Dispose implementation. You can do this by **using** statement or calls the **Dispose** method.
 
-The using statement automatically disposes the object while dispose method should be written by the programmer.Also you should check that the object is not null before dispose method.
+The *using* statement automatically disposes the object while the *dispose* method should be written by the programmer. Also you should check that the object is not null before calling the dispose method, which is automatically handled in a *using* statement.
 
 ## Example 1
 ```csharp
