@@ -6,7 +6,7 @@
 ## Rule description
 By their nature, Urls can change over time. Also there might be different versions of a URL (e.g. one for testing, one for live).
 
-When you use a URL in your application, you may have to change it while the application is live. By moving them to the config fileyou can make changes without having to recompile the whole program. 
+When you use a URL in your application, you may have to change it while the application is live. By moving them to the config file you can make changes without having to recompile the whole program. 
 
 ## Example 1
 ```csharp
