@@ -39,7 +39,7 @@ public class Registeration
 }
 ```
 
-* and perhaps even*  🡻
+*and perhaps even*  🡻
 
 ```csharp
 
