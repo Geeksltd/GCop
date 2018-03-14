@@ -3,6 +3,8 @@ GCop is a set up code analysis rules for improving C# code.
 
 
 ## Installing GCop in Visual Studio 2017
+First of all make sure you have installed visual studio 2017 version 15.5.5 or a newer one.
+
 *You need to do this only once.*
 
 1. Open any solution in Visual Studio
