@@ -23,14 +23,13 @@ public void MyMethod(RegisterClass register)
     //several lines of code
 }
 public class RegisterClass
-    {
-        string UserName { get; set; }
-        string Password { get; set; }
-        string Name { get; set; }
-        string Family { get; set; }
-        string CompanyPhone { get; set; }
-        string HomePhone { get; set; }
-        string Mobile { get; set; }
-       
-    }
+{
+    string UserName { get; set; }
+    string Password { get; set; }
+    string Name { get; set; }
+    string Family { get; set; }
+    string CompanyPhone { get; set; }
+    string HomePhone { get; set; }
+    string Mobile { get; set; }   
+}
 ```
