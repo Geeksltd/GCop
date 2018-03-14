@@ -9,7 +9,7 @@ When you finish using an object that implements IDisposable, the object's Dispos
 If you do that manually, you need to write code to ensure that:
 * The object is not null before calling Dispose()
 * The dispose method is not accidentally skipped in the event of an early **return** or **break** or **continue** statement.
-* In the case of exceptions, you still call the Dispose() bu using a try/finally block.
+* In the case of exceptions, you still call the Dispose() by using a try/finally block.
 
 Instead of doing the above manually, you can simply use a **using** block which will automatically handle all of that for you.
 
