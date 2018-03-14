@@ -14,7 +14,7 @@ var myLink = $"https://telegram.me/{botName}";
 *should be* 🡻
 
 ```csharp
-var telegramLink = ConfigurationManager.AppSettings["DayanUrl"];
+var telegramLink = ConfigurationManager.AppSettings["TelegramUrl"];
 var myLink = $"{telegramLink}{botName}";
 ```
 
