@@ -38,3 +38,24 @@ public class Registeration
     string Mobile { get; set; }   
 }
 ```
+
+* and perhaps even*  🡻
+
+```csharp
+
+public class Registeration
+{
+    string UserName { get; set; }
+    string Password { get; set; }
+    string Name { get; set; }
+    string Family { get; set; }
+    string CompanyPhone { get; set; }
+    string HomePhone { get; set; }
+    string Mobile { get; set; }   
+    
+    public void MyMethod()
+    {
+       ...
+    }
+}
+```
