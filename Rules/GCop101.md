@@ -10,9 +10,10 @@ Instead of a long list of parameters, a method can use the data of an object.
 
 ## Example 1
 ```csharp
-public void MyMethod(string UserName, string Password, string Name, string Family, string CompanyPhone, string HomePhone, string Mobile )
+public void MyMethod(string userName, string password, string name, string family,
+                     string companyPhone, string homePhone, string mobile )
 {
-    //several lines of code
+    ...
 }
 ```
 *should be* 🡻
@@ -20,8 +21,9 @@ public void MyMethod(string UserName, string Password, string Name, string Famil
 ```csharp
 public void MyMethod(RegisterClass register)
 {
-    //several lines of code
+    ...
 }
+
 public class RegisterClass
 {
     string UserName { get; set; }
