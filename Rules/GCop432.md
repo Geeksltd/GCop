@@ -27,7 +27,7 @@ public int MyMethod()
 
 ## Example 2
 ```csharp
-public int MyMethod(objedct arg, int myVar)
+public void MyMethod(objedct arg, int myVar)
 {
     int x = (5 + myVar);
     var localItem = ((MyObjectName)(arg));
@@ -36,7 +36,7 @@ public int MyMethod(objedct arg, int myVar)
 *should be* 🡻
 
 ```csharp
-public int MyMethod(objedct arg,int myVar)
+public void MyMethod(objedct arg,int myVar)
 {
     int x = 5 + myVar;
     var localItem = (MyObjectName)arg;
@@ -45,7 +45,7 @@ public int MyMethod(objedct arg,int myVar)
 
 ## Example 3
 ```csharp
-public int MyMethod()
+public void MyMethod()
 {
     if ((IsLocalFileSystemWebService(Url) == true))
     {
@@ -56,7 +56,7 @@ public int MyMethod()
 *should be* 🡻
 
 ```csharp
-public int MyMethod()
+public void MyMethod()
 {
     if (IsLocalFileSystemWebService(Url) == true)
     {
