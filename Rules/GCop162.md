@@ -9,25 +9,26 @@ It improves readability and writeability. Also it can potentially provide a bett
 
 ## Example 1
 ```csharp
-if (result == "-1" || result == "-2")
- return false;
+if (result == "something" || result == "another-thing")
+   return false;
 ```
 *should be* 🡻
 
 ```csharp
-if (result.IsAnyOf("-1","-2"))
-    return false;
+if (result.IsAnyOf("something","another-thing"))
+   return false;
 ```
  
 ## Example 2
 ```csharp
-if (order.GetCurrentStatus() == OrdeStatus.Pending || order.GetCurrentStatus() == OrdeStatus.Processing || order.GetCurrentStatus() == OrdeStatus.Ready))
- return false;
+if (order.GetCurrentStatus() == OrdeStatus.Pending || order.GetCurrentStatus() == OrdeStatus.Processing ||
+    order.GetCurrentStatus() == OrdeStatus.Ready))
+   return false;
 ```
 *should be* 🡻
 
 ```csharp
 if (order.GetCurrentStatus().IsAnyOf(OrdeStatus.Pending, OrdeStatus.Processing, OrdeStatus.Ready))
-    return false;
+   return false;
 ```
 
