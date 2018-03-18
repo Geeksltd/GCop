@@ -4,11 +4,9 @@
 
 
 ## Rule description
-If a method name start with **Get** keyword and continue with a camelcase word and count of body statements are more than 25 statements, this will be hint.
+For historic reasons, a method named GetXyz() can be perceived as something that’s simple and can run quickly. As a result, developers may call it liberally and multiple times (for example in loops or Linq methods). 
 
-Actually if a method role is getting value, there is no need to have a long body.
-It seems that long body is more needed for finding a value or create an object or etc.
-
+When your method’s implementation contains substantial logic, you should name the method in a way to bring this to the attention of the callers, for instance to allow them to run it once and store the result in a variable. 
 ## Example 1
 ```csharp
 protected string GetImage(int imageID)
