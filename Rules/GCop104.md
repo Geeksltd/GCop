@@ -4,7 +4,7 @@
 
 
 ## Rule description
-the empty partials should not be overwritten if they already exist (they're meant to be customized by developers).
+The empty partials should not be overwritten if they already exist (they're meant to be customized by developers).
 
 ## Example 1
 ```csharp
@@ -16,7 +16,3 @@ public partial class Subset {
 ```csharp
  //this class should be removed
 ```
- 
- 
- ## Controversy
-...
