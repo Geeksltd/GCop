@@ -6,9 +6,7 @@
 
 
 ## Rule description
-Mostly we consider ending the name of derived classes with the name of the base class. 
-So methods with the same end with class, reduce readability of the program.
-Static Methodes are expected from this rule.
+As instance methods are defined inside a class, the name of the class is already implied in their context and should not be repeated in the name of the method. 
 ## Example 1
 ```csharp
 public class SampleClass
