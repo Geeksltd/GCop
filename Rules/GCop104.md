@@ -4,8 +4,7 @@
 
 
 ## Rule description
-The empty partials should not be overwritten if they already exist (they're meant to be customized by developers).
-
+Blank partial class files are unnecessary and should be removed.
 ## Example 1
 ```csharp
 public partial class Subset {
