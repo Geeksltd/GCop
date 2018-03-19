@@ -4,24 +4,34 @@
 
 
 ## Rule description
-Readability will increase if the variable is named result. This makes your intention clear and it is descriptive of the role of the variable.
+When someone is reading the code of a method, every time they see a variable declrataion, they have to think about the role or purpose of it in order to understand it.
+
+Often you need to define a variable that is used to hold the return value of the method. In those cases, use the convention to name it "result", so the reader will immediately understand its purpose.
 
 ## Example 1
 ```csharp
-public static string getme()
+public string GetTheThing()
 {
-    var res = "something";
-    res = "another-thing";
-    return res;
+    var anyName = "something";
+    ...
+    if (BlahBlah())
+        anyName = "another-thing";
+    ...
+    
+    return anyName;
 }
 ```
 *should be* 🡻
 
 ```csharp
-public static string getme()
+public string GetTheThing()
 {
     var result = "something";
-    result = "another-thing";
+    ...
+    if (BlahBlah())
+        result = "another-thing";
+    ...
+    
     return result;
 }
 ```
