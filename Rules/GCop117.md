@@ -1,6 +1,6 @@
 ﻿# GCop117
 
-> *"The meaning of 'true/false' is not obvious. Specify the parameter's name explicitly."*
+> *"The meaning of **true / false** is not obvious. Specify the parameter's name explicitly."*
 
 
 ## Rule description
