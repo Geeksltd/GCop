@@ -43,8 +43,7 @@ Unfortunately Visual Studio doesn't allow you to disable analysis rules at the s
 1. Right click on the project and select **Properties**
 2. Select the **Build** tab
 3. Update the **Suppress warnings** field to include the warning codes you want to disable. 
-   - You should seperate multiple warning codes with semicolon (***;***) character.
-   - The following example will disable the specified three rules: *GCop316; GCop140; GCop179*
+   - Seperate multiple warning codes with a semicolon, e.g: *GCop316; GCop140; GCop179*
    
 ### One class?
 You can disable GCop for specific C# classes by adding the *[EscapeGCop]* attribute on top of it. You can optionally provide a reason description as well. This is particularly useful for auto-generated code.
