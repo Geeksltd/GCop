@@ -1,6 +1,6 @@
 ﻿# GCop121
 
-> *"Use StringVariable.To< {int/long} >() instead of {int/long}.Parse(StringVariable)"*
+> *"Use **numeric string.To< data type >()** instead of **data type.Parse(numeric string)**"*
 
 
 ## Rule description
