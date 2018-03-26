@@ -21,10 +21,10 @@ public static void MyMethod(string myParam)
 ```csharp
 public static void MyMethod(string myParam)
 {
-  if (myParam.IsEmpty)
-    {
-        //Several lines of code             
-    }
+   if (myParam.TriOrEmpty().IsEmpty())
+   {
+       //Several lines of code             
+   }
 }
 ```
  ## Example 2
@@ -38,7 +38,7 @@ if (token != null)
 *should be* 🡻
 
 ```csharp
-if (ReferenceEquals(token, null))
+if (! (token is null))
 {
     //several lines of code
 }
