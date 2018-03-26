@@ -12,7 +12,7 @@ public void MyMethod(DateTime? fromDate = null, DateTime? toDate = null)
 {
     if(fromDate.Value > toDate.Value)
     {
-        //some other codes
+        ...
     }
 }
 ```
@@ -23,7 +23,7 @@ public void MyMethod(DateTime? fromDate = null, DateTime? toDate = null)
 {
     if(fromDate > toDate)
     {
-        //some other codes
+        ...
     }
 }
 ```
