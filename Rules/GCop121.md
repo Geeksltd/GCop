@@ -4,7 +4,7 @@
 
 
 ## Rule description
-...
+The To<...>() extension method on the string type allows you to make type conversions in a uniform way for many types. It's also briefer and more readable. Just like you can say myInt.To**String**(), you can say myString.To<**int**>(). 
 
 ## Example 1
 ```csharp
