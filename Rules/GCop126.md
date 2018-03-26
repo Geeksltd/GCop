@@ -12,7 +12,7 @@ public static void MyMethod(string myParam)
 {
     if (string.IsNullOrEmpty(myParam) || string.IsNullOrWhiteSpace(myParam))
     {
-        // ...     
+        ...     
     }
 }
 ```
@@ -23,7 +23,7 @@ public static void MyMethod(string myParam)
 {
    if (myParam.TrimOrEmpty().IsEmpty())
    {
-       // ...            
+       ...            
    }
 }
 ```
@@ -32,7 +32,7 @@ If your logic applies to null, but not empty string, then change the condition t
 ```csharp
 if (token != null)
 {
-    // ...
+    ...
 }
 ```
 *should be* 🡻
@@ -40,7 +40,7 @@ if (token != null)
 ```csharp
 if (! (token is null))
 {
-    // ...
+    ...
 }
 ```
 
