@@ -10,9 +10,9 @@ You can avoid unnecessary clutter in your code by using **IsEmpty** or **HasValu
 ```csharp
 public static void MyMethod(string myParam)
 {
-  if (string.IsNullOrEmpty(myParam) || string.IsNullOrWhiteSpace(myParam))
+    if (string.IsNullOrEmpty(myParam) || string.IsNullOrWhiteSpace(myParam))
     {
-        //Several lines of code       
+        // ...     
     }
 }
 ```
@@ -21,9 +21,9 @@ public static void MyMethod(string myParam)
 ```csharp
 public static void MyMethod(string myParam)
 {
-   if (myParam.TriOrEmpty().IsEmpty())
+   if (myParam.TrimOrEmpty().IsEmpty())
    {
-       //Several lines of code             
+       // ...            
    }
 }
 ```
@@ -32,7 +32,7 @@ If your logic applies to null, but not empty string, then change the condition t
 ```csharp
 if (token != null)
 {
-    //several lines of code
+    // ...
 }
 ```
 *should be* 🡻
@@ -40,7 +40,7 @@ if (token != null)
 ```csharp
 if (! (token is null))
 {
-    //several lines of code
+    // ...
 }
 ```
 
