@@ -16,7 +16,7 @@ Instead of doing the above manually, you can simply use a **using** block which 
 ## Example 1
 ```csharp
 var font = new Font(pfcoll.Families[0], 58, FontStyle.Bold, GraphicsUnit.Pixel);
-//several lines of code
+...
 font.Dispose();
 ```
 *should be* 🡻
@@ -24,7 +24,7 @@ font.Dispose();
 ```csharp
 using(var font = new Font(pfcoll.Families[0], 58, FontStyle.Bold, GraphicsUnit.Pixel))
 {
-    //several lines of code
+    ...
 }
 
 ```
