@@ -12,7 +12,7 @@ foreach (var item in myList)
 {
     if(item != null)
     {
-        // Several lines of code
+        ...
     }
 }
 ```
@@ -23,7 +23,7 @@ foreach (var item in myList)
 {
     if(item == null) continue;
     
-    // Several lines of code
+    ...
 }
 ```
 
