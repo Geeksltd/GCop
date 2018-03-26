@@ -9,25 +9,6 @@ The TryParseAs<...>() extension method on the string type allows you to make saf
 ## Example 1
 ```csharp
 decimal myDecimal;
-if (decimal.TryParse(txtUserInput.Text, out myDecimal))
-{
-   ...
-}
-```
-*should be* 🡻
-
-```csharp
-var myDecimal = txtUserInput.Text.TryParseAs<decimal>();
-if (myDecimal.HasValue)
-{
-   ...
-}
-```
-
-
-## Example 2
-```csharp
-decimal myDecimal;
 
 if (decimal.TryParse(txtUserInput.Text, out myDecimal))
 {
@@ -44,7 +25,7 @@ else
 someObject.SomeNullableProperty = txtUserInput.Text.TryParseAs<decimal>();
 ```
 
-## Example 3
+## Example 2
 ```csharp
 try
 {
