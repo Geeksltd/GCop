@@ -24,7 +24,7 @@ var result = myList.SingleOrDefault(s => s.Name == "onlinepayment");
 var city = "london";
 if (city.Equals("tehran"))
 {
-    //...
+    ...
 }
 ```
 *should be* 🡻
@@ -33,6 +33,6 @@ if (city.Equals("tehran"))
 var city = "london";
 if (city == "tehran")
 {
-    //...
+    ...
 }
 ```
