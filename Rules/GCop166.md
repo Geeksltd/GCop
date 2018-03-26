@@ -11,7 +11,7 @@ Using assignment within conditional statements would decrease readability. Inste
 public void MyMethod()
 {
     if ((TotalRows = Query.Count()) < 1)
-        //do something
+        ...
 }
 ```
 *should be* 🡻
@@ -21,7 +21,7 @@ public void MyMethod()
 {
     TotalRows = Query.Count();
     if (TotalRows < 1)
-        //do something
+        ...
 }
 ```
  
@@ -31,7 +31,7 @@ public void MyMethod()
 public void MyMethod()
 {
     if ((TotalRows = Query.Count() == 2)
-        //do something
+        ...
 }
 ```
 *should be* 🡻
@@ -40,7 +40,7 @@ public void MyMethod()
 {
     TotalRows = Query.Count(); 
     if (TotalRows == 2)
-        //do something
+        ...
 }
 ```
  
