@@ -13,7 +13,7 @@ public static List<ShopProduct> FetchProducts()
     var result = new List<ShopProduct>();
     
     result = db.ShopProducts.Where(p => p.IsActive).ToList();
-    //...
+    ...
     return result;
 }
 ```
@@ -23,7 +23,7 @@ public static List<ShopProduct> FetchProducts()
 public static List<ShopProduct> FetchProducts()
 {    
     var result = db.ShopProducts.Where(p => p.IsActive).ToList();
-    //...
+    ...
     return result;
 }
 ```
