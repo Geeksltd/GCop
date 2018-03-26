@@ -9,7 +9,7 @@ You almost never need to use ref/out. It's basically a way of getting another re
 ```csharp
 private void ReSize(ref int width, ref int height)
 {
-    //several lines of code
+    ...
 }
 ```
 *should be* 🡻
@@ -17,7 +17,7 @@ private void ReSize(ref int width, ref int height)
 ```csharp
 private CustomizedSize ReSize(int width, int height)
 {
-    //several lines of code
+    ...
     return CustomizedSizeObject;
 }
 public class CustomizedSize
