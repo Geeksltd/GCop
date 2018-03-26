@@ -13,7 +13,7 @@ public class SampleClass
 {
     public void BindSampleClass()
     {
-        //several lines of code
+        ...
     }
 }
 ```
@@ -24,7 +24,7 @@ public class SampleClass
 {
     public void Bind()
     {
-        //several lines of code
+        ...
     }
 }
 ```
