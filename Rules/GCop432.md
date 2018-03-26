@@ -10,7 +10,7 @@ It is possible in C# to insert parenthesis around virtually any type of expressi
 public int MyMethod()
 {
     var localItem = 100;
-    //several lines of code
+    ...
     return (localItem * 10);
 }
 ```
@@ -20,7 +20,7 @@ public int MyMethod()
 public int MyMethod()
 {
     var localItem = 100;
-    //several lines of code
+    ...
     return localItem * 10;
 }
 ```
@@ -49,7 +49,7 @@ public void MyMethod()
 {
     if ((IsLocalFileSystemWebService(Url) == true))
     {
-        //several lines of code
+        ...
     }
 }
 ```
@@ -60,7 +60,7 @@ public void MyMethod()
 {
     if (IsLocalFileSystemWebService(Url) == true)
     {
-        //several lines of code
+        ...
     }
 }
 ```
