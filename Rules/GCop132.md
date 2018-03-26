@@ -14,7 +14,7 @@ There is one exception which is where the type is a delegate type such as Action
 public void MyMethod()
 {
     object myObject = new object();
-    //some other codes
+    ...
 }
 ```
 *should be* 🡻
@@ -23,7 +23,7 @@ public void MyMethod()
 public void MyMethod()
 {
     var myObject = new object();
-    //some other codes
+    ...
 }
 ```
  
