@@ -26,11 +26,11 @@ public partial class Banner
 {
     public void MyMethod() 
     {
-        //some codes
+        ...
     }
     public Banner()
     {
-        //some codes
+        ...
     }       
 }
 ```
@@ -41,11 +41,11 @@ public partial class Banner
 {
     public Banner()
     {
-        //some codes
+        ...
     } 
     public void MyMethod() 
     {
-        //some codes
+        ...
     }
 }
 ```
