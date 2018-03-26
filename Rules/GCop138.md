@@ -30,7 +30,7 @@ public string MyMethod()
 {
     try
     {
-        //several lines of code
+        ...
     }
     catch
     {
@@ -45,7 +45,7 @@ public string MyMethod()
 {
     try
     {
-        //several lines of code
+        ...
     }
     catch
     {
