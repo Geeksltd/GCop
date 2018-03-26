@@ -25,7 +25,7 @@ public class MyClassName
 {
     public void MyMethod() 
     {
-        //some codes
+        ...
     }
     private const string myConstVal = "someText";
 
@@ -40,7 +40,7 @@ public class MyClassName
     
     public void MyMethod() 
     {
-        //some codes
+        ...
     }
 
 }
