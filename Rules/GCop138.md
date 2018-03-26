@@ -13,9 +13,10 @@ Generally you should either:
 There may be scenarios that just don't want the method to throw an exception and would rather silence the error. Those cases are rare, but it happens. In those cases you must at least:
 
 - Log the error, so it can be investigated later.
-- If you believe that even logging is not necessary in your case, document that explicitly by adding a comment such as "No logging is needed".
+- Write a message to Console, so at least during development and debugging it has a chance of being noticed.
+- If you believe that neither of the above are necessary in your case, document that explicitly by adding a comment such as "No logging is needed".
 
-If the body of an exception block doesn't rethrow the error, Gcop will look for the term "log" in the code. It doesn't care if it's a real log invokation or a comment. The purpose here is to ensure you have thought about this and made a contious decision, rather than omitting it by accident or ignorance.
+If the body of an exception block doesn't rethrow the error, Gcop will look for the term "log" or "console" in your code. It doesn't care if it's a real log invokation or a comment. The purpose here is to ensure you have thought about this and made a contious decision, rather than omitting it by accident or ignorance.
 
 ## Keeping information about the original exception
 When you catch an exception and then throw a new exception, the stack trace (containing information about the original exception) will get lost. To prevent that you should either: 
@@ -98,6 +99,24 @@ public string MyMethod()
     }
     catch (Exception ex)
     {
+        Console.WriteLine("ERROR in MyMethod: " + ex.Message);
+        return "";
+    }
+}
+```
+
+
+*OR* 🡻
+
+```csharp
+public string MyMethod()
+{
+    try
+    {
+        //several lines of code
+    }
+    catch (Exception ex)
+    {
         // No logging is needed because ...
         return "";
     }
@@ -114,7 +133,7 @@ public string MyMethod()
     }
     catch
     {
-        return "";
+        throw new Exception("Some error message");
     }
 }
 ```
@@ -127,9 +146,9 @@ public string MyMethod()
     {
         //several lines of code
     }
-    catch
+    catch (Exception ex)
     {
-        Console.WriteLine("some error message");
+        throw new Exception("Some error message", ex);
     }
 }
 ```
