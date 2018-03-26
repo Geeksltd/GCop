@@ -13,7 +13,7 @@ There could be cases where the method **gets** something from someone and saves 
 ```csharp
 public void GetCreditAsync(string Username, string Password) 
 {
-    //some codes
+    ...
 }
 ```
 *should be* 🡻
@@ -21,7 +21,7 @@ public void GetCreditAsync(string Username, string Password)
 ```csharp
 public void SetCreditAsync(string Username, string Password)
 {
-    //some codes          
+    ...        
 }
 ```
 
