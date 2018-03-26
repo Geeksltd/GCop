@@ -11,7 +11,7 @@ The To<...>() extension method on the string type allows you to make type conver
 public long Calc(string commision)
 {
     var calculatedCommision = long.parse(commision);
-    //several lines of code
+    ...
     return calculatedCommision;
 }
 ```
@@ -21,7 +21,7 @@ public long Calc(string commision)
 public string Calc(string commision)
 {
     var calculatedCommision = commision.To<long>();
-    //several lines of code
+    ...
     return calculatedCommision;
 }
 ```
