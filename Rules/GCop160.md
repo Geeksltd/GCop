@@ -5,25 +5,26 @@
 
 ## Rule description
 Writting long conditional expression will reduce code readability and increase misundrestanding.
+You should define an abstraction for the long expression. That abstraction can either be a method or a variable.
 
-If the length of conditional expression is more than 110 characters, this error will be hint.
+If you can't think of any good abstraction name for that concept, at least rewrite it in an *if/else *statement to make it more readable.
+
 
 ## Example 1
 ```csharp
 var code = currentAccount.ID + (currentProduct.ProductId.ToString().Length > 3 ? currentProduct.ProductId.ToString() : (currentProduct.ProductId.ToString().Length == 2 ? "00" + currentProduct.ProductId : "0" + currentProduct.ProductId));
 ```
-*should be either* 🡻
+*should be* 🡻
 
 ```csharp
-var code = currentAccount.ID + currentProduct.ProductId.ToString("0000");
-```
-*OR* 🡻
-```csharp
-var code = currentAccount.ID + GetStringProductId(currentProduct.ProductId);
-private string GetStringProductId(int productId)
+var code = currentAccount.ID + GetProductId(currentProduct.ProductId);
+
+string GetStringProductId(int productId)
 {
-    return productId.ToString("0000");
+    if (productId.ToString().Length > 3) return productId.ToString();
+    else if (productId.ToString().Length == 2) return "00" + currentProduct.ProductId;
+    else return "0" + currentProduct.ProductId;
 }
+
+// Note: This is for illustration only. The logic in this example could be written in a cleaner way.
 ```
-
-
