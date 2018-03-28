@@ -12,7 +12,7 @@ There are rare cases, mainly for performance optimization, where this rule can b
 
 ## Example 1
 ```csharp
-void ReSize(ref int width, ref int height)
+void ReSize(out int width, out int height)
 {
     ...
 }
