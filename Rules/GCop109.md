@@ -1,15 +1,15 @@
 ﻿# GCop109
 
-> *"Use ArrayName.HasMany() instead of ArrayName.Count()/ArrayName.Length()"*
+> *"Use something.HasMany() instead of something.Count() > 1, as it will be faster and more descriptive."*
 
 
 ## Rule description
-...
+The Count() method can potentially be time consuming, especially if the IEnumerable object is lazy evaluated such as with Linq expressions. The HasMany() method has a more efficient implementation and doesn't have to count all items. As soon as it finds more than one, it returns true.
 
 ## Example 1
 ```csharp
-var myArray = new int[] { 1, 2, 3, 4, 5 };
-if (myArray.Count > 1)
+IEnumerable<Something> myCollection = ...;
+if (myCollection.Count() > 1)
 {
     ...
 }
@@ -17,31 +17,9 @@ if (myArray.Count > 1)
 *should be* 🡻
 
 ```csharp
-var myArray = new int[] { 1, 2, 3, 4, 5 };
-if (myArray.HasMany())
+IEnumerable<Something> myCollection = ...;
+if (myCollection.HasMany())
 {
     ...
 }
 ```
- 
- 
-
-## Example 2
-```csharp
-var myArray = new string[] { "a", "b", "c", "d" };
-if (myArray.Length > 1)
-{
-    ...
-}
-```
-*should be* 🡻
-
-```csharp
-var myArray = new string[] { "a", "b", "c", "d" };
-if (myArray.HasMany())
-{
-    ...
-}
-```
- 
- 
