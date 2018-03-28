@@ -23,5 +23,5 @@ protected void ReFetch(object sender, EventArgs e) => FetchProducts(true);
 *should be* 🡻
 
 ```csharp
-protected void ReFetch(object sender, EventArgs e) => FetchProducts(Refetch: true);
+protected void ReFetch(object sender, EventArgs e) => FetchProducts(refresh: true);
 ```
