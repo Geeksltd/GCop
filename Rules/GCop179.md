@@ -19,39 +19,6 @@ If the nature of the value is business related, or easy to understand by a norma
 
 ## Example 1
 ```csharp
-public static void MyMethod()
-{
-    try
-    {
-        ...
-    }
-    catch (Exception)
-    {
-        throw new HttpException(404, "File Not Found");    
-    }
-}
-```
-*should be* 🡻
-
-```csharp
-public static void MyMethod()
-{
-    try
-    {
-        ...
-    }
-    catch (Exception)
-    {
-        //use code below if it is WebApi project
-        throw new HttpResponseException(HttpStatusCode.NotFound);
-        //use code below if it is not a WebApi project
-        throw new HttpException((int)HttpStatusCode.NotFound,"");
-    }
-}
-```
-
-## Example 2
-```csharp
 public static void MyMethod(int maxWidth = 300)
 { 
     ...    
@@ -60,26 +27,59 @@ public static void MyMethod(int maxWidth = 300)
 *should be* 🡻
 
 ```csharp
-public const int constMaxWidth = 300;
-public static void MyMethod(int maxWidth = constMaxWidth)
+const int DefaultMaxWidth = 300;
+public static void MyMethod(int maxWidth = DefaultMaxWidth)
 { 
     ...   
 }
 ```
 
-## Example 3
+## Example 1
+```csharp
+public static void MyMethod()
+{
+    try
+    {
+        ...
+    }
+    catch (Exception)
+    {
+        throw new HttpException(404, "The requested file does not exist");
+    }
+}
+```
+*should be* 🡻
+
+```csharp
+public static void MyMethod()
+{
+    try
+    {
+        ...
+    }
+    catch (Exception)
+    {
+        throw new HttpException((int)HttpStatusCode.NotFound, "The requested file does not exist");
+    }
+}
+```
+
+
+## Example 2
 ```csharp
 var result = myList.Where(lai => lai.ClassID == 18).ToList();
 ```
 *should be* 🡻
 
 ```csharp
-public class BusinessParameters
+public class Settings // Database Entity
 {
-    public static int MyLimitation
-    {
-        get { return Settings.Default.MyLimitation; }
-    }
+    public static Settings Current {get;} // Singleton instance
+
+    public string PrimaryClass {get; set;}    
+    ...
 }
-var result = myList.Where(lai => lai.ClassID == BusinessParameters.MyLimitation).ToList();
+
+...
+var result = myList.Where(lai => lai.ClassID == Settings.Current.PrimaryClass).ToList();
 ```
