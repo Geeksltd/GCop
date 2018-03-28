@@ -4,11 +4,15 @@
 
 
 ## Rule description
-You almost never need to use ref/out. It's basically a way of getting another return value, and should usually be avoided precisely because it means the method's probably trying to do too much. That's not always the case (TryParse etc are the canonical examples of reasonable use of out) but using ref/out should be a relative rarity.
+OUT and REF keywords are used to return more than one value from a method. It's usually a bad idea because:
+- If the return values are related to each other, they perhaps represent a missing abstraction. So you should create a class or struct to properly name that abstraction and just return an instance of that type.
+- If the two values are not related, then the method is trying to do too much.
+
+There are rare cases, mainly for performance optimization, where this rule can be ignored. The .NET framework e.g. uses it for parsing string objects, or for searching through dictionaries.
 
 ## Example 1
 ```csharp
-private void ReSize(ref int width, ref int height)
+void ReSize(ref int width, ref int height)
 {
     ...
 }
@@ -16,15 +20,15 @@ private void ReSize(ref int width, ref int height)
 *should be* 🡻
 
 ```csharp
-private CustomizedSize ReSize(int width, int height)
+Size ReSize(int width, int height)
 {
-    ...
-    return CustomizedSizeObject;
+    ...    
 }
-public class CustomizedSize
+
+public class Size
 {
-    int width {get; set;}
-    int height {get; set;}
+    public int Width {get; set;}
+    public int Height {get; set;}
 }
 ```
 
