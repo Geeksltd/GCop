@@ -16,7 +16,8 @@ Ideally during development, you should break the debugger at that point to make 
 ```csharp
 public async void MyMethod()
 {
-    await ThrowAsync();
+    ...
+    await SomethingThatMayThrow();
 }
 ```
 *should be* 🡻
@@ -24,14 +25,19 @@ public async void MyMethod()
 ```csharp
 public async Task MyMethod()
 {
-    await ThrowAsync();
+    ...
+    await SomethingThatMayThrow();
 }
 ```
 *Or, if it's not possible, at least* 🡻
 ```csharp
 static async void MyMethod()
 {
-  try { await ThrowAsync(); }
-  catch (Exception ex) { Log("Exception handled OK"); System.Diagnostics.Debugger.Break(); }
+  try { await SomethingThatMayThrow(); }
+  catch (Exception ex) 
+  {
+      Log("Exception handled OK");
+      System.Diagnostics.Debugger.Break(); 
+  }
 }
 ```
