@@ -1,20 +1,21 @@
 ﻿# GCop179
 
-> "Do not hardcode numbers, strings or other values.
-> 
-> Declare constant in the top of the file and use it in your code if the value is unlikely to ever change. 
-> 
-> If the value may change in the future (or on different servers) and the nature of the value is technical, then it must be stored in Web.Config.
-> 
-> If the nature of the value is business related, or easy to understand by a normal business admin user, then it must be stored in the application in an entity named Setting."
-
+> "Do not hardcode numbers, strings or other values. Use constant fields, config files or database as appropriate."
 
 ## Rule description
-One of the hard-coding issues is that changing the configuration information requires a code change, and then a redeployment of the system. 
+Hard-coded values in the middle of the code is usually wrong. If the value is hard-coded in multiple places within the system, there is a risk that it can change in the future in one place but not all, and create bugs and inconsistencies.
 
-Another issue is if the configuration is hard-coded into multiple places within the system, then the programmer must remember all the places the hard-coding exists.
+#### Is the value unlikely to ever change?
+In that case declare a constant field at the top of the class and use it instead of hard-coding the value. This way the name of the constant field would be effectively documenting the meaning of that value.
 
-To get around hard-coding configuration information into the system, we often move configuration to an external source or at least declare constants in top of the file.
+#### Is the value an option from a group?
+If the value represents an option from a finite group of other options, then define an Enum for it.
+
+#### Can the value ever change - by developers?
+If the value may change in the future (or on different servers) and the nature of the value is technical, then it must be stored in the config file such as *web.config* or *app.config* or *appSettings.json*. This make it possible to change the value on a deployed application without having to recompile the whole application.
+
+#### Can the value ever change - by user?
+If the nature of the value is business related, or easy to understand by a normal business admin user, then it must be stored in the application in an entity named Setting or some other appropriate table. This way you can build a secure admin UI for changing it.
 
 ## Example 1
 ```csharp
