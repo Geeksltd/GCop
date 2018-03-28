@@ -12,14 +12,17 @@ If you can't think of any good abstraction name for that concept, at least rewri
 
 ## Example 1
 ```csharp
-var code = currentAccount.ID + (currentProduct.ProductId.ToString().Length > 3 ? currentProduct.ProductId.ToString() : (currentProduct.ProductId.ToString().Length == 2 ? "00" + currentProduct.ProductId : "0" + currentProduct.ProductId));
+var code = currentAccount.ID + (currentProduct.ProductId.ToString().Length > 3 ? 
+       currentProduct.ProductId.ToString() : 
+       (currentProduct.ProductId.ToString().Length == 2 ? "00" + currentProduct.ProductId : "0" + currentProduct.ProductId)
+     );
 ```
 *should be* 🡻
 
 ```csharp
-var code = currentAccount.ID + GetProductId(currentProduct.ProductId);
+var code = currentAccount.ID + PadProductId(currentProduct.ProductId);
 
-string GetStringProductId(int productId)
+string PadProductId(int productId)
 {
     if (productId.ToString().Length > 3) return productId.ToString();
     else if (productId.ToString().Length == 2) return "00" + currentProduct.ProductId;
