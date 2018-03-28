@@ -24,8 +24,10 @@ mykeyboard.AddButton(new InlineKeyboardButton(CustomWork.ReturnPreviousStep, "$"
 ```csharp
 mykeyboard.AddButton(
     new InlineKeyboardButton(
-        CustomWork.ReturnPreviousStep, "$" + Cover.CoverCallback.BackAdvertiseAreas + "," + CurrentButtonState.FK_CurrentBtnId)
-    , width + 1 == 2 ? ++height : height, width = width + 1 == 2 ? 0 : ++width);
+        CustomWork.ReturnPreviousStep, 
+        "$" + Cover.CoverCallback.BackAdvertiseAreas + "," + CurrentButtonState.FK_CurrentBtnId),
+        width + 1 == 2 ? ++height : height,
+        width = width + 1 == 2 ? 0 : ++width);
 ```
 
 ## Example 2
