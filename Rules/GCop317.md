@@ -27,6 +27,7 @@ public void MyMethod()
 public void MyMethod()
 {
     int waitStatus = (int)Status.Wait;
+    
     if(something == otherthing)
     {
         AnotherMethod(waitStatus, "thisString");
@@ -43,8 +44,7 @@ ReturnStatement
 ```csharp
 public ServerResult MyMethod()
 {
-    if(something == otherthing)
-        return new ServerResult { Success = false, Message = "sometext" };
+    if(something == otherthing) return new ServerResult { Success = false, Message = "sometext" };
     try
     {
         ...
@@ -60,19 +60,39 @@ public ServerResult MyMethod()
 ```csharp
 public ServerResult MyMethod()
 {
-    if(something == otherthing)
-        return SpecialError();
+    if(something == otherthing) return CreateError();
+    
     try
     {
         ...
     } 
     catch
     {
-        return SpecialError();
+        return CreateError();
     }
 }
-public ServerResult SpecialError()
+
+ServerResult CreateError() => new ServerResult { Success = false, Message = "sometext" };
+```
+
+*OR it can even be an inline method inside the parent method* 🡻
+
+```csharp
+public ServerResult MyMethod()
 {
-    return new ServerResult { Success = false, Message = "sometext" };
+    ServerResult error() => new ServerResult { Success = false, Message = "sometext" };
+    
+    if(something == otherthing) return error();
+    
+    try
+    {
+        ...
+    } 
+    catch
+    {
+        return error();
+    }
 }
+
+
 ```
