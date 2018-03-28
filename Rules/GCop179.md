@@ -1,6 +1,6 @@
 ﻿# GCop179
 
-> "Do not hardcode numbers, strings or other values. Use constant fields, config files or database as appropriate."
+> "Do not hardcode numbers, strings or other values. Use constant fields, enums, config files or database as appropriate."
 
 ## Rule description
 Hard-coded values in the middle of the code is usually wrong. If the value is hard-coded in multiple places within the system, there is a risk that it can change in the future in one place but not all, and create bugs and inconsistencies.
@@ -34,7 +34,7 @@ public static void MyMethod(int maxWidth = DefaultMaxWidth)
 }
 ```
 
-## Example 1
+## Example 2
 ```csharp
 public static void MyMethod()
 {
@@ -65,7 +65,7 @@ public static void MyMethod()
 ```
 
 
-## Example 2
+## Example 3
 ```csharp
 var result = myList.Where(lai => lai.ClassID == 18).ToList();
 ```
