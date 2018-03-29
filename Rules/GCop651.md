@@ -7,6 +7,7 @@
 Wait will synchronously block until the task completes. 
 So the current thread is literally blocked waiting for the task to complete. 
 As a general rule, you should use "async all the way down"; that is, don't block on async code. 
+Wait is only correct if you're absolutely sure that the task is already completed
 
 await will asynchronously wait until the task completes. 
 This means the current method is "paused" (its state is captured) and the method returns an incomplete task to its caller. 
