@@ -4,15 +4,15 @@
 
 
 ## Rule description
-...
+The *Remove()* extension method on string is more readable, more explicit and briefer than using *Replacte(..., "")* when you just want to eliminate a phrase.
 
 ## Example 1
 ```csharp
-textBoxText.Replace("someText", "");
+var clean = textBox.Text.Replace("someText", "");
 ```
 *should be* 🡻
 
 ```csharp
-textBoxText.Remove("someText");
+var clean = textBox.Text.Remove("someText");
 ```
 
