@@ -4,7 +4,7 @@
 
 
 ## Rule description
-The *Remove()* extension method on string is more readable, more explicit and briefer than using *Replacte(..., "")* when you just want to eliminate a phrase.
+The *Remove()* extension method on string is more readable, more explicit and briefer than using *Replace(..., "")* when you just want to eliminate a phrase.
 
 ## Example 1
 ```csharp
