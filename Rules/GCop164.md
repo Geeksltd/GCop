@@ -20,12 +20,12 @@ public static string BotUrl => Config.Get("BotUrl");
  
 ## Example 2
 ```csharp
-connection = new SqlConnection(ConfigurationManager.ConnectionStrings["connectionName"].ConnectionString);
+var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["connectionName"].ConnectionString);
 ```
 *should be* 🡻
 
 ```csharp
-connection = new SqlConnection(Config.GetConnectionString("connectionName"));
+var connection = new SqlConnection(Config.GetConnectionString("connectionName"));
 ```
 
 
