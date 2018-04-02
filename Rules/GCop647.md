@@ -4,7 +4,7 @@
 
 
 ## Rule description
-If you choose to implement a property get accessor yourself, you can use an expression body definition for single expressions that simply return the property value.
+Where the body of a property getter is a small single line, it can be written in a briefer format.
 
 ## Example 1
 ```csharp
@@ -18,4 +18,3 @@ public string Property
 ```csharp
 public string Property => "something";
 ```
-
