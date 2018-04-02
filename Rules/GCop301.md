@@ -4,9 +4,7 @@
 
 
 ## Rule description
-Throw exceptions using default constructor creates a brand new Exception instance, losing the original stack trace of the exception, as well as its type. (eg, IOException).
-In addition, some exceptions hold additional information (eg, ArgumentException.ParamName).
-throw new Exception(ex.Message); will destroy this information too.
+An exception with no error message is confusing and hard to debug.
 
 ## Example 1
 ```csharp
