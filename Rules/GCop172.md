@@ -4,11 +4,12 @@
 
 
 ## Rule description
-In C#6 code using the null conditional operator indicating that this code will not throw a NullReferenceException exception if handler is null, which avoid you writing null checks that you would have to do in previous versions of the C# language.
+In C#, from version 6, the **?.** expression can be used to simplify the code.
 
 ## Example 1
 ```csharp
 Delegate handler = null;
+...
 if (handler != null)
 {
     handler.Invoke();
@@ -18,6 +19,7 @@ if (handler != null)
 
 ```csharp
 Delegate handler = null;
+...
 handler?.Invoke();
 ```
 
