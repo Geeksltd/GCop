@@ -13,5 +13,5 @@ var isFree = cost == 0 ? false : true;
 *should be* 🡻
 
 ```csharp
-var isFree = cost == 0 ;
+var isFree = cost == 0;
 ```
