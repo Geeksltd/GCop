@@ -4,22 +4,25 @@
 
 
 ## Rule description
-When classes get too big, it is likely they have too many responsibilities and it is against SOLID first rule, which stands for "Single responsibility". 
-Define two or more responsibilities within the boundaries of what the class is doing, separate theme into two, or more, classes.
+When classes get too big, it is likely they have too many responsibilities and it is against SOLID first rule which is having a *Single responsibility*. 
+
+Consider breaking the class into two or more classes, each with specific responsibilities.
+
+Your ultimate goal should be to achieve a highly cohesive set of small classes.
 
 ## Example 1
 ```csharp
-public class MyClass
+public class BigClass
 {
-    //More than 1000 lines
+    // Multiple methods, and more than 1000 lines
 }
 ```
 *should be* 🡻
 
 ```csharp
-public class MyClass
+public class SmallClass1
 {
-    //This GodClass uses all the new classes, exposes the same methods to the rest of the system, but does not implement any functionality in itself.
+    // ...
 }
 ```
 
