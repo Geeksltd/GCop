@@ -4,8 +4,7 @@
 
 
 ## Rule description
-expression-body are used when you have a relatively short, often frequently repeated methods.
-It provides better readability and saves some space in your code.
+Short methods that can be written in a single line should be written as expression-bodied which is a briefer and more compact format, allowing readers to see more on the screen.
 
 ## Example 1
 ```csharp
