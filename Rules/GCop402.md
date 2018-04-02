@@ -4,8 +4,8 @@
 
 
 ## Rule description
-Creating new instances of a class with or without paranthesis have no difference. Both will call the default parameter-less constructor.
- So using paranthesis just increase code length.
+Creating new instances of a class with or without paranthesis are the same. Both will call the default parameter-less constructor.
+Adding the paranthesis will be unnecessary noise.
 
 ## Example 1
 ```csharp
