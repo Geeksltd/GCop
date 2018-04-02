@@ -1,11 +1,12 @@
 ﻿# GCop164
 
 > *"Instead use Config.GetConnectionString()"*
+
 > *"Instead use Config.Get()"*
 
 
 ## Rule description
-...
+The Config utility class in M#, Zebble and Olive provides a shortcut to reading config values.
 
 ## Example 1
 ```csharp
