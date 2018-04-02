@@ -4,9 +4,10 @@
 
 
 ## Rule description
-Fields should (almost always) be kept private to a class and accessed via get and set properties. 
+A private auto-property has no advantage to a simple class field. But it has two small disadvantages:
+- It's slightly slower to invoke compared to a plain field.
+- It has the *{get; set;}* noise code.
 
-Properties are public and provide access to private fields. So have a private property is meaningless.
 ## Example 1
 ```csharp
 public class MyClass
@@ -18,19 +19,9 @@ public class MyClass
 ```csharp
 public class MyClass
 {
-    // this is a field.  It is private to your class and stores the actual data.
-    private string _myField;
-
-    public string MyProperty
-    {
-        get
-        {
-            return _myField;
-        }
-        set
-        {
-            _myField = value;
-        }
-    }
+     private string MyProperty;
+     
+     // Or just:
+     string MyProperty;
 }
 ```
