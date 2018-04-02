@@ -4,14 +4,14 @@
 
 
 ## Rule description
-It is better to get out of the method immediately if it makes the intent of the code more clear. in this way you will have a more meaningful code.
+It is better to get out of the method immediately if it makes the intent of the code more clear. In this way you will have a more meaningful code.
 
 ## Example 1
 ```csharp
 if (some condition)
-    {
-        Some code...            
-    }
+{
+    Some code...            
+}
 ```
 *should be* 🡻
 
