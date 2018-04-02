@@ -4,9 +4,10 @@
 
 
 ## Rule description
-The decision to use either instance or static methods is not influenced by performance reasons, but by how the method is intended to be used. 
-If the method relates to a class primary concern, put it in an instance method.
+A static method defined in a class that takes an instance of the same class is usually an indication that the responsibility (method) belongs to the instance as opposed to the class.
 
+This is of course not always true. One exception is when the method is supposed to do something when the argument is null.
+If you have made an informed decision that the method should remain static, add a [EscapeGCop] attribute and explain the reason why.
 
 ## Example 1
 ```csharp
