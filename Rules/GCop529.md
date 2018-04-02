@@ -4,16 +4,14 @@
 
 
 ## Rule description
-One important difference between IEnumerable and List (besides one being an interface and the other being a concrete class) is that IEnumerable is read-only and List is not.
-
-If you need the ability to make permanent changes of any kind to your collection (add & remove), you'll need List. If you just need to read, sort and/or filter your collection, IEnumerable is sufficient for that purpose.
+When your code only needs to read data out of the parameter use IEnumerable type rather than List. Using the IEnumerable type for an argument tells the caller that this object is used as read-only. On the other hand, taking a List parameter in, may confuse the caller to think that the method might change it (add or remove items).
 
 
 ## Example 1
 ```csharp
 public MyMethod(List<Product> products)
 {
-    ...
+    // ... code that only reads products
 }
 ```
 *should be* 🡻
@@ -21,6 +19,6 @@ public MyMethod(List<Product> products)
 ```csharp
 public MyMethod(IEnumerable<Product> products)
 {
-    ...
+    // ... code that only reads products
 }
 ```
