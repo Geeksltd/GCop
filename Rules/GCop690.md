@@ -10,8 +10,8 @@ Human brain can understand positive expressions and statements faster than negat
 ```csharp
 public bool Check(int? myVar)
 {
-    if (!myVar.HasValue)
-        return false;
+    if (!myVar.HasValue) return false;
+    ...
     return true;
 }
 ```
@@ -20,8 +20,8 @@ public bool Check(int? myVar)
 ```csharp
 public bool Check(int? myVar)
 {
-    if (myVar == null)
-        return false;
+    if (myVar == null) return false;
+    ...
     return true;
 }
 ```
