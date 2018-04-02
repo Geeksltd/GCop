@@ -4,11 +4,11 @@
 
 
 ## Rule description
-Use ToLower() or ToUpper() to become sure about insensitive string comparison.
+File extensions in Windows are treated case insensitively. So you can have a file named something.jpg or something.JPG or something.Jpg and they will all work fine. But if in your application logic you hard-code a specific casing, you can have a problem. See the below example to learn more.
 
 ## Example 1
 ```csharp
-if ("~/Extensions/Languages.xml".AsFile() == null)
+if (someFileInfo.Extension == ".xml")
 {
     ...
 }
@@ -16,7 +16,7 @@ if ("~/Extensions/Languages.xml".AsFile() == null)
 *should be* 🡻
 
 ```csharp
-if ("~/Extensions/Languages.xml".ToLower().AsFile() == null)
+if (someFileInfo.Extension.ToLower() == ".xml")
 {
     ...
 }
