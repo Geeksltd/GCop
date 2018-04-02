@@ -8,6 +8,34 @@ Repeated Statements will reduce code readability. To have a more meaningful code
 
 ## Example 1
 ```csharp
+if (condition1)
+{
+    DoSomething();
+}
+else if (condition2)
+{
+    //...
+}
+else if (condition3)
+{
+    DoSomething();
+}
+```
+*should be* 🡻
+
+```csharp
+if (condition1 || condition3)
+{
+    DoSomething();
+}
+else if (condition2)
+{
+    //...
+}
+```
+
+## Example 2
+```csharp
 switch(myValue)
 {
     case -1: Quality = Quality.VeryLow; break;
