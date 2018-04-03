@@ -1,21 +1,23 @@
-﻿# GCop###
+﻿# GCop {number}
 
-> *"Error message pattern"*
-
+> *"Error message"*
 
 ## Rule description
+
 ...
 
-## Example 1
+## Example
+
 ```csharp
 (...some violating rule)
 ```
+
 *should be* 🡻
 
 ```csharp
 (...corrected version)
 ```
- 
- 
- ## Controversy
+
+## Controversy
+
 ...
