@@ -1,6 +1,6 @@
 ﻿# GCop210
 
-> *"Suffix name of a service class with Service"*
+> *"Suffix the name of a service class with 'Service' as it's inside the Services folder."*
 
 
 ## Rule description
@@ -8,13 +8,22 @@ using *Service* as a suffix for a class indicates that the class represents a se
 
 ## Example 1
 ```csharp
-public static Port CreatePort(string PortName, string BindingName, string targetNamespace)
+namespace MyNameSpace.Service
 {
-    ...
+    public class SampleClass 
+    {   
+        ...   
+    }
 }
 ```
 *should be* 🡻
 
 ```csharp
-(...corrected version)
+namespace MyNameSpace.Service
+{
+    public class SampleClassService 
+    {   
+        ...   
+    }
+}
 ```
