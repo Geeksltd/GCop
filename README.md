@@ -44,7 +44,7 @@ First of all make sure you have installed visual studio 2017 version 15.5.5 or a
 - For getting ride of *NETStandard* warnings , you need to install the `NETStandard.Library` NuGet into the website project and then add the `netstandard.dll` as an analyzer.
 - For adding a *dll* as analyzer you can right click on the website project , go to Add > Analyzer > then find the *netstandrd all* in the installed Package folder.
 
-### Disabling specific GCop rules
+#### Disabling specific GCop rules
 
 If you disagree with any of the GCop rules, or if you believe they are not applicable to your project, you can *Escape the Cop*, i.e. disable it, using any of the following methods.
 
