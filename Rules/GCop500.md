@@ -1,4 +1,5 @@
 ﻿# GCop500
+
 > *"Void async methods cannot be awaited. Also they can hide exceptions and cause tricky bugs. Return a Task instead."*
 
 

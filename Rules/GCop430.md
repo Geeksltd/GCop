@@ -1,4 +1,5 @@
 ﻿# GCop430
+
 > *"Use \" NotEqualsExpression.HasValue \" as negative logic is taxing on the brain."*
 
 
