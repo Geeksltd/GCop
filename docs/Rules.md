@@ -1,4 +1,3 @@
-
 # Error list
 
 GCop code | Description
