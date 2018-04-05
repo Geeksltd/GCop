@@ -9,13 +9,17 @@ To have a short and readable code it is better not to write "== true" for *Boole
 ## Example 1
 ```csharp
 if (notNullableBoolVar == true)
+{
     ...
+}
 ```
 *should be* 🡻
 
 ```csharp
 if (notNullableBoolVar)
+{
     ...
+}
 ```
 
 ## Example 2
