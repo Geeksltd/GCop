@@ -4,7 +4,7 @@
 
 
 ## Rule description
-This error will be shown when your *foreach identifier* is a single character. It should be descriptive engough to reveal its meaning, purpose and role in that context.
+A single character variable name isn't descriptive enough. Sometimes it's acceptable, e.g. in a lambda expression or in a very short loop. But in most cases it's better to use a descriptive name to reveal its meaning, purpose and role in that context.
 
 ## Example 1
 ```csharp
