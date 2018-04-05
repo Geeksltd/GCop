@@ -4,7 +4,9 @@
 
 
 ## Rule description
-Methods which are used for validation and return boolean result without *Throw* statements should be written like 'Is...Valid' pattern, to be more meaningful.
+A validation method named as "ValidateSomething()" is expected to be void, and throw an exception if necessary.
+
+A validation method named as "IsSomethingValid()" is expected to not throw an exception, and instead return true/false.
 
 ## Example 1
 ```csharp
