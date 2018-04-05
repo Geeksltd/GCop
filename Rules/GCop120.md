@@ -13,5 +13,5 @@ Thread.Sleep(TimeSpan.FromHours(2));
 *should be* 🡻
 
 ```csharp
-2.Hours();
+Thread.Sleep(2.Hours());
 ```
