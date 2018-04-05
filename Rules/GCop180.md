@@ -33,8 +33,7 @@ double commission;
 
 public double Commission
 {
-    get => commission;
-    }
+    get => commission;    
     set
     {
     	if (!commission.AlmostEquals(value))
