@@ -4,21 +4,22 @@
 
 
 ## Rule description
-...
+It's a standard problem due to how the computer stores floating point values. For example a float/double can't store 0.1 precisely. [It will always be a little off](https://stackoverflow.com/questions/1398753/comparing-double-values-in-c-sharp). 
+
+That's why using *==* and *!=* operators can give you random results. Instead you use use the AlmostEquals() method, which optionally takes another parameter called *accuracy* (by default it's 0.001). It will then return whether the difference between the two compared values is less than or equal to the accepted accuracy.
+
+Note: If you want exact numbers, use the decimal type instead, which stores numbers in decimal notation. Thus 0.1 will be representable precisely.
 
 ## Example 1
 ```csharp
-private double _Commission;
+double commission;
 
 public double Commission
 {
-    get
-    {
-    	return this._Commission;
-    }
+    get => commission;    
     set
     {
-    	if (this._Commission != value)
+    	if (commission != value)
     	{
             ...
     	}
@@ -28,17 +29,15 @@ public double Commission
 *should be* 🡻
 
 ```csharp
-private double _Commission;
+double commission;
 
 public double Commission
 {
-    get
-    {
-    	return this._Commission;
+    get => commission;
     }
     set
     {
-    	if (this._Commission.AlmostEquals(value))
+    	if (!commission.AlmostEquals(value))
     	{
             ...
     	}
