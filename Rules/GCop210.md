@@ -4,7 +4,7 @@
 
 
 ## Rule description
-using *Service* as a suffix for a class indicates that the class represents a service, which is assumed to be remote.
+Using "*Service*" as a suffix for a class indicates that the class represents a service, which is assumed to be remote.
 
 ## Example 1
 ```csharp
