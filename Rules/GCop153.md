@@ -10,12 +10,16 @@ Human brain can understand positive expressions and statements faster than negat
 
 ## Example 1
 ```csharp
-var myVar = "something";
 if (!myStringList.Contains(myVar))
+{
     ...
+}
 ```
 *should be* 🡻
 
 ```csharp
 if (myStringList.Lacks(myVar))
+{
+    ...
+}
 ```
