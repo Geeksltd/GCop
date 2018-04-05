@@ -1,10 +1,10 @@
 ﻿# GCop120
 
-> *"Use HoursCount.Hours() instead of TimeSpan(HoursCount)"*
+> *"Use someIntVariable.Hours() instead of TimeSpan.FromHours(someIntVariable)"*
 
 
 ## Rule description
-...
+It's more readable and fluent to use the Hours() extension method on int
 
 ## Example 1
 ```csharp
