@@ -8,7 +8,10 @@
 
 
 ## Rule description
-It is more readable and fluent to use *None()* , *IsSingle()* or *Any* to determine count of collections items rather than comparing theme with zero or one, also ther are fastest options.
+It's better to use *None()* , *IsSingle()* or *Any* in some scenarios, instead of using *Count()*.
+
+- Faster: Executing a count operation can be time consuming sometimes and involved complex operations. If you only care if there is AT LEAST ONE item, why run the calculation on every item in the list?
+ - More readable and expressive: For example *Any()* is more to-the-point and expressive of your intent, rather than comparing Count() against 1.
 
 ## Example 1
 ```csharp
@@ -61,22 +64,6 @@ if(myIEnumerableCollection.Any())
 ## Example 4
 ```csharp
 if(myIEnumerableCollection.Count() >= 1)
-{
-    ...
-}
-```
-*should be* 🡻
-
-```csharp
-if(myIEnumerableCollection.Any())
-{
-    ...
-}
-```
-
-## Example 5
-```csharp
-if(0 < myIEnumerableCollection.Count())
 {
     ...
 }
