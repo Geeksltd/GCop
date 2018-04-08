@@ -31,13 +31,15 @@ switch(role)
     case 0:
     ...
     break;
+    
     case 1:
     ...
     break;
+    
     case 2:
     ...
     break;
-    default:
-    throw ArgumentException;
+    
+    default: throw new NotSupportedException("...");
 }
 ```
