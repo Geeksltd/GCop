@@ -4,7 +4,7 @@
 
 
 ## Rule description
-If number of conditions is more than 3 or so, prefer SWITCH over IF, because it is more readable and faster. A Switch is really saying "pick one of these based on this variables value" ( using a lookup table or a hash list for more than five items) but an IF statement is just a series of boolean checks.
+Where multiple subsequent IF conditionss are checking the same variable against different values, prefer SWITCH over IF, because it is more readable and faster to run. A Switch is really saying "pick one of these based on this variables value" (using a lookup table or a hash list for more than five items) but an IF statement is just a series of boolean checks.
 
 ## Example 1
 ```csharp
