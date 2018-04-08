@@ -10,15 +10,15 @@ A `switch` has a semantic meaning. It's saying *"pick one of these based on this
 
 ## Example 1
 ```csharp
-if(role == 0)
+if (role == 0)
 {
     ...
 }
-else if(role == 1)
+else if (role == 1)
 {
     ...
 }
-else if(role == 2)
+else if (role == 2)
 {
     ...
 }
@@ -26,7 +26,7 @@ else if(role == 2)
 *should be* 🡻
 
 ```csharp
-switch(role)
+switch (role)
 {
     case 0:
        ...
