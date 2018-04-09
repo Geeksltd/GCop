@@ -4,8 +4,8 @@
 
 ## Rule description
 
-More than 6 parameters for a method will face this hint.
-In fact, you should aim to reduce the number of parameters in your methods to 3 or less for better readability.
+More than six parameters for a method will face this hint.
+In fact, you should aim to reduce the number of parameters in your methods to three or less for better readability.
 
 It is hard to understand long list of parameters. You can easily make a mistake to pass the wrong parameter in the wrong order and cause hard-to-debug issues. Instead of a long list of parameters, a method can use the data of an object that encapsulates those parameters.
 
@@ -24,12 +24,12 @@ public void MyMethod(string userName, string password, string name, string famil
 *should be* 🡻
 
 ```csharp
-public void MyMethod(Registeration register)
+public void MyMethod(Registration register)
 {
     ...
 }
 
-public class Registeration
+public class Registration
 {
     string UserName { get; set; }
     string Password { get; set; }
@@ -44,7 +44,7 @@ public class Registeration
 *and perhaps even*  🡻
 
 ```csharp
-public class Registeration
+public class Registration
 {
     string UserName { get; set; }
     string Password { get; set; }
