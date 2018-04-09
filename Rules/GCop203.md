@@ -1,4 +1,4 @@
-﻿# GCop203
+﻿# GCop 203
 
 > *"Use meaningful names instead of single character for foreach identifier"*
 

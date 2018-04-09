@@ -6,7 +6,7 @@
 
 Short methods that can be written in a single line should be written as expression-bodied which is a briefer and more compact format, allowing readers to see more on the screen.
 
-## Example 1
+## Example
 
 ```csharp
 public bool Check()

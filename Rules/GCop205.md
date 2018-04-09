@@ -1,4 +1,4 @@
-﻿# GCop205
+﻿# GCop 205
 
 >*"Interfaces must start with the letter 'I'."* 
 >
