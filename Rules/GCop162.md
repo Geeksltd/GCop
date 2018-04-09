@@ -4,8 +4,8 @@
 
 ## Rule description
 
-The IsAnyOf extension method is available on some types such as String and IEntity, as an alternative to a number of OR (||) checks.
-It improves readability and writeability. Also it can potentially provide a better performance.
+The `IsAnyOf` extension method is available on some types such as `String` and `IEntity`, as an alternative to a number of `OR (||)` checks.
+It improves readability and writ ability. Also it can potentially provide a better performance.
 
 ## Example 1
 
