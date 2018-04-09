@@ -4,9 +4,9 @@
 
 ## Rule description
 
-Sanity/Pangolin have commands to inject the current system date and time to enable testing time dependant processes. For example ***assume date 22/01/2021***. The underlying mechanism will use LocalTime provided features.
+Sanity/Pangolin have commands to inject the current system date and time to enable testing time dependent processes. For example ***assume date 22/01/2021***. The underlying mechanism will use `LocalTime` provided features.
 
-Fo your code to work correctly in the test running mode, instead of DateTime.Now or DateTime.Today you should use LocalTime.Now or LocalTime.Today to make sure injected date/time commands are respected.
+Fo your code to work correctly in the test running mode, instead of `DateTime.Now` or `DateTime.Today` you should use `LocalTime.Now` or `LocalTime.Today` to make sure injected date/time commands are respected.
 
 ## Example
 
