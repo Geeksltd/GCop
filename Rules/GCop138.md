@@ -16,11 +16,12 @@ There may be scenarios that just don't want the method to throw an exception and
 - Write a message to Console, so at least during development and debugging it has a chance of being noticed.
 - If you believe that neither of the above are necessary in your case, document that explicitly by adding a comment such as "No logging is needed".
 
-If the body of an exception block doesn't rethrow the error, Gcop will look for the term "log" or "console" in your code. It doesn't care if it's a real log invokation or a comment. The purpose here is to ensure you have thought about this and made a contious decision, rather than omitting it by accident or ignorance.
+If the body of an exception block doesn't re-throw the error, Gcop will look for the term "log" or "console" in your code. It doesn't care if it's a real log invocation or a comment. The purpose here is to ensure you have thought about this and made a conscious decision, rather than omitting it by accident or ignorance.
+
 
 ## Keeping information about the original exception
 When you catch an exception and then throw a new exception, the stack trace (containing information about the original exception) will get lost. To prevent that you should either: 
-- rethrow the original exception (by using the ***throw;*** command with no parameters) or
+- re-throw the original exception (by using the ***throw;*** command with no parameters) or
 - pass the original exception as the "InnerException" of the new one.
 
 ## Example 1
