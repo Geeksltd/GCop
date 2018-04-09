@@ -6,7 +6,7 @@
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability its better to use *Lacks* rather than * !Contains *. 
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use `Lacks` rather than `!Contains`. 
 
 ## Example
 
