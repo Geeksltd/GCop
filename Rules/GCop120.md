@@ -4,7 +4,7 @@
 
 ## Rule description
 
-It's more readable and fluent to use the Hours() extension method on int
+It's more readable and fluent to use the `Hours()` extension method on `int`.
 
 ## Example
 
