@@ -1,7 +1,6 @@
-# GCop201
+# GCop 201
 
 > *"Use camelCasing when declaring local variables / a parameter."*
-
 
 ## Rule description
 
@@ -21,6 +20,7 @@ void MyMethod(int MyParameter)
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -39,6 +39,7 @@ void myMethod()
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -49,7 +50,7 @@ void myMethod()
 }
 ```
 
-## Example 4
+## Example 3
 
 ```csharp
 int _SomeName;
@@ -59,6 +60,7 @@ public int SomeName
     set => _SomeName = value;
 }
 ```
+
 *should be* 🡻
 
 ```csharp

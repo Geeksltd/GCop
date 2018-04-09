@@ -1,9 +1,9 @@
-﻿# GCop148
+﻿# GCop 148
 
 > *"All constructors should be before all methods in a class."*
 
-
 ## Rule description
+
 According to the StyleCop Rules Documentation the ordering of items in a class is as follows:
 
 * Constant Fields
@@ -20,7 +20,8 @@ According to the StyleCop Rules Documentation the ordering of items in a class i
 * Structs
 * Classes
 
-## Example 1
+## Example
+
 ```csharp
 public partial class Banner
 {
@@ -34,6 +35,7 @@ public partial class Banner
     }       
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -49,4 +51,3 @@ public partial class Banner
     }
 }
 ```
-

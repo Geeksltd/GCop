@@ -1,9 +1,9 @@
-﻿# GCop138
+﻿# GCop 138
 
 > *"When you catch an exception you should throw exception or at least log the error"*
 
-
 ## Rule description
+
 If you catch an exception and just silence the error, it can potentially lead to hard-to-find bugs.
 
 Generally you should either:
@@ -23,8 +23,8 @@ When you catch an exception and then throw a new exception, the stack trace (con
 - rethrow the original exception (by using the ***throw;*** command with no parameters) or
 - pass the original exception as the "InnerException" of the new one.
 
-
 ## Example 1
+
 ```csharp
 public string MyMethod()
 {
@@ -38,6 +38,7 @@ public string MyMethod()
     }
 }
 ```
+
 *should be either* 🡻
 
 ```csharp
@@ -105,7 +106,6 @@ public string MyMethod()
 }
 ```
 
-
 *OR* 🡻
 
 ```csharp
@@ -124,6 +124,7 @@ public string MyMethod()
 ```
 
 ## Example 2
+
 ```csharp
 public string MyMethod()
 {
@@ -137,6 +138,7 @@ public string MyMethod()
     }
 }
 ```
+
 *should be* 🡻
 
 ```csharp

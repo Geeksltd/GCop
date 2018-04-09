@@ -1,9 +1,9 @@
-﻿# GCop101
+﻿# GCop 101
 
 > *"Too many parameters as argument. Define a container and encapsulate them"*
 
-
 ## Rule description
+
 More than 6 parameters for a method will face this hint.
 In fact, you should aim to reduce the number of parameters in your methods to 3 or less for better readability.
 
@@ -11,7 +11,8 @@ It is hard to understand long list of parameters. You can easily make a mistake 
 
 If you need to pass a group of parameters together, they probably actually form a concept or abstraction that is missing from your design. So try to come up with an abstraction and give it a good name. That way, you will not only solve the immediate problem, but also potentially realise that you can refactor your code using that new class, and move some of the existing logic (methods) to that class instead. As a result you will add more clarity to your code and end up with a more object-oriented architecture.
 
-## Example 1
+## Example
+
 ```csharp
 public void MyMethod(string userName, string password, string name, string family,
                      string companyPhone, string homePhone, string mobile )
@@ -19,6 +20,7 @@ public void MyMethod(string userName, string password, string name, string famil
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -42,7 +44,6 @@ public class Registeration
 *and perhaps even*  🡻
 
 ```csharp
-
 public class Registeration
 {
     string UserName { get; set; }

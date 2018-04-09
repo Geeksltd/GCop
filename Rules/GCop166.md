@@ -1,12 +1,13 @@
-# GCop166
+# GCop 166
 
 > *"Avoid assignment within conditional statements"*
 
-
 ## Rule description
+
 Using assignment within conditional statements would decrease readability. Instead you should use seperate statements for the assignment, and the comparison.
 
 ## Example 1
+
 ```csharp
 public void MyMethod()
 {
@@ -14,6 +15,7 @@ public void MyMethod()
         ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -24,9 +26,9 @@ public void MyMethod()
         ...
 }
 ```
- 
 
 ## Example 2
+
 ```csharp
 public void MyMethod()
 {
@@ -34,7 +36,9 @@ public void MyMethod()
         ...
 }
 ```
+
 *should be* 🡻
+
 ```csharp
 public void MyMethod()
 {
@@ -43,4 +47,3 @@ public void MyMethod()
         ...
 }
 ```
- 

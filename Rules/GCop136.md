@@ -1,9 +1,9 @@
-# GCop136
+# GCop 136
 
 > *"All constants and class fields should be defined at the top of the class, before all methods."*
 
-
 ## Rule description
+
 According to the StyleCop Rules Documentation the ordering of items in a class is as follows: 
 * Constant Fields
 * Fields
@@ -19,7 +19,8 @@ According to the StyleCop Rules Documentation the ordering of items in a class i
 * Structs
 * Classes
 
-## Example 1
+## Example
+
 ```csharp
 public class MyClassName
 {
@@ -31,6 +32,7 @@ public class MyClassName
 
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -45,4 +47,3 @@ public class MyClassName
 
 }
 ```
-

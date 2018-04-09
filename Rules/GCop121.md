@@ -1,12 +1,13 @@
-﻿# GCop121
+﻿# GCop 121
 
 > *"Use **numeric string.To< data type >()** instead of **data type.Parse(numeric string)**"*
 
-
 ## Rule description
+
 The To<...>() extension method on the string type allows you to make type conversions in a uniform way for many types. It's also briefer and more readable. Just like you can say myInt.To**String**(), you can say myString.To<**int**>(). 
 
-## Example 1
+## Example
+
 ```csharp
 public long Calc(string commision)
 {
@@ -15,6 +16,7 @@ public long Calc(string commision)
     return calculatedCommision;
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -25,4 +27,3 @@ public string Calc(string commision)
     return calculatedCommision;
 }
 ```
-

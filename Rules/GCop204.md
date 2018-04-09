@@ -1,8 +1,9 @@
-# GCop204
+# GCop 204
 
 > *"Rename the variable 'variable name' to something clear and meaningful."*
 
 ## Rule description
+
 This error will be shown when your variable or parameter name is a single character. Variable and method parameter names should be descriptive engough to reveal their meaning, purpose and role in that context.
 
 There are some exception in this rule:
@@ -11,14 +12,15 @@ There are some exception in this rule:
   * Lambda expression variables
   * Iterator variable in small for loops
   
-
 ## Example 1
+
 ```csharp
 void MyMethod(DateTime d)
 {
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -29,12 +31,14 @@ void MyMethod(DateTime date)
 ```
 
 ## Example 2
+
 ```csharp
 void SomeMethod()
 {
     var d = ...;
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -45,12 +49,14 @@ void SomeMethod()
 ``` 
 
 ## Example 3
+
 ```csharp
 public class SampleClass
 {
     public string F;    
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -59,4 +65,3 @@ public class SampleClass
     public string Family;   
 }
 ```
- 

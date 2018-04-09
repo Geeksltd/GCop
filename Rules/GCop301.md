@@ -1,12 +1,13 @@
-﻿# GCop301
+﻿# GCop 301
 
 > *"Do not throw exceptions using default constructor or with empty message"*
 
-
 ## Rule description
+
 An exception with no error message is confusing and hard to debug.
 
-## Example 1
+## Example
+
 ```csharp
 public static void MyMethod()
 {   
@@ -16,6 +17,7 @@ public static void MyMethod()
     }   
 }
 ```
+
 *should be* 🡻
 
 ```csharp

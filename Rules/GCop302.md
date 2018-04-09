@@ -1,9 +1,9 @@
-﻿# GCop302
+﻿# GCop 302
 
 > *"Since 'Idisposable object' implements IDisposable, wrap it in a **using()** statement"*
 
-
 ## Rule description
+
 When you finish using an object that implements IDisposable, the object's Dispose method needs to be called.
 
 If you do that manually, you need to write code to ensure that:
@@ -13,12 +13,14 @@ If you do that manually, you need to write code to ensure that:
 
 Instead of doing the above manually, you can simply use a **using** block which will automatically handle all of that for you.
 
-## Example 1
+## Example
+
 ```csharp
 var font = new Font(pfcoll.Families[0], 58, FontStyle.Bold, GraphicsUnit.Pixel);
 ...
 font.Dispose();
 ```
+
 *should be* 🡻
 
 ```csharp

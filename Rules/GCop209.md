@@ -1,7 +1,6 @@
-# GCop209
+# GCop 209
 
 > *"Use PascalCasing for (class or enum or ... ) names."*
-
 
 ## Rule description
 
@@ -15,12 +14,14 @@ In C#, PascalCasing is used for these identifires:
 * Enums and Enum values
 
 ## Example 1
+
 ```csharp
 public class sampleClassName
 {
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -31,12 +32,14 @@ public class SampleClassName
 ```
 
 ## Example 2
+
 ```csharp
 interface iSampleInterface
 {
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -46,14 +49,15 @@ interface ISampleInterface
 }
 ```
 
+## Example 3
 
-## Example 4
 ```csharp
 public void sampleMethod()
 {
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -63,15 +67,17 @@ public void SampleMethod()
 }
 ```
  
+## Example 4
 
-## Example 5
 There is one exception where you are allowed to use underscore, and that's for event handlers.
+
 ```csharp
 private void sampleButton_Click(Object sender, EventArgs e)
 {
     ...
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -81,15 +87,15 @@ private void SampleButton_Click(Object sender, EventArgs e)
 }
 ```
  
+## Example 5
 
-
-## Example 6
 ```csharp
 enum SampleEnum
 {
     sampleEnumValue
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -99,8 +105,8 @@ enum SampleEnum
 }
 ```
  
+## Example 6
 
-## Example 7
 ```csharp
 public class SampleClassName
 {
@@ -108,6 +114,7 @@ public class SampleClassName
     public string samplePublicInstanceField = "someText";
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -117,14 +124,16 @@ public class SampleClassName
     public string SamplePublicInstanceField = "someText";
 }
 ```
- 
-## Example 8
+
+## Example 7
+
 ```csharp
 public class SampleClassName
 {
     public string myProperty { get; set; }
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -133,4 +142,3 @@ public class SampleClassName
     public string MyProperty { get; set; }
 }
 ```
- 

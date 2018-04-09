@@ -1,15 +1,18 @@
-﻿# GCop104
+﻿# GCop 104
 
 > *"Remove empty partial class"*
 
-
 ## Rule description
+
 Blank partial class files are unnecessary and should be removed.
-## Example 1
+
+## Example
+
 ```csharp
 public partial class Subset {
 }
 ```
+
 *should be* 🡻
 
 ```csharp

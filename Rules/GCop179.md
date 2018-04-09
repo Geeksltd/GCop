@@ -1,8 +1,9 @@
-﻿# GCop179
+﻿# GCop 179
 
 > "Do not hardcode numbers, strings or other values. Use constant fields, enums, config files or database as appropriate."
 
 ## Rule description
+
 Hard-coded values in the middle of the code is usually wrong. If the value is hard-coded in multiple places within the system, there is a risk that it can change in the future in one place but not all, and create bugs and inconsistencies.
 
 ### Is the value unlikely to ever change?
@@ -18,12 +19,14 @@ If the value may change in the future (or on different servers) and the nature o
 If the nature of the value is business related, or easy to understand by a normal business admin user, then it must be stored in the application in an entity named Setting or some other appropriate table. This way you can build a secure admin UI for changing it.
 
 ## Example 1
+
 ```csharp
 public static void MyMethod(int maxWidth = 300)
 { 
     ...    
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -35,6 +38,7 @@ public static void MyMethod(int maxWidth = DefaultMaxWidth)
 ```
 
 ## Example 2
+
 ```csharp
 public static void MyMethod()
 {
@@ -48,6 +52,7 @@ public static void MyMethod()
     }
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -64,11 +69,12 @@ public static void MyMethod()
 }
 ```
 
-
 ## Example 3
+
 ```csharp
 var result = myList.Where(lai => lai.ClassID == 18).ToList();
 ```
+
 *should be* 🡻
 
 ```csharp

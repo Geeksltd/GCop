@@ -1,12 +1,13 @@
-﻿# GCop168
+﻿# GCop 168
 
 > *"Don't instantiate a variable with the **new** keyword if you are going to assign it to a different object immediately."*
 
-
 ## Rule description
+
 Variable definition is seperate from object creation. When using the *new* keyword, a new object is actually created in the memory which wastes memory and garbage collection's time. When a variable is immediately assigned to another object, there is no point on instantiating it first. 
 
 ## Example 1
+
 ```csharp
 public static List<ShopProduct> FetchProducts()
 {
@@ -17,6 +18,7 @@ public static List<ShopProduct> FetchProducts()
     return result;
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -29,6 +31,7 @@ public static List<ShopProduct> FetchProducts()
 ```
 
 ## Example 2
+
 ```csharp
 public void MyMethod()
 {
@@ -37,6 +40,7 @@ public void MyMethod()
     myVar = result.FirstOrDefault();
 }
 ```
+
 *should be* 🡻
 
 ```csharp
