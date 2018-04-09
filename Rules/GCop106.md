@@ -4,7 +4,7 @@
 
 ## Rule description
 
-using *AsFile()* makes your code more meaningful and shorter. Also it increase readability.
+using `AsFile()` makes your code more meaningful and shorter. Also it increase readability.
 
 ## Example
 
