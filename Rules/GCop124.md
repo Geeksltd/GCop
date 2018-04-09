@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The TryParseAs<...>() extension method on the string type allows you to make safe type conversions in a uniform way for many types. If the value cannot be converted to the target type then it returns null instead of throwing an exception. It's briefer and more readable than alternative styles of code for handling this.
+The `TryParseAs<...>()` extension method on the string type allows you to make safe type conversions in a uniform way for many types. If the value cannot be converted to the target type then it returns null instead of throwing an exception. It's briefer and more readable than alternative styles of code for handling this.
 
 ## Example 1
 
