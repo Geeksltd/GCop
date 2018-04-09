@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Variable definition is seperate from object creation. When using the *new* keyword, a new object is actually created in the memory which wastes memory and garbage collection's time. When a variable is immediately assigned to another object, there is no point on instantiating it first. 
+Variable definition is separate from object creation. When using the `new` keyword, a new object is actually created in the memory which wastes memory and garbage collection's time. When a variable is immediately assigned to another object, there is no point on instantiating it first. 
 
 ## Example 1
 
