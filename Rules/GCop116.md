@@ -6,7 +6,7 @@
 
 The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that.
 
-Functions should do one thing. They should do it well. They should do it only, so long methodes are against OOP rules and reduce the code readabilty.
+Functions should do one thing. They should do it well. They should do it only, so long methods are against OOP rules and reduce the code readability.
 
 ## Example
 
