@@ -4,10 +4,10 @@
 
 ## Rule description
 
-Writting long conditional expression will reduce code readability and increase misundrestanding.
+Writing long conditional expression will reduce code readability and increase misunderstanding.
 You should define an abstraction for the long expression. That abstraction can either be a method or a variable.
 
-If you can't think of any good abstraction name for that concept, at least rewrite it in an *if/else *statement to make it more readable.
+If you can't think of any good abstraction name for that concept, at least rewrite it in an `if/else` statement to make it more readable.
 
 ## Example
 ```csharp
