@@ -10,7 +10,7 @@ Hard-coded values in the middle of the code is usually wrong. If the value is ha
 In that case declare a constant field at the top of the class and use it instead of hard-coding the value. This way the name of the constant field would be effectively documenting the meaning of that value.
 
 ### Is the value an option from a group?
-If the value represents an option from a finite group of other options, then define an Enum for it.
+If the value represents an option from a finite group of other options, then define an `Enum` for it.
 
 ### Can the value ever change - by developers?
 If the value may change in the future (or on different servers) and the nature of the value is technical, then it must be stored in the config file such as *web.config* or *app.config* or *appSettings.json*. This make it possible to change the value on a deployed application without having to recompile the whole application.
