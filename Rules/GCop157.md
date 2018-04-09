@@ -4,9 +4,9 @@
 
 ## Rule description
 
-The “==” works with nulls but “Equals” crashes when you compare NULL values.
+The “==” works with nulls but `Equals` crashes when you compare null values.
 
-The “==” does type checking during compile time while “Equals” is more during runtime.
+The “==” does type checking during compile time while `Equals` is more during runtime.
 
 ## Example 1
 
