@@ -6,7 +6,7 @@
 
 ## Rule description
 
-The Config utility class in M#, Zebble and Olive provides a shortcut to reading config values.
+The `Config` utility class in M#, Zebble and Olive provides a shortcut to reading config values.
 
 ## Example 1
 
