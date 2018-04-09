@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Using assignment within conditional statements would decrease readability. Instead you should use seperate statements for the assignment, and the comparison.
+Using assignment within conditional statements would decrease readability. Instead you should use separate statements for the assignment, and the comparison.
 
 ## Example 1
 
