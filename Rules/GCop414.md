@@ -1,7 +1,6 @@
-# GCop414
+# GCop 414
 
 > *"Remove .ToString() as it's unnecessary."*
-
 
 ## Rule description
 
@@ -27,6 +26,7 @@ var result = "someText" + myObject + " ...";
 ```csharp
 public string SomeMethod() => "This year is " + DateTime.Today.Year.ToString();
 ```
+
 should be 🡻
 
 ```csharp
@@ -38,9 +38,9 @@ public string SomeMethod() => "This year is " + DateTime.Today.Year;
 ```csharp
 var result = "someText".ToString();
 ```
+
 should be 🡻
 
 ```csharp
 var result = "someText";
 ```
- 

@@ -1,12 +1,13 @@
-﻿# GCop415
+﻿# GCop 415
 
 > *"The same code is repeated in multiple IF branches. Instead update the IF condition to cover both scenarios."*
 
-
 ## Rule description
+
 Repeated Statements will reduce code readability. To have a more meaningful code it is better to refactor these IF conditions.
 
 ## Example 1
+
 ```csharp
 if (condition1)
 {
@@ -21,6 +22,7 @@ else if (condition3)
     DoSomething();
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -35,6 +37,7 @@ else if (condition2)
 ```
 
 ## Example 2
+
 ```csharp
 switch(myValue)
 {
@@ -44,6 +47,7 @@ switch(myValue)
     default: Quality = Quality.VeryLow; break;    
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -54,4 +58,3 @@ switch(myValue)
     default: Quality = Quality.VeryLow; break;    
 }
 ```
-

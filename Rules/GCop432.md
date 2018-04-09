@@ -1,11 +1,13 @@
-﻿# GCop432
+﻿# GCop 432
 
 > *"Unnecessary paranthesis should be removed."*
 
-
 ## Rule description
+
 It is possible in C# to insert parenthesis around virtually any type of expression, statement, or clause, and in many situations use of parenthesis can greatly improve the readability of the code. However, excessive use of parenthesis can have the opposite effect, making it more difficult to read and maintain the code.
+
 ## Example 1
+
 ```csharp
 public int MyMethod()
 {
@@ -14,6 +16,7 @@ public int MyMethod()
     return (localItem * 10);
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -26,6 +29,7 @@ public int MyMethod()
 ```
 
 ## Example 2
+
 ```csharp
 public void MyMethod(objedct arg, int myVar)
 {
@@ -33,6 +37,7 @@ public void MyMethod(objedct arg, int myVar)
     var localItem = ((MyObjectName)(arg));
 }
 ```
+
 *should be* 🡻
 
 ```csharp
@@ -44,6 +49,7 @@ public void MyMethod(objedct arg,int myVar)
 ```
 
 ## Example 3
+
 ```csharp
 public void MyMethod()
 {
@@ -53,6 +59,7 @@ public void MyMethod()
     }
 }
 ```
+
 *should be* 🡻
 
 ```csharp
