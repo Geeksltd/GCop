@@ -1,4 +1,4 @@
-﻿# GCop404
+﻿# GCop 404
 
 > *"Multiple 'if' and 'else if' on the same variable can be replaced with a 'switch'"*
 
