@@ -6,11 +6,11 @@
 
 ## Rule description
 
-In the Switch,Case,Default statementsts, if there is no match with a constant expression, the statement associated with the default keyword is executed. If the default keyword is not used, control passes to the statement following the switch block.
+In the `Switch, Case, Default` statements, if there is no match with a constant expression, the statement associated with the default keyword is executed. If the default keyword is not used, control passes to the statement following the switch block.
 
 The default case can appear in any order in the switch statement. Regardless of its order in the source code, it is always evaluated last, after all case labels have been evaluated.
 
-It is prefered to use default statement :
+It is preferred to use default statement :
 
 * To 'catch' an unexpected value.
 
@@ -18,7 +18,7 @@ It is prefered to use default statement :
 
 * To handle 'default' actions, where the cases are for special behavior.
   
-    it is seen a lot in menu-driven programs or when a variable is declared outside the switch-case but not initialized, and each case initializes it to something different. Here the default needs to initialize it too so that down the line code that accesses the variable doesn't raise an error.
+    it is seen a lot in menu-driven programs or when a variable is declared outside the `switch-case` but not initialized, and each case initializes it to something different. Here the default needs to initialize it too so that down the line code that accesses the variable doesn't raise an error.
 
 ## Example 1
 
