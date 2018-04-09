@@ -4,7 +4,7 @@
 
 ## Rule description
 
-You can avoid unnecessary clutter in your code by using **IsEmpty** or **HasValue** instead of string.IsNullOrEmpty() or string.IsNullOrWhiteSpace().
+You can avoid unnecessary clutter in your code by using **IsEmpty** or **HasValue** instead of `string.IsNullOrEmpty()` or `string.IsNullOrWhiteSpace()`.
 
 ## Example 1
 
