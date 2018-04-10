@@ -4,10 +4,10 @@
 
 ## Rule description
 
-PascalCase is a naming convention where the first letter in of each word in the phrase are upper case, and the rest are lower case.
-You do not use under_score in PascalCased identifiers.
+Pascal Case is a naming convention where the first letter in of each word in the phrase are upper case, and the rest are lower case.
+You do not use underscore in Pascal Cased identifiers.
 
-In C#, PascalCasing is used for these identifires:
+In C#, Pascal Casing is used for these identifiers:
 
 * Classes, Interfaces, Delegates, Namespaces
 * Events, Methods, Fields, Properties
