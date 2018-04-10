@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Comparisons are more clear and meaningful while we dont use negative syntax.
+Comparisons are more clear and meaningful while we don’t use negative syntax.
 
 ## Example 1
 
