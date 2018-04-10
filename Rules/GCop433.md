@@ -4,7 +4,7 @@
 
 ## Rule description
 
-You can access a static member in the sme class by simply specifying its name directly.
+You can access a static member in the same class by simply specifying its name directly.
 
 ## Example
 
