@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Repeated Statements will reduce code readability. To have a more meaningful code it is better to refactor these IF conditions.
+Repeated Statements will reduce code readability. To have a more meaningful code it is better to refactor these `if` conditions.
 
 ## Example 1
 
