@@ -4,9 +4,9 @@
 
 ## Rule description
 
-An object of type IEnumerable can be resource consuming every time that it's iterated in foreach loops or Linq methods that evaluate the result such as ToList(), ToArray(), Count(), Any(), ...
+An object of type `IEnumerable` can be resource consuming every time that it's iterated in foreach loops or Linq methods that evaluate the result such as `ToList()`, `ToArray()`, `Count()`, `Any()`, ...
 
-If you need the result of an IEnumerable object more than once, it's better to call .ToArray() or .Tolist() on it once to prepare the final result, and then use that directly.
+If you need the result of an `IEnumerable` object more than once, it's better to call `.ToArray()` or `.Tolist()` on it once to prepare the final result, and then use that directly.
 
 ## Example
 
