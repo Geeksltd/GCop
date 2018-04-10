@@ -4,7 +4,7 @@
 
 ## Rule description
 
-You can access a static member in a static context by specifying its name directly.
+You can access a static member in the sme class by simply specifying its name directly.
 
 ## Example
 
@@ -17,6 +17,7 @@ public class MyClass
         ...
         MyClass.AnotherMethod();
     }
+    
     static void AnotherMethod()
     {
         ...
@@ -35,6 +36,7 @@ public class MyClass
         ...
         AnotherMethod();
     }
+    
     static void AnotherMethod()
     {
         ...

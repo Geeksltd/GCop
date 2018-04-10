@@ -4,7 +4,10 @@
 
 ## Rule description
 
-`cast` and `.Value()` both compile to the exact same IL. Hard cast doesn't add anything in terms of readability, but it does cost in terms of maintainability. If you change your variable from `int?` to `byte?`, then all your casts are wrong, but if you was using `.Value`, you are free to change the variable as necessary.
+Casting a nullable object to its underlying type will be changed to invoking the `.Value` in the compiled IL.
+Instead of casting, you should just invoke `.Value` explicitly so it's more clear and readabile.
+
+As another benefit, simply calling `.Value` makes it easier to change the type of the variable, e.g. from `int?` to `byte?`, without breaking the code or causing strange run-time bugs as a result of a cast to an invalid type.
 
 ## Example
 
