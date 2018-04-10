@@ -4,13 +4,13 @@
 
 ## Rule description
 
-CamelCase convention is used to capitalize some kind of identifiers in C#. In CamelCase capitalization, the first letter of an identifier is lowercase and the first letter of each subsequent concatenated word is capitalized.
+Camel Case convention is used to capitalize some kind of identifiers in C#. In Camel Case capitalization, the first letter of an identifier is lowercase and the first letter of each subsequent concatenated word is capitalized.
 
-CamelCasing is used for these identifires :
+Camel Casing is used for these identifiers :
 
 * Parameters
 * Local variables
-* Class fields (only where a property or method already exists with the PascalCased version of that name)
+* Class fields (only where a property or method already exists with the Pascal Cased version of that name)
 
 ## Example 1
 
