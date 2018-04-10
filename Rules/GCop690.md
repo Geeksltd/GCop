@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability its better to check for null rather than negative HasValue. 
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it’s better to check for null rather than negative `HasValue`. 
 
 ## Example
 
