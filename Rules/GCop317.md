@@ -4,7 +4,7 @@
 
 ## Rule description
 
-We should write as short and simple code as it is possible. Repeatation will reduce the clarity of the code.
+We should write as short and simple code as it is possible. Repetition will reduce the clarity of the code.
 
 ## Example 1
 
