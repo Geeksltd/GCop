@@ -6,7 +6,7 @@
 
 ## Rule description
 
-It is recommended to use (??) Instead of several lines of code ckecking null expression. The ?? operator is called the null-coalescing operator. It returns the left-hand operand if the operand is not null; otherwise it returns the right hand operand.
+It is recommended to use (??) Instead of several lines of code checking null expression. The ?? operator is called the null-coalescing operator. It returns the left-hand operand if the operand is not null; otherwise it returns the right hand operand.
 
 To make short the if-else condition, we can use conditional operator (?:). Following is the syntax for the conditional operator.
 
