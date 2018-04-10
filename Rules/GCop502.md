@@ -6,7 +6,7 @@
 
 Unused parameters just increase code length and reduce readability of code, so it is better to avoid using them.
 
-There are cases where the argument must remain for the method signature to comply with an interface or an overriden base method. In those cases, to make it clear that the argument is not used, name it as _ or __ or ___ depending on how many such unused arguments exist.
+There are cases where the argument must remain for the method signature to comply with an interface or an overridden base method. In those cases, to make it clear that the argument is not used, name it as _ or __ or ___ depending on how many such unused arguments exist
 
 ## Example
 
