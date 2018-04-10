@@ -4,7 +4,8 @@
 
 ## Rule description
 
-Duplicate casts decrease performance and is unnecessary.
+You should not use explicit casting code such as `(TypeX)someValue` where `someValue` is already implicitly castable to `TypeX`.
+Unnecessary explicit casting is noise in code, and can even decrease performance.
 
 ## Example1
 
