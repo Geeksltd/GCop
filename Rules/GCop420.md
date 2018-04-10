@@ -21,39 +21,25 @@ public static void Log(this Exception ex)
 ```csharp
 public static void Log(this Exception ex)
 {
-    ...
+    // some code ...
 }
 ```
 
 ## Example2
 
 ```csharp
-public class MyClass:IHttpModule
+public class MyClass : IHttpModule
 {
     public void Dispose()
     {
     }
 }
 ```
-
 *should be* 🡻
 
 ```csharp
 public class MyClass:IHttpModule
 {
-    public void Dispose()
-    {
-        throw new NotImplementedException();
-    }
-}
-```
-*OR* 🡻
-
-```csharp
-public class MyClass:IHttpModule
-{
-    void IHttpModule.Dispose()
-    {
-    }
+    void IHttpModule.Dispose() { }
 }
 ```
