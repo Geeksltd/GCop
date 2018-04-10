@@ -4,9 +4,9 @@
 
 ## Rule description
 
-If the purpose of a boolean argument is a flag or a switch, it should go after the main parameters for better readability, and also to enable the caller to specify the name of the parameter before the *true/faalse* expression [see GCop117](GCop117.md).
+If the purpose of a `Boolean` argument is a flag or a switch, it should go after the main parameters for better readability, and also to enable the caller to specify the name of the parameter before the *`true/false`* expression [see GCop117](GCop117.md).
 
-If the role of the boolean argument is not just a switch, and instead it's to specify the primary action, then the method design should change into two separate methods.
+If the role of the `Boolean` argument is not just a switch, and instead it's to specify the primary action, then the method design should change into two separate methods.
 
 ## Example 1
 
