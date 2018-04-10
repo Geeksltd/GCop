@@ -4,7 +4,7 @@
 
 ## Rule description
 
-In many cases it is not necessory to call ToString method when using the + operator, as the C# compiler is smart enough to automatically do that. The benefits of not calling it unnecessarily are: 
+In many cases it is not necessary to call `ToString` method when using the + operator, as the C# compiler is smart enough to automatically do that. The benefits of not calling it unnecessarily are: 
 
 1.  Avoid unnecessary clutter in your code. 
 2.  To avoid null reference exception (in case the object is null)   
