@@ -30,6 +30,7 @@ public static void Log(this Exception ex)
 ```csharp
 public class MyClass : IHttpModule
 {
+    ...
     public void Dispose()
     {
     }
@@ -38,8 +39,9 @@ public class MyClass : IHttpModule
 *should be* 🡻
 
 ```csharp
-public class MyClass:IHttpModule
+public class MyClass : IHttpModule
 {
+    ...
     void IHttpModule.Dispose() { }
 }
 ```
