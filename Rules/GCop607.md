@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability its better to use *Except* rather than * Lambda Not Expression*. 
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use *`Except`* rather than *Lambda Not Expression*. 
 
 ## Example
 
