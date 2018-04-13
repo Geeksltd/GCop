@@ -6,9 +6,7 @@
 
 ## Rule description
 
-we use `string.Format or string.FormatWith` to converts the value of objects to strings based on the formats specified and inserts them into another string.
-
-You should consider about the index of every format item has a matching object in the object list.
+The `string.Format` and `string.FormatWith` methods inject parameters into a string template. The placeholders (such as `{0}` and `{1}`) are meant to correspond to the values passed into the method. If they don't match, it's often a programming mistake that can lead to runtime errors.
 
 ## Example1
 
