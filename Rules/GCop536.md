@@ -4,12 +4,12 @@
 
 ## Rule description
 
-There's no value to write empty XML documentation comments. They just make your dirty and unreadable.
+Empty XML documentation parameters are just unnecessary noise and should be removed.
 
 ## Example
 
 ```csharp
-///<param name="myParam"></param> 
+///<param name="myParam"></param>
 public void MyMethod(int myParam)
 {
     ...
@@ -19,7 +19,16 @@ public void MyMethod(int myParam)
 *should be* 🡻
 
 ```csharp
-///<param name="myParam">description</param> 
+///<param name="myParam">Some actual description....</param> 
+public void MyMethod(int myParam)
+{
+    ...
+}
+```
+
+*OR* 🡻
+
+```csharp
 public void MyMethod(int myParam)
 {
     ...
