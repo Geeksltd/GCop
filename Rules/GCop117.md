@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Using true or false for `boolean` arguments is not meaningful enough. Instead, specify the parameters name that the reader will immediately understand its purpose.
+Using `true` or `false` for `bool` arguments is not meaningful enough. Instead, specify the parameters name that the reader will immediately understand its purpose.
 
 ## Example 1
 
