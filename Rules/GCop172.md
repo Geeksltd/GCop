@@ -4,7 +4,7 @@
 
 ## Rule description
 
-In C#, from version 6, the **?.** expression can be used to simplify the code.
+In C#, from version 6, the `?.` expression can be used to simplify the code.
 
 ## Example 1
 
