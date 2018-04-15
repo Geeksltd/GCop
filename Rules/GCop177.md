@@ -4,7 +4,7 @@
 
 ## Rule description
 
-It is a bad practice to declare a variable only to immediately return or throw. This variable is an internal implementation detail that is not exposed to the callers of the method so it does not improve code readability.
+It is a bad practice to declare a variable only to immediately `return` or `throw`. This variable is an internal implementation detail that is not exposed to the callers of the method so it does not improve code readability.
 
 ## Example
 
