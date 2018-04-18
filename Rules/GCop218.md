@@ -11,11 +11,17 @@ To further clarify that the role of this parameter is indeed to specify the `thi
 ## Example
 
 ```csharp
-public static Int64 ToInt64(this string no){...}
+public static int CountUniqueWords(this string something)
+{
+    ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-public static Int64 ToInt64(this string @this){...}
+public static int CountUniqueWords(this string @this)
+{
+    ...
+}
 ```
