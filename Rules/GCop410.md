@@ -4,42 +4,44 @@
 
 ## Rule description
 
-Requiring an override to call the base without a template is Bad Design. It's misleading for the maintenance programmer. If you really need to do that, then there is a flaw in your design. When you don't see an override then you know the base is called. An override tells us there is something different, even if the base is called in there as well. 
+The only reason for overriding a virtual method is to change its behaviour. An override tells us there is something different, even if the base is called in there as well, but it should do something else also.
 
-Then the right thing to do is to provide a separate non-virtual method in base class and call this one instead of the virtual one.
+Therefore there is no good reason to override a method that only calls its base implementation. Such method is complete noise.
 
 ## Example
 
 ```csharp
-class BaseClass
-{
-    protected internal override void OnInit(EventArgs e){...}
-}
-public class SubClass: BaseClass
+public class SomeSubClass: SomeBaseClass
 {
     protected override void OnInit(EventArgs e)
     {
         base.OnInit(e);
     }
+    ...
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-class BaseClass
+
+public class SomeSubClass: SomeBaseClass
 {
-    protected internal override void OnInit(EventArgs e)
-    {
-        MyOnInitMethod();
-    }
-    protected void MyOnInitMethod(){...}
+    ...
 }
-public class SubClass: BaseClass
+```
+
+*OR* 🡻
+
+```csharp
+
+public class SomeSubClass: SomeBaseClass
 {
     protected override void OnInit(EventArgs e)
-    {
-        MyOnInitMethod();
+    {    
+        base.OnInit(e); // optional
+        SomeOtherLogicAlso();
     }
+    ...
 }
 ```
