@@ -4,22 +4,27 @@
 
 ## Rule description
 
-When `void` is used as a return type for a method, it  specifies that the method doesn't return a value and doesn’t change the object. So it is meaningless to use `void` while the method changes the object.
+When you invoke a method on an immutable object such as `string`, `DateTime`, etc, it won't change the state of that object. For example the `AddDays()` method of a `DateTime` object will return a new `DateTime` object and doesn't change the original instance. Therefore it's meaningless to invoke it without using the returned value.
 
 ## Example
 
 ```csharp
-public void AddHours(double hours)
-{
-    CurrentDateTime.AddHours(hours);
-}
+...
+CurrentDateTime.AddHours(hours);
+...
 ```
 
 *should be* 🡻
 
 ```csharp
-public datetime AddHours(double hours)
-{
-    return CurrentDateTime.AddHours(hours);
-}
+...
+var something = CurrentDateTime.AddHours(hours);
+...
+```
+*OR* 🡻
+
+```csharp
+...
+return CurrentDateTime.AddHours(hours);
+...
 ```
