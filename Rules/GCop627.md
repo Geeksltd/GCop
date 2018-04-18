@@ -6,9 +6,7 @@
 
 ## Rule description
 
-Human brain can understand positive phrases better than negative ones so it is recommended to use `==` rather than `!=` where possible, to have a more readable code.
-
-When dealing with expressions that are `Nullable<bool>`, using `?? false` is the same as using `== true` whether the expression's value is `true`, `false` or `null`. But `== true` is more readable as it's *positive logic*.
+Human brain can understand positive phrases better than negative ones. When dealing with expressions that are `Nullable<bool>`, using `?? false` is the same as using `== true` whether the expression's value is `true`, `false` or `null`.
 
 ## Example1
 
