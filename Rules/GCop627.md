@@ -6,9 +6,9 @@
 
 ## Rule description
 
-Human brain can undrestand positive phrases better than negative ones so it is recommended to use `==false` rather than `!nullable expression == true` to have a more readable code.
+Human brain can understand positive phrases better than negative ones so it is recommended to use `==false` rather than `!nullable expression == true` to have a more readable code.
 
-Also using `??false` is like using `==true` but is less meaningful.
+Also using `??false` is like using `==true` but is less meaningful.understand 
 
 ## Example1
 
