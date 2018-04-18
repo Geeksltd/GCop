@@ -8,6 +8,8 @@
 
 Human brain can undrestand positive phrases better than negative ones so it is recommended to use `==false` rather than `!nullable expression == true` to have a more readable code.
 
+Also using `??false` is like using `==true` but is less meaningful.
+
 ## Example1
 
 ```csharp
