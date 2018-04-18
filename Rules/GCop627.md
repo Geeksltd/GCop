@@ -6,34 +6,46 @@
 
 ## Rule description
 
-Human brain can understand positive phrases better than negative ones so it is recommended to use `==false` rather than `!nullable expression == true` to have a more readable code.
+Human brain can understand positive phrases better than negative ones so it is recommended to use `==` rather than `!=` where possible, to have a more readable code.
 
-Also using `??false` is like using `==true` but is less meaningful.understand 
+When dealing with expressions that are `Nullable<bool>`, using `?? false` is the same as using `== true` whether the expression's value is `true`, `false` or `null`. But `== true` is more readable as it's *positive logic*.
 
 ## Example1
 
 ```csharp
-bool? nullableBool = true;
-
-if(nullableBool ?? false){...}
+var nullableBool = GetSomeNullableBool(...);
+...
+if(nullableBool ?? false)
+{
+   ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-bool? nullableBool = true;
-
-if(nullableBool == true){...}
+var nullableBool = GetSomeNullableBool(...);
+...
+if(nullableBool == true)
+{
+   ...
+}
 ```
 
 ## Example2
 
 ```csharp
-if(!boolVar == true){...}
+if (!nullableBool == true)
+{
+   ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-if(boolVar == false){...}
+if (nullableBool == false)
+{
+   ...
+}
 ```
