@@ -4,7 +4,7 @@
 
 ## Rule description
 
-...
+The `Round()` extension method on decimal and double types reads better and should be used instead of `Math.Round()`.
 
 ## Example
 
