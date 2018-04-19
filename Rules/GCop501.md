@@ -4,48 +4,44 @@
 
 ## Rule description
 
-The language design force us to call the extension method like an instance method, but is actually a static method.
+Every extension method is a static method, and therefore can be called directly. However, that is ugly and defeats the purpose. After all, the method is defined as an *extension method* rather than a normal method so it can be called like an *instance method*.
 
 ## Example
 
 ```csharp
-public static class Util
+public static class MyBlahBlahExtensions
 {
-    ...
-    public static void Log(this string message, string fileName)
+    public static string GetSomething(this string @this)
     {
         ...
     }
 }
-public class AnotherClass
-{
+
     ...
-    public static void MyMethod()
+    void SomeCaller()
     {
         ...
-        Util.Log(message, "fileName");             
+        var x = MyBlahBlahExtensions.GetSomething(message);             
     }
-}
+
 ```
 
 *should be* 🡻
 
 ```csharp
-public static class Util
+public static class MyBlahBlahExtensions
 {
-    ...
-    public static void Log(this string message, string fileName)
+    public static void GetSomething(this string @this)
     {
         ...
     }
 }
-public class AnotherClass
-{
+
     ...
-    public static void MyMethod()
+    void SomeCaller()
     {
         ...
-        message.Log("fileName");             
+        var x = message.GetSomething();             
     }
-}
+
 ```
