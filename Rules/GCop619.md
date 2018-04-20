@@ -4,7 +4,7 @@
 
 ## Rule description
 
-To have an invert assignment of `boolean` objects it’s better not to use `if` conditions.
+You should use the boolean logic for shorter and more readable code. You don't need to use an `if` condition in many cases. This rule will catch a common pattern.
 
 ## Example
 
