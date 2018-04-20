@@ -25,7 +25,7 @@ return something ?? somethingElse;
 
 ```csharp
 if (somethig != null) result = somethig;
-else result = null;
+else result = somethingElse;
 ```
 
 *should be* 🡻
