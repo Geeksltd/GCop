@@ -4,29 +4,30 @@
 
 ## Rule description
 
-the `GetValueOrDefault()` retrieves the value of the current `Nullable<T>` object, or the object's default value.
-it is the same as when you call Null Coalescing Operator, `Nullable<T> ?? defaultValue`, while the first one is unclear when the condition is true(one must know the default value of `T`).
+The `GetValueOrDefault()` method retrieves the value of the current `Nullable<T>` object, or the object's default value. It is the same as when you call the *null coalescing* Operator such as `Nullable<T> ?? defaultValue`.
+
+This is briefer, but more importantly it's explicit about what default value will be used in case the nullable object was indeed `null`.
 
 ## Example1
 
 ```csharp
-var result = intNullableObj.GetValueOrDefault();
+var result = myNullableInteger.GetValueOrDefault();
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = intNullableObj ?? 0;
+var result = myNullableInteger ?? 0;
 ```
 
 ## Example2
 
 ```csharp
-var result = boolNullableObj.GetValueOrDefault();
+return myNullableBool.GetValueOrDefault();
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = boolNullableObj ?? false;
+return myNullableBool ?? false;
 ```
