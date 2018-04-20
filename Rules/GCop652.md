@@ -11,9 +11,9 @@ When foreach iterates over your variable, detects that there are no items and wi
 ## Example
 
 ```csharp
-if(myIQueryable.Any())
+if(myCollection.Any())
 {
-    foreach(var item in myIQueryable)
+    foreach(var item in myCollection)
     {
         ...
     }
@@ -23,7 +23,7 @@ if(myIQueryable.Any())
 *should be* 🡻
 
 ```csharp
-foreach(var item in myIQueryable)
+foreach(var item in myCollection)
 {
     ...
 }
