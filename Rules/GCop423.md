@@ -4,21 +4,43 @@
 
 ## Rule description
 
-Duplicate conditions are noisy, make long your code and reduce the readability of your program.
+Duplicate conditions are noisy, make long your code and reduce the readability of your code.
+When the same condition is repeated, it's just poorly formatted logic.
 
 ## Example
 
 ```csharp
-if (someBooleanExpression){...}
-else{...}
+if (someBooleanExpression)
+{
+    DoFirstThing();
+}
+else
+{
+   ...
+}
 
-if (someBooleanExpression){...}
-else{...}
+if (someBooleanExpression)
+{
+    DoSecondThing();
+}
+else
+{
+  ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-if (someBooleanExpression){...}
-else{...}
+if (someBooleanExpression)
+{
+    DoFirstThing();
+    DoSecondThing();
+}
+else
+{
+   ...
+   ...
+}
+
 ```
