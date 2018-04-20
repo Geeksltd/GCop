@@ -4,22 +4,25 @@
 
 ## Rule description
 
-You do not need to `await` a method which returns a `Task<T>`, the code will just run asynchronously if you have the `async` keyword on the method. The purpose of the `async` keyword is simply to mark a method as being able to return a `Task<T>` and be able to use the await keyword. so if you remove `await` keyword you don’t either need `async` keyword too.
+The purpose of the `async` keyword is only to mark a method as being able to use the `await` keyword.
+A method that returns a `Task` or `Task<T>` doesn't necessarily need to be marked as `async`.
+ 
+If all your `async` method is doing is to `await` a task, then you can drop both `async` and `await` and let the method simply return the task back to its caller. This will not only be cleaner, but also faster to run.
 
 ## Example
 
 ```csharp
-private async Task<bool> MyMethod(int myParam)
+async Task<bool> MyMethod(int myParam)
 {
-    return await AnotherAsyncMethod(myParam);
+    return await AnotherAsyncMethodOrExpression(myParam);
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-private Task<bool> MyMethod(int myParam)
+Task<bool> MyMethod(int myParam)
 {
-    return AnotherAsyncMethod(myParam);
+    return AnotherAsyncMethodOrExpression(myParam);
 }
 ```
