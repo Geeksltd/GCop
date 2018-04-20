@@ -20,12 +20,12 @@ if (month > 12 || month < 1 || day > 31 || day < 1 || (month > 6 && day > 30))
 *should be* 🡻
 
 ```csharp
-if (IsInvalidDate(month, day))
+if (IsDateInvalid(month, day))
 {
     ...
 }
 
-bool IsInvalidDate(int month, int day)
+bool IsDateInvalid(int month, int day)
 {
     return month > 12 || month < 1 || day > 31 || day < 1 || (month > 6 && day > 30);
 }
@@ -34,8 +34,8 @@ bool IsInvalidDate(int month, int day)
 *OR* 🡻
 
 ```csharp
-var isInvalidDate = month > 12 || month < 1 || day > 31 || day < 1 || (month > 6 && day > 30);
-if (isInvalidDate)
+var isDateInvalid = month > 12 || month < 1 || day > 31 || day < 1 || (month > 6 && day > 30);
+if (isDateInvalid)
 {
     ...
 }
