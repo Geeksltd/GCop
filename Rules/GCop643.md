@@ -1,40 +1,35 @@
 ﻿# GCop 643
 
-> *"Change to return {'xVariable'} ?? {'yVariable'};"*
-> 
-> *"Change to return {'xVariable.GetIdentifier()'} ?? {'yVariable'};"*
-> 
-> *"Change to {'result'} = {'xVariable'} ?? {'yVariable'};"*
+> *"Change to return {something} ?? {somethingElse};"*
 
 ## Rule description
 
-`if` is great for flow-control, but if you are just returning one of two values or assigning one of two values based on a condition, it is better to use `??` as appropriate.
+When returning a value or assigning it, there are cases where you want to use a particular value, but if it's `null`, then use another value. Instead of using an `if` statement in those cases, you can use the `??` syntax.
 
 ## Example1
 
 ```csharp
-if (myBoolObj != null)
-    return myBoolObj;
+if (somethig != null)
+    return something;
 else 
-    return anotherBoolObj;
+    return somethingElse;
 ```
 
 *should be* 🡻
 
 ```csharp
-return myBoolObj ?? anotherBoolObj;
+return something ?? somethingElse;
 ```
 
 ## Example2
 
 ```csharp
-if (myBoolObj != null)
-    result = myBoolObj;
+if (somethig != null) result = somethig;
 else result = null;
 ```
 
 *should be* 🡻
 
 ```csharp
-result = myBoolObj ?? result;
+result = myBoolObj ?? somethingElse;
 ```
