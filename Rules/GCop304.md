@@ -9,11 +9,11 @@
 ## Example
 
 ```csharp
- var addresses = myCollection.Where(a => a.Country == null).ToList();
+ var addresses = myCollection.Where(mc => mc.Country == null).ToList();
 ```
 
 *should be* 🡻
 
 ```csharp
-(...corrected version)
+ var addresses = myCollection.Where(mc => mc.CountryId == null).ToList();
 ```
