@@ -4,51 +4,31 @@
 
 ## Rule description
 
-By using anonymous methods, you reduce the coding overhead in instantiating delegates because you do not have to create a separate method. To reduce the complexity of code you can use other methods.
+Lambda expressions (aka anonymous methods) are a great convinience in C#, allowing you to create quick function expressions without the full ceremony of creating a method.
+
+However, a very long lambda expression will make the code look complex and cluttered. Therefore you should only use lambda expressions for simply functions, and revert back to a full standard method if the code is long or complex.
+
 
 ## Example
 
 ```csharp
-var myCollection = _cacheManager.Get(cacheKey, () =>
+var customers = cacheManager.GetOrAdd(cacheKey, () =>
 {
-    ...
-
-    foreach (var c in someCollection)
-    {
-        ...
-
-        for (int i = 0; i <= someValue; i++)
-        {
-            ...
-
-            if(someCondition)
-            {
-                ...
-            }
-            else
-            {
-                ...
-            }
-        }
-    }
-    //more than five statements
-    return myModel;
+    // ... Complex implementation
+    return result;
 });
 ```
 
 *should be* 🡻
 
 ```csharp
-var myCollection = _cacheManager.Get(cacheKey, () =>
+var customers = cacheManager.GetOrAdd(cacheKey, () => LoadCustomers());
+...
+
+IEnumerable<Customer> LoadCustomers()
 {
-    CallSimpleMethod();
+   // ... Complex implementation
+   return result;
+}
 
-    foreach (var c in someCollection)
-    {
-        CallOtherSimpleMethod(c);
-
-        CallAnotherSimpleMetod();
-    }
-    return myModel;
-});
 ```
