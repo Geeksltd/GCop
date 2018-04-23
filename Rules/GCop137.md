@@ -28,13 +28,13 @@ public void MyMethod()
 *should be* 🡻
 
 ```csharp
-private Object thisLock = new Object(); 
+object syncLock = new Object(); 
  
 public void MyMethod()
 {
     if (someCondition)
     {
-        lock (thisLock)
+        lock (syncLock)
         {
             ...
         }
