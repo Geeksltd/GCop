@@ -4,18 +4,18 @@
 
 ## Rule description
 
-Empty object initializers are just unnecessary noise and should be removed.
+Empty object initializers are just unnecessary noise and should be simplified.
 
 ## Example
 
 ```csharp
 var customer = new Customer
 {
-}
+};
 ```
 
 *should be* 🡻
 
 ```csharp
-//object initializer should be removed
+var customer = new Customer();
 ```
