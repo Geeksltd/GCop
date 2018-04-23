@@ -6,9 +6,9 @@
 
 ## Rule description
 
-`Contains` takes an object while `Any` takes a predicate. So if you want to check for a specific condition, use `Any`. If you want to check for the existence of an element, use `Contains`.
+The `someCollection.Contains()` method takes an object while `Any(...)` takes a predicate. So if you want to check for existence of an element, use `Contains()` rather than comparing every item using `Any(...)`.
 
-## Example1
+## Example
 
 ```csharp
 if (myCollection.Any(c => c == categoryId))
@@ -25,6 +25,8 @@ if (myCollection.Contains(categoryId))
     ...
 }
 ```
+
+> TODO: Move to another rule
 
 ## Example2
 
