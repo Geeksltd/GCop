@@ -10,10 +10,10 @@ Callers of non-public methods are always in your control. If the method is calle
 ## Example
 
 ```csharp
-public static class MyClass
+class MyClass
 {
     ...
-    private void myMethod(this MyClass myParam)
+    private void myMethod(SomeType myParam)
     {
         if (myParam == null)
             throw new ArgumentNullException(nameOf(myParam));
@@ -25,10 +25,10 @@ public static class MyClass
 *should be* 🡻
 
 ```csharp
-public static class MyClass
+class MyClass
 {
     ...
-    private void myMethod(this MyClass myParam)
+    private void myMethod(SomeType myParam)
     {        
         ...
     }
