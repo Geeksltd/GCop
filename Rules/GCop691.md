@@ -17,7 +17,8 @@ class MyClass
     {
         if (myParam == null)
             throw new ArgumentNullException(nameOf(myParam));
-        ...
+        
+        // use the parameter...
     }
 }
 ```
@@ -30,7 +31,7 @@ class MyClass
     ...
     private void myMethod(SomeType myParam)
     {        
-        ...
+        // use the parameter...
     }
 }
 ```
