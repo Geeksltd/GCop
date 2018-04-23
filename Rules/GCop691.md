@@ -13,10 +13,10 @@ Callers of non-public methods are always in your control. If the method is calle
 public static class MyClass
 {
     ...
-    private static void myMethod(this MyClass myParam)
+    private void myMethod(this MyClass myParam)
     {
         if (myParam == null)
-                throw new ArgumentNullException(nameOf(myParam));
+            throw new ArgumentNullException(nameOf(myParam));
         ...
     }
 }
@@ -28,7 +28,7 @@ public static class MyClass
 public static class MyClass
 {
     ...
-    private static void myMethod(this MyClass myParam)
+    private void myMethod(this MyClass myParam)
     {        
         ...
     }
