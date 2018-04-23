@@ -4,7 +4,7 @@
 
 ## Rule description
 
-`String.Contains()` Returns a value indicating whether a specified substring occurs within this string. `String.Contains()` is more faster than `String.IndexOf` and also is more readable if you don't need the index.
+The `String.Contains()` method returns a `bool` value indicating whether a specified substring occurs within this string. `String.Contains()` is more expressive and readable than `String.IndexOf()`.
 
 ## Example
 
