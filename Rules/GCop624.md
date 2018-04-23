@@ -26,7 +26,7 @@ if (myCollection.Contains(categoryId))
 }
 ```
 
-> TODO: Move to another rule
+> TODO: Break into another rule: https://github.com/Geeksltd/GCop/issues/108
 
 ## Example2
 
