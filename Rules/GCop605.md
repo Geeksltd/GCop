@@ -4,22 +4,16 @@
 
 ## Rule description
 
-...
+The `string.To(...`) extension method is faster and smarter than than the standard `Convert.ChangeType`, and it's more readable.
 
 ## Example
 
 ```csharp
-public static object StringToType(string value, Type propertyType)
-{
-    return Convert.ChangeType(value, propertyType, CultureInfo.InvariantCulture);
-}
+return Convert.ChangeType(value, propertyType);
 ```
 
 *should be* 🡻
 
 ```csharp
-public static object StringToType(string value, Type propertyType)
-{
-    return value.To(propertyType);
-}
+return value.To(propertyType);
 ```
