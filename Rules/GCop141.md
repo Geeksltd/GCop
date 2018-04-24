@@ -46,3 +46,5 @@ for (...)
     }
 }
 ```
+
+In this example, alternatively, you can refactor the big loop into a method, and simply `return` instead of `goto`.
