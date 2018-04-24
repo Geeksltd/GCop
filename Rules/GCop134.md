@@ -4,8 +4,9 @@
 
 ## Rule description
 
-You should avoid writing too much logic in the event handler methods such as `OnValidating`, `OnSaving`, `OnSaved`, 'OnDeleting', etc. Instead, break the logic into one or more methods that are properly named, and just invoke them in your 
-The first rule of functions is that they should be small. Functions should do one thing. They should do it well. They should do it only, so long methods are against OOP rules and reduce the code readability.
+You should avoid writing too much logic in the event handler methods such as `OnValidating`, `OnSaving`, `OnSaved`, 'OnDeleting', etc. Instead, break the logic into one or more methods that are properly named, and just invoke them in your event handler.
+
+This will help *document* the logic.
 
 ## Example
 
