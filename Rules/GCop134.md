@@ -4,44 +4,53 @@
 
 ## Rule description
 
+You should avoid writing too much logic in the event handler methods such as `OnValidating`, `OnSaving`, `OnSaved`, 'OnDeleting', etc. Instead, break the logic into one or more methods that are properly named, and just invoke them in your 
 The first rule of functions is that they should be small. Functions should do one thing. They should do it well. They should do it only, so long methods are against OOP rules and reduce the code readability.
 
-## Example1
+## Example
 
 ```csharp
-private void OnSaving()
+public override void OnSaved(SaveEventArgs args)
 {
-    //More than 10 statements
+    if (args.Mode == SaveMode.Insert)
+    {
+        Database.Save(new EmailQueueItem 
+        {
+           To = Config.Get("Order.Receiver.Email"),
+           Html = true,
+           Subject = "New order submitted",
+           Body = @".....
+                   .....
+                   ....
+                   ...."
+        });        
+    }
 }        
 ```
 
 *should be* 🡻
 
 ```csharp
-private void OnSaving()
+public override void OnSaved(SaveEventArgs args)
 {
-    //Call other methods
-    //less than 10 statements
-} 
-//Smaller methods
-```
-
-## Example2
-
-```csharp
-protected override void OnDeleting()
-{
-    //More than 10 statements
+    if (args.Mode == SaveMode.Insert)
+    {
+         SendNotificationEmail();
+    }
 }        
-```
 
-*should be* 🡻
-
-```csharp
-protected override void OnDeleting()
+void SendNotificationEmail()
 {
-    //Call other methods
-    //less than 10 statements
-} 
-//Smaller methods
+        Database.Save(new EmailQueueItem 
+        {
+           To = Config.Get("Order.Receiver.Email"),
+           Html = true,
+           Subject = "New order submitted",
+           Body = @".....
+                   .....
+                   ....
+                   ...."
+        });        
+}
 ```
+
