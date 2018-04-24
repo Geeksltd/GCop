@@ -9,11 +9,11 @@ The `string.Tostring("separator")` places the separator between every element of
 ## Example
 
 ```csharp
-var result = string.Join(",", myStringArray);
+var result = string.Join(",", myCollection);
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = myStringArray.ToString(",");
+var result = myCollection.ToString(",");
 ```
