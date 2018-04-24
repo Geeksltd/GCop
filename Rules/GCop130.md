@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `Enumerable.Empty<TResult>()` method returns an empty collection that has the specified type argument. You can use this method with conditional operator `??`  To return an empty collection when your collection is null, or a better solution, use `OrEmpty()` method. This method do the same but is more readable and easy to use. 
+The `Enumerable.Empty<TResult>()` returns an empty collection that has the specified type argument. You can use this method with conditional operator `??`  to return an empty collection when your collection is null, or a better solution, use `OrEmpty()` method. This method do the same but is more readable and easy to use. 
 
 ## Example
 
