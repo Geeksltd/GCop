@@ -17,7 +17,8 @@ public class MyClass
     static MyClass()
     {
         ...
-        throw new Exception("SomeText");
+        if (...)
+           throw new Exception("SomeText");
     }
 }
 ```
@@ -27,11 +28,22 @@ public class MyClass
 ```csharp
 public class MyClass
 {
+    static bool IsInitialized;
     ...
     public static void Initialize()
     {
         ...
-        throw new Exception("SomeText");
+        if (...)
+           throw new Exception("SomeText");
+        else IsInitialized = true;
+    }
+    
+    void AnyOtherMethodThatReliesOnInitialization()
+    {
+        if (!IsInitialized) 
+            throw new InvalidOperationException("MyClass.Initialize() is not called...");
+        
+        ...
     }
 }
 ```
