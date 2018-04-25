@@ -6,7 +6,7 @@
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use `HasValue` rather than `!IsEmpty` and `IsEmpty` rather than `!HasValue`.
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use `HasValue` rather than `!IsEmpty`, and `IsEmpty` rather than `!HasValue`.
 
 ## Example1
 
@@ -20,7 +20,7 @@ if (!myString.HasValue())
 *should be* 🡻
 
 ```csharp
-if (!myString.IsEmpty())
+if (myString.IsEmpty())
 {
     ...
 }
