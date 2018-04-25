@@ -15,5 +15,5 @@ The `FirstOrDefault` is almost the same as `First`. The difference is how it han
 *should be* 🡻
 
 ```csharp
- var myResult = myList.FirstOrDefault() ?? null;
+ var myResult = myList.FirstOrDefault();
 ```
