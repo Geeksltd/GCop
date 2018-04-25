@@ -4,9 +4,10 @@
 
 ## Rule description
 
-If any exception is thrown from within a static constructor, a `TypeInitializationException` will be thrown, with an `InnerException` set to the original exception that occurred.  At that point, you can no longer access any static data or methods in the class.  You also can’t create any objects of the type using instance constructors.  After the exception, the type is unusable.
+If any exception is thrown from within a static constructor, a `TypeInitializationException` will be thrown, with an `InnerException` set to the original exception that occurred. At that point, you can no longer access any static data or methods in the class. You also can’t create any objects of the type using instance constructors. After the exception, the type is unusable. It can be very hard to debug.
 
-To fix this error, you can add `try-catch` blocks around the body of the static constructor that throws it.
+To avoid such problems, if your initializatoin code can throw exceptions (either explicitly or by calling other things) then it's best to avoid writing that in the static constructor. Instead, create an `Initialize()` method that is called explicitly by the consumer, so it can fall in the standard exception handling flow.
+
 ## Example
 
 ```csharp
@@ -27,16 +28,10 @@ public class MyClass
 public class MyClass
 {
     ...
-    static MyClass()
+    public static void Initialize()
     {
-        try
-        {
-            ...
-        }   
-        catch
-        {
-            throw new Exception("SomeText");
-        }
+        ...
+        throw new Exception("SomeText");
     }
 }
 ```
