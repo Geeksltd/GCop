@@ -9,7 +9,7 @@ The `FirstOrDefault` is almost the same as `First`. The difference is how it han
 ## Example
 
 ```csharp
- var myResult = myList.Any() ? myList.First(f => f.ID == 2) : null;
+ var myResult = myList.Any() ? myList.First() : null;
 ```
 
 *should be* 🡻
