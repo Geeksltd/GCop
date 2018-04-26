@@ -4,7 +4,7 @@
 
 ## Rule description
 
-When in development, many tasks need remembering. We track them in Visual Studio with TODO comments. These comments help organize our projects. We list to-do items in a central place.
+When in development, many tasks need remembering. We track them in Visual Studio with `TODO` comments. These comments help organize our projects. We list to-do items in a central place.
 
 ## Example
 
