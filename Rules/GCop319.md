@@ -13,7 +13,7 @@ protected override async Task OnSaved(SaveEventArgs e)
 {
     await base.OnSaved(e);
     ...
-    Database.Save(this);
+    await Database.Save(this);
 }
 ```
 
@@ -25,6 +25,6 @@ protected override async Task OnSaved(SaveEventArgs e)
     await base.OnSaved(e);
     ...
     if(SomeCondition)
-        Database.Save(this);
+        await Database.Save(this);
 }
 ```
