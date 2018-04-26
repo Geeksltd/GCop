@@ -20,6 +20,12 @@ private string MyProperty { get; set; }
 public string MyProperty { get; set; }
 ```
 
+*OR* 🡻
+
+```csharp
+string MyProperty;
+```
+
 ## Example2
 
 ```csharp
