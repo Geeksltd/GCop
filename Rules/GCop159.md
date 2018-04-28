@@ -4,7 +4,7 @@
 
 ## Rule description
 
-When you have to perform an operation on an instance in some cases you need to know whether it is a new or an existing instance. To do so, M# provides you the readonly boolean property IsNew.
+When you have to perform an operation on an instance in some cases you need to know whether it is a new or an existing instance. To do so, M# provides you the readonly boolean property `IsNew`.
 
 ## Example
 
