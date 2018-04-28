@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `AsDirectory()` converts the path into a directory object. It is more readable and easy to undrestand rather than `DirectoryInfo()`.
+The `AsDirectory()` converts the path into a directory object. It is more readable and easy to understand rather than `DirectoryInfo()`.
 
 ## Example
 
