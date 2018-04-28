@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `Lacks` method work as opposite of `Contains()`. It gets all items of this list except those meeting a specified criteria , which is exactly what `Except` does. It is more readable and easy to undrestand to use `Except` rather than `Lacks`.
+The `Lacks` method work as opposite of `Contains()`. It gets all items of this list except those meeting a specified criteria , which is exactly what `Except` does. It is more readable and easy to understand to use `Except` rather than `Lacks`.
 
 ## Example1
 
