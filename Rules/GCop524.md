@@ -8,25 +8,7 @@
 
 A private auto-property has no advantage to a simple class field. It's slightly slower to invoke compared to a plain field. It has the `{get; set;}` noise code.
 
-## Example1
-
-```csharp
-private string MyProperty { get; set; }
-```
-
-*should be* 🡻
-
-```csharp
-public string MyProperty { get; set; }
-```
-
-*OR* 🡻
-
-```csharp
-string MyProperty;
-```
-
-## Example2
+## Example 1
 
 ```csharp
 private string MyField;
@@ -38,7 +20,7 @@ private string MyField;
 string MyField
 ```
 
-## Example3
+## Example 2
 
 ```csharp
 private int MyInstanceMethod()
@@ -55,3 +37,16 @@ int MyInstanceMethod()
     ...
 }
 ```
+
+## Example 3
+
+```csharp
+private string MyProperty { get; set; }
+```
+
+*should be* 🡻
+
+```csharp
+string MyProperty;
+```
+
