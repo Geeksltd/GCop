@@ -4,14 +4,14 @@
 
 ## Rule description
 
-You can call a method in a base class using the base keyword. You can do this from anywhere within the child class, but  it’s a common pattern to call the base class method when you override it.  This allows you to extend the behavior of that method.
+When overriding event handler methods in entity classes, you should invoke the base implementation. Otherwise you can accidentally skip any event handler code written in the parent class..
 
 ## Example
 
 ```csharp
 protected override async Task OnSaved(SaveEventArgs e)
 {
-    if (SomeCondition){...}
+    if (SomeCondition) {...}
     ...
 }
 ```
@@ -22,7 +22,8 @@ protected override async Task OnSaved(SaveEventArgs e)
 protected override async Task OnSaved(SaveEventArgs e)
 {
     await base.OnSaved(e);
-    if (SomeCondition){...}
+    
+    if (SomeCondition) {...}
     ...
 }
 ```
