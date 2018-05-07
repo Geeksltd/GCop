@@ -6,6 +6,8 @@
 
 There is no need to call a method which just return count of a collection items. Instead You can simply call the `Count()` method on that collection, which is more readable and cleaner.
 
+This warning is shown when the collection property is itself `public`.
+
 ## Example
 
 ```csharp
