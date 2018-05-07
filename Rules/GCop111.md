@@ -4,17 +4,17 @@
 
 ## Rule description
 
-The M# offers `Databas.Save()` method to persist an entity instance in the database.
+When C# can infer the generic type of a method, it's cleaner to remove explicit type from the call.
 
 ## Example
 
 ```csharp
-Database.Save<myEntityName>(myEntityInstance);
+Database.Save<Customer>(myCustomer);
 ```
 
 *should be* 🡻
 
 ```csharp
-Database.Save(myEntityInstance);
+Database.Save(myCustomer);
 
 ```
