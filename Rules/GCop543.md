@@ -70,7 +70,9 @@ public static class DeadlockDemo
   
   public static void Test()
   {
-      var something = GetSomething().GetAlreadyCompletedResult(); // only if you know for sure that the task is completed
+      // Use only if you know for sure that the task is completed,
+      // and also your method HAS TO be a void rather than a Task
+      var something = GetSomething().GetAlreadyCompletedResult(); 
       // .... (use something)
   }
 }
@@ -88,7 +90,9 @@ public static class DeadlockDemo
   
   public static void Test()
   {
-      var something = GetSomething().RiskDeadlockAndAwaitResult(); // If you have no choice, or know what you're doing.
+      // Use if your method HAS TO be a void rather than a Task,
+      // and know what you're doing.
+      var something = GetSomething().RiskDeadlockAndAwaitResult(); 
       // .... (use something)
   }
 }
