@@ -3,8 +3,7 @@
 > *"The condition is unnecessary."*
 
 ## Rule description
-
-The `Append` method add a copy of the specified string to this instance. If you append a null value to the `StringBuilder` object, it would be stored as a “null” (four character string) in the object instead of no value at all. So there is no need to check for `null` values, because no exception will be thrown.
+A call to `Append(...)` method of a `StringBuilder` object will be ignored if the parameter is `null` or `empty string`. Therefore it's unnecessary to add such logic in your code.
 
 ## Example
 
@@ -17,10 +16,4 @@ if (myString.HasValue())
 
 ```csharp
 myStringBuilder.Append(myString);
-```
-
-*Or* 🡻
-
-```csharp
-myStringBuilder.Append(myString ?? "");
 ```
