@@ -4,20 +4,8 @@
 
 ## Rule description
 
-When in development, many tasks need remembering. We track them in Visual Studio with `TODO` comments. These comments help organize our projects. We list to-do items in a central place.
+When in development, often you need to add a reminder to complete a task. We track them in Visual Studio with `TODO` comments. These comments help organize our projects.
 
-## Example
+GCop will show a central list of those in the Messages window to help you remember and address them.
 
-```csharp
-//TODO Create method
-```
 
-*should be* 🡻
-
-```csharp
-//Method created
-public void MyMethod()
-{
-    ...
-}
-```
