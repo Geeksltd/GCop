@@ -2,9 +2,6 @@
 
 > *"[Database.Save(this);] without condition will create a loop in \{OnSaved / OnSaving} method."*
 
-## Rule description
-
-...
 
 ## Example
 
