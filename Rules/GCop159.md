@@ -1,10 +1,12 @@
 ﻿# GCop 159
 
-> *"In OnSaved method the property IsNew must not be used, instead use: e.Mode == SaveMode.Insert"*
+> *"In OnSaved method, the property `IsNew` must not be used, instead use: e.Mode == SaveMode.Insert"*
 
 ## Rule description
 
-When you have to perform an operation on an instance in some cases you need to know whether it is a new or an existing instance. To do so, M# provides you the readonly boolean property `IsNew`.
+The `IsNew` property is always `false` when an object is saved. On the other hand when the `OnSaved()` method is running, the object is always saved in the database. Therefore in an `OnSaved()` method `IsNew` is always `false` and it doesn't make sense to write conditional logic based on it.
+
+Instead, the `Mode` property of the event args object should be used for the conditional logic.
 
 ## Example
 
