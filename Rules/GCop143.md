@@ -4,7 +4,7 @@
 
 ## Rule description
 
-When overriding event handler methods in entity classes, you should invoke the base implementation. Otherwise you can accidentally skip any event handler code written in the parent class..
+When overriding event handler methods in entity classes, you should invoke the base implementation. Otherwise you can accidentally skip any event handler code written in the parent class.
 
 ## Example
 
