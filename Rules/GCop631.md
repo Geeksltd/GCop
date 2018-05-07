@@ -4,7 +4,7 @@
 
 ## Rule description
 
-For adding validation criteria you should override `Validate()` method and add your custom logics there. `OnValidating` is meant to be used for special cases such as setting late-bound default values.
+For adding validation criteria you should override `Validate()` method and add your custom logics there. The `OnValidating()` method is meant to be used for special cases such as setting late-bound default values.
 
 ## Example
 
