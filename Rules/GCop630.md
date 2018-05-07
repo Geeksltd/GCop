@@ -6,13 +6,17 @@
 
 For adding validation criteria we should override Validate() method and add our custom logics there. There is no need to write validation logics in other methods.
 
+Note: This rule is sensitive to invoking a method which has the word *Validate* in its name.
+
 ## Example
 
 ```csharp
-protected override Task OnSaving(CancelEventArgs e)
+protected override async Task OnSaving(CancelEventArgs e)
 {
-    ...
-    var xx = ValidateMethod();
+    await base.OnSaving(e);
+    
+    if (SomeValidateMethod())
+        ...;
     ...
 }
 ```
@@ -20,9 +24,11 @@ protected override Task OnSaving(CancelEventArgs e)
 *should be* 🡻
 
 ```csharp
-public override Task Validate()
-{
-    //...Validation logic
-    return base.Validate();
+public override async Task Validate()
+{ 
+    await base.Validate();
+    
+    if (SomeValidateMethod())
+        ...;
 }
 ```
