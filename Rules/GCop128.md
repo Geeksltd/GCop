@@ -6,30 +6,6 @@
 
 ## Rule description
 
-The `IHierarchy` interface is available under `MSharp.Framework.Services` namespace, which contains definitions of two methods to implement parent and children hierarchies and one property to define the name of the current entity instance in hierarchal data. So it should be implemented on the entity definition.
+If you specify the `IHierarchy` or `ISortable` interfaces manually, in the **partial logic class** of an entity, then the M# code generator will not be aware of that.
 
-The `ISortable` interface is defined under "MSharp.Framework.Services" and contains only one int type property definition. This property must be implemented in the entity type in order to perform sorting on the collection of an entity instance.
-
-## Example
-
-```csharp
-namespace Domain
-{
-    public class MyClass: IHierarchy
-    {
-        ...
-    }
-}
-```
-
-*should be* 🡻
-
-```csharp
-namespace Domain
-{
-    public class MyEntityTypeClass: IHierarchy
-    {
-        ...
-    }
-}
-```
+Instead, you should specify them in your **M# entity definition**, in which case, M# will not only generate the interface implementaiton code of `... : IHierarchy` or `... : ISortable` on the generated class, but also it will generate **additional code** that is required for a correct implementation of those concepts.
