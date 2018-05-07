@@ -4,30 +4,37 @@
 
 ## Rule description
 
-*`Result`* will synchronously block until the task completes. So the current thread is literally blocked waiting for the task to complete. That [can cause deadlocks](http://blog.stephencleary.com/2012/07/dont-block-on-async-code.html) and other problems.
+Calling the *`Result`* property will synchronously block until the task completes. So the current thread is literally blocked waiting for the task to complete. That [can cause deadlocks](http://blog.stephencleary.com/2012/07/dont-block-on-async-code.html) and other problems depending on the implementation of that task.
 
+### Default correct way
 As a general rule, you should use "[async all the way down](https://stackoverflow.com/questions/29808915/why-use-async-await-all-the-way-down)" to avoid blocking code. Make sure to learn [async programming best practices](https://msdn.microsoft.com/en-us/magazine/jj991977.aspx?f=255&MSPPError=-2147217396).
 
 With *`await`* your code will asynchronously wait until the task completes. This means the current method is "paused" (its state is captured) and the method returns an incomplete task to its caller. Later, when the await expression completes, the remainder of the method is scheduled as a continuation.
 
-The *`GetAlreadyCompletedResult()`* method throws an exception warning you to await the task If the task is not completed already. If the task wraps an exception, the wrapped exception will be thrown. Otherwise the result will be returned. Use this instead of calling the Result property when you know that the result is ready to avoid deadlocks.
+### Special scenario A
+The `.GetAlreadyCompletedResult()` method should be used when you know that the task is already completed, and you just need to unwrap the result out of the Task object.
+
+The benefit of this method compared to calling `.Result` is that if you've made a mistake, and the task is not indeed already completed, rather than blocking the thread or risking a deadlock, it will throw an exception, which helps you debug your assumptions.
+
+### Special scenario B
+There might be cases where you have no choice but to syncrhronously wait for the task to be completed. This is rare, but may sometimes be inevitable. In such cases, you should call `.RiskDeadlockAndAwaitResult()` rather than simply calling `.Result` which is an explicit way of confirming that you know what you are doing.
 
 ## Example
 
 ```csharp
 public static class DeadlockDemo
 {
-  private static async Task DelayAsync()
-  {
-    await Task.Delay(1000);
-  }
-  // This method causes a deadlock when called in a GUI or ASP.NET context.
+   static async Task<Something> GetSomething()
+   {
+      ...
+   }
+  
   public static void Test()
   {
-    // Start the delay.
-    var delayTask = DelayAsync();
-    // Wait for the delay to complete.
-    delayTask.Result;
+      // This method can causes a deadlock when called in a GUI or ASP.NET context.
+      var something = GetSomething().Result;
+      
+      // .... (use something)
   }
 }
 ```
@@ -37,13 +44,16 @@ public static class DeadlockDemo
 ```csharp
 public static class DeadlockDemo
 {
-  private static async Task DelayAsync()
+   static async Task<Something> GetSomething()
+   {
+      ...
+   }
+  
+  public static async Task Test()
   {
-    await Task.Delay(1000);
-  }
-  public static void Test()
-  {
-    await DelayAsync();
+      var something = await GetSomething();
+      
+      // .... (use something)
   }
 }
 ```
@@ -53,13 +63,33 @@ public static class DeadlockDemo
 ```csharp
 public static class DeadlockDemo
 {
-  private static async Task DelayAsync()
-  {
-    await Task.Delay(1000);
-  }
+   static async Task<Something> GetSomething()
+   {
+      ...
+   }
+  
   public static void Test()
   {
-    DelayAsync().GetAlreadyCompletedResult();
+      var something = GetSomething().GetAlreadyCompletedResult(); // only if you know for sure that the task is completed
+      // .... (use something)
+  }
+}
+```
+
+*OR* 🡻
+
+```csharp
+public static class DeadlockDemo
+{
+   static async Task<Something> GetSomething()
+   {
+      ...
+   }
+  
+  public static void Test()
+  {
+      var something = GetSomething().RiskDeadlockAndAwaitResult(); // If you have no choice, or know what you're doing.
+      // .... (use something)
   }
 }
 ```
