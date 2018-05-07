@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `RecordException` method formats information contained in the exception object (including all inner exceptions) and logs it with the title of “Exception” in the database. 
+`Log.Error(...)` is a shortcut to `ApplicationEventManager.RecordException(myException);` and should be used instead.
 
 ## Example
 
