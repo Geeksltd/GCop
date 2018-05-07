@@ -4,15 +4,16 @@
 
 ## Rule description
 
-The `CookieProperty.Set()` method sets a specified value in the response cookie as well as request cookie. Set a null value as key is equivalent to use `CookieProperty.Remove()` method, while the second one is more readable and meaningful.
+To remove a cookie, rather than setting the value to null, the `Remove()` method should be used. Otherwise the cookie will still remain on the browser (albeit with the value of null).
+
 ## Example
 
 ```csharp
-CookieProperty.Set<string>(null);
+CookieProperty.Set("mykey", null);
 ```
 
 *should be* 🡻
 
 ```csharp
-CookieProperty.Remove<string>();
+CookieProperty.Remove("mykey");
 ```
