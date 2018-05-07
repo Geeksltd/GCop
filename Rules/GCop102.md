@@ -4,16 +4,16 @@
 
 ## Rule description
 
-The `AsDirectory()` converts the path into a directory object. It is more readable and easy to understand rather than `DirectoryInfo()`.
+The `x.AsDirectory()` converts the path into a directory object as a fluent shortcut to `new DirectoryInfo(x)`.
 
 ## Example
 
 ```csharp
-var myDirectory = new DirectoryInfo(@"c:\MyAddress");
+var myDirectory = new DirectoryInfo(somePathString);
 ```
 
 *should be* 🡻
 
 ```csharp
-var myDirectory = @"c:\MyAddress".AsDirectory();
+var myDirectory = somePathString.AsDirectory();
 ```
