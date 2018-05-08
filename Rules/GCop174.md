@@ -4,9 +4,9 @@
 
 ## Rule description
 
-In `FileInfo` and `DirectoryInfo` objects there is a property named `Exists`. But it caches the value upon first call. If after calling it once, the file existence sitation changes, it will not reflect that. 
+In `FileInfo` and `DirectoryInfo` objects there is a property named `Exists`. But it caches the value upon first call. If after calling it once, the file existence situation changes, it will not reflect that. 
 
-To avoid that problen use the `.Exists()` extenion method instead.
+To avoid that problem use the `.Exists()` extension method instead.
 
 ## Example
 
