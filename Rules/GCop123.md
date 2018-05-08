@@ -4,7 +4,7 @@
 
 ## Rule description
 
-When your application completes all the work it wants to perform in a transaction, you should call the `.Complete()` method only once to inform the transaction manager that it is acceptable to commit the transaction. It is very good practice to put the call to Complete as the last statement in the using block.
+When your application completes all the work it wants to perform in a transaction, you should call the `.Complete()` method only once to inform the transaction manager that it is acceptable to commit the transaction. It is very good practice to put the call to `.Complete()` as the last statement in the using block.
 
 Failing to call this method **aborts the transaction**, because the transaction manager interprets this as a system failure, or equivalent to an exception thrown within the scope of the transaction. 
 
