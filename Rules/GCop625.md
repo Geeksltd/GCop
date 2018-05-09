@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Since Entity Framework needs to translate your LINQ statements to SQL statements and `!=` operator is not converted into SQL, you should compare the properties of your objects.
+The Linq to SQL convertor in M# Framework / Olive requires this to work correctly.
 
 ## Example
 
