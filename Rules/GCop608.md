@@ -6,14 +6,15 @@
 
 ## Rule description
 
-For each secure file type property you must implement a method in the business logic, which is invoked by the M# framework. M# framework requires a specific naming format “Is + PropertyName + VisibleTo” in order to invoke the method. This method should only require one argument of Interface type `IUser` and must have `bool` return.
+For each secure file type property you must implement a method in the business logic, which is invoked by the M# framework. M# framework requires a specific naming format of `bool Is{PropertyName}VisibleTo(IUser user)` in order to invoke the method.
 
+This method should only require one argument of Interface type `IUser` and must have `bool` return.
 You should apply proper checks to restrict access only for authorised users.
 
 ## Example1
 
 ```csharp
-public bool IsUserVisibleTo(IUser user)
+public bool IsMyDocumentVisibleTo(IUser user)
 {
     return true;
 }
@@ -22,28 +23,36 @@ public bool IsUserVisibleTo(IUser user)
 *should be* 🡻
 
 ```csharp
-public bool IsUserVisibleTo(IUser user)
+public bool IsMyDocumentVisibleTo(IUser user)
 {
-    if (user is Administrator)
-        return true;
-    return false;
+    return user is Administrator;
+}
+```
+
+*OR* 🡻
+
+```csharp
+public bool IsMyDocumentVisibleTo(IUser user)
+{
+    return user is Customer customer && customer.Organisation == this.Organisation ;
 }
 ```
 
 ## Example2
 
 ```csharp
-public bool IsUserVisibleTo(IUser user)
+public bool IsMyDocumentVisibleTo(IUser user)
 {
-    return user != null;
+    return user != null; // This is not a real security check because 'user' is never null, even for anonymous users.
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public bool IsUserVisibleTo(IUser user)
+public bool IsMyDocumentVisibleTo(IUser user)
 {
-    return user != null && user is Administrator;
+    return user is Administrator;
 }
 ```
+*or some other code with real security checking logic*
