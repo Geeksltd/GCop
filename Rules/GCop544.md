@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Negating a value is much simpler than normal multiplication because there is no need to perform any actual arithmetic. So it helps to improve your code readability.
+Negating a value is much simpler than normal multiplication because there is no need to perform any actual arithmetic. It also helps to improve your code readability.
 
 ## Example
 
@@ -16,10 +16,4 @@ myInteger = myParameter * -1;
 
 ```csharp
 myInteger = -myInteger;
-```
-
-*OR* 🡻
-
-```csharp
-myInteger *= -1;
 ```
