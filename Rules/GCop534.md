@@ -3,8 +3,7 @@
 > *"Use yourMemberInfo.Defines< TYPE > instead."*
 
 ## Rule description
-
-...
+This extension method provides a more readable and clear alternative.
 
 ## Example
 
