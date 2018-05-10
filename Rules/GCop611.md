@@ -3,17 +3,36 @@
 > *"It should be written as `Database.Reload({ParameterName})`."*
 
 ## Rule description
-
-...
+If you want to obtain the database version of an entity (that is changed in memory), use `Database.Reload(...)` to be more explicit about your intention.
 
 ## Example
 
 ```csharp
-Database.Get<Customer>(myCustomer.ID);
+protected override void OnSaving(SaveEventArgs e)
+{
+    if (e.Mode == SaveMode.Update)
+    {
+        var original = Database.Get<Customer>(this.ID);
+        if (original.Email != this.Email)
+        {
+            // Email is changed, do something...
+        }
+    }
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-Database.Reload(myCustomer);
+protected override void OnSaving(SaveEventArgs e)
+{
+    if (e.Mode == SaveMode.Update)
+    {
+        var original = Database.Reload(myCustomer);
+        if (original.Email != this.Email)
+        {
+            // Email is changed, do something...
+        }
+    }
+}
 ```
