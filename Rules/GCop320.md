@@ -4,7 +4,7 @@
 
 ## Rule description
 
-M# runs bulk saves in “Transaction”. Meaning, failure to save one records results rolling back all the saved instances of the current collection. Whenever an entity instance is saved or updated, it goes through a series of events, which are used to implement core business logic e.g. validation. 
+M# runs bulk saves in “Transaction”. Meaning, failure to save one records results rolling back all the saved instances of the current collection. Whenever an entity instance is saved or updated, it goes through a series of events, which are used to implement core business logic e.g. validation. Saving of each of its items can potentially affect the source expression from which this `IEnumerable` object is define upon. To avoid unintended side effects, evaluate myobjects into an Array or List before passing it to `Database.Save()` or `Database.Update()`.
 
 ## Example1
 
