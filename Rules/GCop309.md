@@ -1,6 +1,6 @@
 ﻿# GCop 309
 
-> *"It should be written as {0}, Because the criteria will be faster and eliminate unnecessary database fetches"*
+> *"It should be written as \{lambdaExpression}, Because the criteria will be faster and eliminate unnecessary database fetches"*
 
 ## Rule description
 
@@ -15,5 +15,5 @@ var result = Database.GetList<Employee>(e => e == myEmployee );
 *should be* 🡻
 
 ```csharp
-var result = Database.GetList<Employee>(e => e.ID == myEmployee.ID );
+var result = Database.GetList<Employee>(e => e == myEmployee.ID );
 ```
