@@ -1,6 +1,6 @@
 ﻿# GCop 155
 
-> *"Should be written simply as {0}.Intersect({1})"*
+> *"Should be written simply as `{CollectionName}.Intersect({AnotherCollectionName})`"*
 
 ## Rule description
 
