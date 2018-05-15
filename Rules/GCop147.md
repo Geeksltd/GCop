@@ -15,5 +15,5 @@ var result = Database.Find<Employee>(e => e.ID == myEmployee.ID );
 *should be* 🡻
 
 ```csharp
-var result = Database.Find<Employee>(e => e.ID == myEmployee );
+var result = Database.Find<Employee>(e => e == myEmployee );
 ```
