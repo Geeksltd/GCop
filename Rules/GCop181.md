@@ -4,7 +4,7 @@
 
 ## Rule description
 
-you need to use virtual methods because your program may be designed in such a way that you do not know all the types of objects that will occur when it is executed. You can provide a standard (base) type and design around that type.
+You need to use virtual methods because your program may be designed in such a way that you do not know all the types of objects that will occur when it is executed. You can provide a standard (base) type and design around that type.
 
 ## Example
 
