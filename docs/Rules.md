@@ -77,7 +77,7 @@ GCop code | Description
 202 | [Don’t end the name of **methods** with the same name as the **class**](/Rules/GCop202.md)
 203 | [Use meaningful names instead of single character for foreach identifier](/Rules/GCop203.md)
 204 | [Rename the variable 'variable name' to something clear and meaningful.](/Rules/GCop204.md)
-205 | [nterfaces must start with the letter 'I'."](/Rules/GCop205.md)
+205 | [Interfaces must start with the letter 'I'."](/Rules/GCop205.md)
 206 | [Avoid using underscores in the class name](/Rules/GCop206.md)
 207 | [The logic seems extensive. Rename the method to imply this. E.g: Calculate, Find, Select, Create, Evaluate, etc](/Rules/GCop207.md)
 209 | [Use PascalCasing for (class or enum or ... ) names.](/Rules/GCop209.md)
