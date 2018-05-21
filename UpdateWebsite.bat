@@ -1,0 +1,1 @@
+scriptcs .\DocumentGenerator.csx
