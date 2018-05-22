@@ -9,7 +9,7 @@ The `Extension` property returns the `FileSystemInfo` extension, including the p
 ## Example
 
 ```csharp
-FileInfo fInfo = new FileInfo(path);/
+FileInfo fInfo = new FileInfo(path);
 if(fInfo.Extension == "txt")
 {
     ...
@@ -19,7 +19,7 @@ if(fInfo.Extension == "txt")
 *should be* 🡻
 
 ```csharp
-FileInfo fInfo = new FileInfo(path);/
+FileInfo fInfo = new FileInfo(path);
 if(fInfo.Extension == ".txt")
 {
     ...
