@@ -4,7 +4,9 @@
 
 ## Rule description
 
-The `IsEquivalentTo` method determines whether this list is equivalent to another specified list. While `Equals` or `==` determine whether this instance and another specified `String` object have the same value.
+Since `string` is also an `IEnumerable<System.Char>` all the usual collection Linq methods show up on string objects in intellisense, and that can be confusing. The `IsEquivalentTo()` method is not a `string` operation, but rather an `IEnumerable<T>()` functionality which compares equivalence between two collections by comparing all their items one  by one. 
+
+When you want to compare strings, you should use the `Equals()` method or `==` operator. Most importantly for `Database` operations, the latter allows the framework to run the criteria at the database engine level for a much better performance.
 
 ## Example
 
