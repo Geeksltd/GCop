@@ -4,12 +4,14 @@
 
 ## Rule description
 
-Authorization is deciding whether a user is allowed to perform an action. Web API provides a built-in authorization filter, `AuthorizeAttribute`. This filter checks whether the user is authenticated. If not, it returns HTTP status code 401 (Unauthorized), without invoking the action.
+The standard `[Authorize]` attribute in ASP.NET MVC will check the current HTTP user's roles using HttpRequest *Cookies*. That's designed for normal users (browser sessions).
+
+But Web Apis calls coming from server applications don't use cookies. Instead they use Http Headers which makes the standard `[Authorize]` attribute useless. In Olive, there is another class called `[AuthorizeApi]` which will do the same job as the normal `[Authorize]` but via Http Headers instead of Cookies.
 
 ## Example
 
 ```csharp
-[Authorize]
+[Authorize("SomeRole")]
 public class ApiController : BaseController
 {
     ...
@@ -19,7 +21,7 @@ public class ApiController : BaseController
 *should be* 🡻
 
 ```csharp
-[AuthorizeApi]
+[AuthorizeApi("SomeRole")]
 public class ApiController : BaseController
 {
     ...
