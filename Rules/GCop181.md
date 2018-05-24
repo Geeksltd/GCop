@@ -4,7 +4,7 @@
 
 ## Rule description
 
-You need to use virtual methods because your program may be designed in such a way that you do not know all the types of objects that will occur when it is executed. You can provide a standard (base) type and design around that type.
+A base class should not know about its subclasses. When your logic depends on the actual type of the object, you need to use virtual methods because your program may be designed in such a way that you do not know all the types of objects that will occur when it is executed. You can provide a standard (base) type and design around that type.
 
 ## Example
 
@@ -12,13 +12,16 @@ You need to use virtual methods because your program may be designed in such a w
 public class BaseClass
 {
     ...
-    public void Mymethod()
+    public void SomeMethod()
     {
-        ...
         if (this is DerivedClass)
-            {
-                ...
-            }
+        {
+            // Implementation A
+        }
+        else
+        {
+            // Implementation B
+        }
     }
 }
 ```
@@ -29,23 +32,17 @@ public class BaseClass
 public class BaseClass
 {
     ...
-    public virtual void Mymethod()
+    public virtual void SomeMethod()
     {
-        ...
+        // Implementation B
     }
 }
 
-public class DerivedClass : BaseClass
+public class DerivedClass : SomeMethod
 {
     public override void MyMethod()
     {
-        ...
-        if (this is DerivedClass)
-        {
-            ...
-        }
-        base.MyMethod();
+        // Implementation A
     }
-
 }
 ```
