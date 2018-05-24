@@ -4,16 +4,16 @@
 
 ## Rule description
 
-When you create a new Entity, M# generates by default an ID property, which is a Guid. This ID is used to store references to this instance in associations.
+The database engine in the M#/Olive framework will automatically convert direct object comparisons to be based on ID comparison. You don't need to compare the IDs manually. In fact, a direct comparison will result in a more efficient SQL query that avoids an unnecessary join.
 
 ## Example
 
 ```csharp
-var result = Database.Find<Employee>(e => e.ID == myEmployee.ID );
+var result = Database.Find<Employee>(e => e.Company.ID == myCompany.ID );
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = Database.Find<Employee>(e => e == myEmployee );
+var result = Database.Find<Employee>(e => e.Company == myCompany );
 ```
