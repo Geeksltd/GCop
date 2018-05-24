@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `Count()` method is used to determine the number of elements in any sequence and there is no need to use `Getlist()` method. In this way you can have a more readable code and improve its performance.
+The `Count()` method on the `Database` class is used to determine the number of records that match a criteria. It's a lot faster to run this at the database engine level, and merely return the single integer value, than to fetch all matching records and then do the count in the CLR process.
 
 ## Example
 
