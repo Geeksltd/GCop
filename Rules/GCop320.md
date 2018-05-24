@@ -9,23 +9,18 @@ M# runs bulk saves in “Transaction”. Meaning, failure to save one records re
 ## Example1
 
 ```csharp
-Database.Save<Customer>(customerCollection);
+var products = AllProducts.Where(u => u.IsMostExpensiveInCategory());
+Database.Update(products, s => s.ReducePriceBy(0.2));
+
+// Imagine that the first two products in the list belong to the same category. The first one was £100 and the second one was £90. We intended to apply the discount only to the most expensive item per category, which is the first product. But with this implementation, we first apply the discount to the first product, making it £80. But then the IsMostExpensiveInCategory() method is evaluated on the second product, which will now return true, meaninig it also gets a discount applied to it.
+
+// What we intended was to first identify the products that are the most expensive in their category before the change operation is applied, which is why we should have evaluated the WHERE criteria before we start to apply the database change.
+
 ```
 
 *should be* 🡻
 
 ```csharp
-Database.Save<Customer>(customerlist);
-```
-
-## Example2
-
-```csharp
-Database.Update<Customer>(customerCollection);
-```
-
-*should be* 🡻
-
-```csharp
-Database.Update<Customer>(customerlist);
+var products = Database.GetList<Product>(u => u.IsMostExpensiveInCategory()).ToArray();
+Database.Update(products, s => s.ReducePrice());
 ```
