@@ -1,10 +1,10 @@
 ﻿# GCop 305
 
-> *"Error messageReplace with `Database.Find<{T}>({LambdaExpression})`"*
+> *"Replace with `Database.Find<{T}>({LambdaExpression})`"*
 
 ## Rule description
 
-The `.Find()` method returns first matched record of the provided Entity Type if found and returns `null` if no record is available in database based on the provided criteria. So there is no need to use `GetList()` with `FirstOrDefault()` method, while these methods can decrease performance.
+The `.Find()` method returns first matched record of a specified Entity type if found. It evalutes the criteria at the database level and runs much faster than if you fetch all records from the database into the .NET process and then find the match using `FirstOrDefault()`.
 
 ## Example
 
