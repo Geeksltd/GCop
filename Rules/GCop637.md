@@ -9,7 +9,7 @@ Instead save the result of the method call in a local variable before Database.U
 ```csharp
 public void Activate()
 {
-    Database.Update(this, o => { o.Email = CallAnotherMethod(); });
+    Database.Update(this, o => o.Email = CallAnotherMethod());
 }
 ```
 
@@ -19,6 +19,6 @@ public void Activate()
 public void Activate()
 {
     var myEmail = CallAnotherMethod();
-    Database.Update(this, o => { o.Email = myEmail; });
+    Database.Update(this, o => o.Email = myEmail);
 }
 ```
