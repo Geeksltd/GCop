@@ -28,6 +28,6 @@ Database.Update(products, s => s.ReducePriceBy(0.2));
 *should be* 🡻
 
 ```csharp
-var products = Database.GetList<Product>(u => u.IsMostExpensiveInCategory()).ToArray();
-Database.Update(products, s => s.ReducePrice());
+var products = AllProducts.Where(u => u.IsMostExpensiveInCategory()).ToArray();
+Database.Update(products, s => s.ReducePriceBy(0.2));
 ```
