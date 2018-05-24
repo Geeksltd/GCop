@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `Intersect` method returns the common elements of both entities and returns the result as a new entity. It is more faster than using `Where` with `Contains`.
+The `Intersect` method returns the common elements between two collections. It is faster and more readable than a manual implementation of that logic using `Where` with `Contains`.
 
 ## Example
 
