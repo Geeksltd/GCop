@@ -11,15 +11,15 @@ You can access a static member in the same class by simply specifying its name d
 ```csharp
 public class MyClass
 {
-    public int MyProperty
-    {
-        get { return Settings.MyMethod(); }
-        set { MyProperty = value; }
-    }  
-  
     static void MyMethod()
     {
         ...
+    }
+    
+    void AnotherMethod()
+    {
+        ...
+        Settings.MyMethod(); 
     }
 }
 ```
@@ -29,15 +29,15 @@ public class MyClass
 ```csharp
 public class MyClass
 {
-    public int MyProperty
-    {
-        get { return MyMethod(); }
-        set { MyProperty = value; }
-    }  
-  
     static void MyMethod()
     {
         ...
+    }
+    
+    void AnotherMethod()
+    {
+        ...
+        MyMethod(); 
     }
 }
 ```
