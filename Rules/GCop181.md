@@ -38,9 +38,9 @@ public class BaseClass
     }
 }
 
-public class DerivedClass : SomeMethod
+public class DerivedClass : BaseClass
 {
-    public override void MyMethod()
+    public override void SomeMethod()
     {
         // Implementation A
     }
