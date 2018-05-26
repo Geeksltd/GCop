@@ -19,7 +19,7 @@ public class MyClass
     void AnotherMethod()
     {
         ...
-        Settings.MyMethod(); 
+        MyClass.MyMethod(); 
     }
 }
 ```
