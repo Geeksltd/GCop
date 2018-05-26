@@ -3,6 +3,7 @@
 > *"Class name is unnecessary here. Static members can be called directly."*
 
 ## Rule description
+> This seems wrong. See https://github.com/Geeksltd/GCop/issues/155
 
 You can access a static member in the same class by simply specifying its name directly.
 
