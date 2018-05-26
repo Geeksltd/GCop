@@ -8,9 +8,7 @@
 
 ## Rule description
 
-The `MaxOrDefault()` and `MinOrDefault()` methods, get the maximum or minimum value of a specified expression in the Collection. If the collection is empty, then the default value of the expression will be returned. The `MinOrNull()` and `MaxOrNull()` methods do the same, but they return `null`, when there is no item in the collection.
-
-These methods are useful when the default value of your type is meaningless or inappropriate.
+The `MaxOrDefault()` and `MinOrDefault()` methods, get the maximum or minimum value of a specified expression in the collection. If the collection is empty, then the default value of the expression will be returned. The `MinOrNull()` and `MaxOrNull()` methods do the same, but they return `null`, when there is no item in the collection. These methods are useful when the default value of your type is meaningless or inappropriate.
 ## Example1
 
 ```csharp
