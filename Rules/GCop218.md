@@ -1,6 +1,6 @@
 ﻿# GCop 218
 
-> *"For consistency and clarity, use '@this' instead of {'argumentName'} for the first paramter of extension methods"*
+> *"For consistency and clarity, use '@this' instead of {'argumentName'} for the first parameter of extension methods"*
 
 ## Rule description
 
