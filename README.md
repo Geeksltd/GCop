@@ -41,10 +41,6 @@ First of all make sure you have installed visual studio 2017 version 15.5.5 or a
 3. Make sure you see items in the *Error List* window whose Code starts with *GCop*.
    - If you don't see any GCop warnings, right click on each project and select **Properties** > **Code Analysis** and ensure **Enable Code Analysis on Build** is ticked.
 
-- In order to get rid of `Microsoft.CodeAnalysis` warnings, You have to update your codeDOM.
-- For getting ride of *NETStandard* warnings , you need to install the `NETStandard.Library` NuGet into the website project and then add the `netstandard.dll` as an analyzer.
-- For adding a *dll* as analyzer you can right click on the website project , go to Add > Analyzer > then find the *netstandrd all* in the installed Package folder.
-
 #### Disabling specific GCop rules
 
 If you disagree with any of the GCop rules, or if you believe they are not applicable to your project, you can *Escape the Cop*, i.e. disable it, using any of the following methods.
