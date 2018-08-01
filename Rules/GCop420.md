@@ -3,6 +3,8 @@
 > *"Methods should not be empty."*
 >
 > *"Methods should not be empty. If it's only for "interfaceName" interface compliance, use explicit interface method implementation."*
+> 
+> *"Constructor should not be empty."*
 
 ## Rule description
 
@@ -43,5 +45,23 @@ public class MyClass : IHttpModule
 {
     ...
     void IHttpModule.Dispose() { }
+}
+```
+
+## Example3
+
+```csharp
+public class MyClass 
+{
+    public MyClass()
+    {
+    }
+}
+```
+*should be* 🡻
+
+```csharp
+public class MyClass
+{
 }
 ```
