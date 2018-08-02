@@ -9,11 +9,11 @@ Because the += operator merely concatenates the internal invocation list of one 
 ## Example
 
 ```csharp
-Changed += new EventHandler(OnChanged);
+changed += new EventHandler(OnChanged);
 ```
 
 *should be* 🡻
 
 ```csharp
-Changed += OnChanged;
+changed += OnChanged;
 ```
