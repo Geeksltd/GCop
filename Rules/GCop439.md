@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The following keywords on a partial-type definition are optional, but if present on one partial-type definition, cannot conflict with the keywords specified on another partial definition for the same type and there is no need to specify theme again:
+The following keywords on a partial-type definition are optional, but if present on one partial-type definition, cannot conflict with the keywords specified on another partial definition for the same type and there is no need to specify them again:
 
 * `public`, `private`, `protected`, `internal`
 * `abstract`, `sealed`
