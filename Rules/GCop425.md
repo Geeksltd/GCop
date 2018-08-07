@@ -1,4 +1,4 @@
-﻿# GCop 425
+﻿# GCop 425 (OBSOLETE)
 
 > *"This method is unnecessary. The caller can just as well call Database.GetList<{0}>()."*
 
