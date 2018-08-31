@@ -44,7 +44,7 @@ if (token != null)
 *should be* 🡻
 
 ```csharp
-if (! (token is null))
+if (!String.ReferenceEquals(token , null))
 {
     ...
 }
