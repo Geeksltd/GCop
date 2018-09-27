@@ -11,7 +11,7 @@ There is no point in having empty `else` part. Unused code should be removed as 
 ```csharp
 if (someCondition)
 {
-    ...
+    SampleMethod();
 }
 else
 {
@@ -23,7 +23,7 @@ else
 ```csharp
 if (someCondition)
 {
-    ...
+    SampleMethod();
 }
 ```
 

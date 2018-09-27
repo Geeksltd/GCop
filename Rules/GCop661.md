@@ -14,7 +14,7 @@ if (Condition)
 }
 else
 {
-  Foo();
+  SampleMethod();
 }
 ```
 
@@ -23,7 +23,7 @@ else
 ```csharp
 if (!Condition)
 {
-  Foo();
+  SampleMethod();
 }
 ```
 
