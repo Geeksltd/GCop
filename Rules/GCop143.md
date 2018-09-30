@@ -1,6 +1,6 @@
 ﻿# GCop 143
 
-> *"First line of OnSaved() method must be a call to base.OnSaved() otherwise CachedReferences will have a problem."*
+> *"First line of `OnSaved()` method must be a call to `base.OnSaved()` otherwise CachedReferences will have a problem."*
 
 ## Rule description
 
@@ -11,7 +11,10 @@ When overriding event handler methods in entity classes, you should invoke the b
 ```csharp
 protected override async Task OnSaved(SaveEventArgs e)
 {
-    if (SomeCondition) {...}
+    if (SomeCondition)
+    {
+        ...
+    }
     ...
 }
 ```
@@ -23,7 +26,10 @@ protected override async Task OnSaved(SaveEventArgs e)
 {
     await base.OnSaved(e);
     
-    if (SomeCondition) {...}
+    if (SomeCondition)
+    {
+        ...
+    }
     ...
 }
 ```

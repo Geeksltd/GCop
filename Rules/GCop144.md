@@ -9,12 +9,11 @@ Actions braces (`{ ... }`) should be removed when there is only one statement. A
 ## Example
 
 ```csharp
-Database.Update(myEntityName, u => { u.EntityProperty = "something"; });
+Database.Update(foo, u => { foo.Bar = "something"; });
 ```
 
 *should be* 🡻
 
 ```csharp
-Database.Update(myEntityName, u => u.EntityProperty = "something"; );
-
+Database.Update(foo, u => foo.Bar = "something");
 ```

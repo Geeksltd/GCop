@@ -15,7 +15,6 @@ Private variables help prevent people from depending on certain parts of your co
 ### GCop's assumption
 GCop assumes that your code is meant to be used within the same solution only. This is the case with most enterprise application classes. If, however, your project is meant to be used as a library outside of the same solution, then you should disable this rule.
 
-
 ## Example
 
 ```csharp

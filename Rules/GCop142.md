@@ -1,8 +1,8 @@
 ﻿# GCop 142
 
-> *"Replace \{!stringObject.HasValue()} with \{stringObject.IsEmpty()}"*
+> *"Replace `!string.HasValue()` with `string.IsEmpty()`"*
 > 
-> *"Replace \{!stringObject.IsEmpty()} with \{stringObject.HasValue()}"*
+> *"Replace `!string.IsEmpty()` with `string.HasValue()`"*
 
 ## Rule description
 
@@ -11,7 +11,7 @@ Human brain can understand positive expressions and statements faster than negat
 ## Example1
 
 ```csharp
-if (!myString.HasValue())
+if (!bar.HasValue())
 {
     ...
 }
@@ -20,7 +20,7 @@ if (!myString.HasValue())
 *should be* 🡻
 
 ```csharp
-if (myString.IsEmpty())
+if (bar.IsEmpty())
 {
     ...
 }
@@ -29,7 +29,7 @@ if (myString.IsEmpty())
 ## Example2
 
 ```csharp
-if (!myString.IsEmpty())
+if (!bar.IsEmpty())
 {
     ...
 }
@@ -38,7 +38,7 @@ if (!myString.IsEmpty())
 *should be* 🡻
 
 ```csharp
-if (myString.HasValue())
+if (bar.HasValue())
 {
     ...
 }
