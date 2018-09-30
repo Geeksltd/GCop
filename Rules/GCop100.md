@@ -1,19 +1,19 @@
 ﻿# GCop 100
 
-> *"Replace with Log.Error(...)"*
+> *"Replace with `Log.Error(...)`"*
 
 ## Rule description
 
-`Log.Error(...)` is a shortcut to `ApplicationEventManager.RecordException(myException);` and should be used instead.
+`Log.Error()` is a shortcut to `ApplicationEventManager.RecordException()` and should be used instead.
 
 ## Example
 
 ```csharp
-ApplicationEventManager.RecordException(myException);
+ApplicationEventManager.RecordException(fooException);
 ```
 
 *should be* 🡻
 
 ```csharp
-Log.Error(myException);
+Log.Error(fooException);
 ```

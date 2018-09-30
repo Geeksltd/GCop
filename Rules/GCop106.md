@@ -1,6 +1,6 @@
 ﻿# GCop 106
 
-> *"Use **FileAddressString.AsFile()** instead of New **FileInfo(FileAddressString)**"*
+> *"Use `path.AsFile()` instead of `New FileInfo(path)`"*
 
 ## Rule description
 
@@ -9,11 +9,11 @@ using `AsFile()` makes your code more meaningful and shorter. Also it increase r
 ## Example
 
 ```csharp
-var file = new FileInfo(HttpContext.Current.Server.MapPath("FileAddress"));
+var file = new FileInfo(address);
 ```
 
 *should be* 🡻
 
 ```csharp
-var file = "FileAddress".AsFile();
+var file = address.AsFile();
 ```

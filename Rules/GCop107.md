@@ -1,8 +1,8 @@
 ﻿# GCop 107
 
-> *"Do not use \{this.Get()}. 'this' is never null"*
+> *"Do not use `this.Get()`. `this` is never null"*
 > 
-> *"Do not use \{this?.ClassMember}. 'this' is never null"*
+> *"Do not use `this?.ClassMember`. `this` is never null"*
 
 ## Rule description
 
@@ -26,11 +26,11 @@ if (this.Get() == null)
 ## Example2
 
 ```csharp
-var result = this?.MyProperty;
+var result = this?.FooProperty;
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = this.MyProperty;
+var result = this.FooProperty;
 ```

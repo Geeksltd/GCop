@@ -1,6 +1,6 @@
 ﻿# GCop 102
 
-> *"Use \{"Address"}.AsDirectory() instead of \{new DirectoryInfo("Address")}"*
+> *"Use `path.AsDirectory()` instead of `new DirectoryInfo(path)`"*
 
 ## Rule description
 
@@ -9,11 +9,11 @@ The `x.AsDirectory()` converts the path into a directory object as a fluent shor
 ## Example
 
 ```csharp
-var myDirectory = new DirectoryInfo(somePathString);
+var directory = new DirectoryInfo(address);
 ```
 
 *should be* 🡻
 
 ```csharp
-var myDirectory = somePathString.AsDirectory();
+var directory = address.AsDirectory();
 ```

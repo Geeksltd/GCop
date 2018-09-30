@@ -9,7 +9,7 @@ Blank partial class files are unnecessary and should be removed.
 ## Example
 
 ```csharp
-public partial class Subset {
+public partial class Foo {
 }
 ```
 
