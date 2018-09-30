@@ -1,6 +1,6 @@
 ﻿# GCop 147
 
-> *"Instead of comparing the Id properties, just compare the objects directly."*
+> *"Instead of comparing the `Id` properties, just compare the objects directly."*
 
 ## Rule description
 
