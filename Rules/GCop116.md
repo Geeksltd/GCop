@@ -1,5 +1,4 @@
-﻿
-# GCop 116
+﻿# GCop 116
 
 > *"Break this down into smaller methods. If such methods would become meaningless as standalone methods in the context of the class, you can refactor this method into a Stateful Service class"*
 

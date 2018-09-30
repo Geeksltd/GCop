@@ -1,6 +1,6 @@
 ﻿# GCop 130
 
-> *"Instead of ?? Enumerable.Empty<>() use .OrEmpty() for collections that can be null"*
+> *"Instead of `?? Enumerable.Empty<>()` use `.OrEmpty()` for collections that can be null"*
 
 ## Rule description
 

@@ -1,5 +1,4 @@
-﻿
-# GCop 101
+﻿# GCop 101
 
 > *"Too many parameters as argument. Define a container and encapsulate them"*
 

@@ -1,6 +1,6 @@
 ﻿# GCop 123
 
-> *"Transaction is created but the method.Complete() is never called."*
+> *"Transaction is created but the `.Complete()` is never called."*
 
 ## Rule description
 
@@ -8,15 +8,15 @@ When your application completes all the work it wants to perform in a transactio
 
 Failing to call this method **aborts the transaction**, because the transaction manager interprets this as a system failure, or equivalent to an exception thrown within the scope of the transaction. 
 
-*Note: Calling `.Complete()` does not guarantee that the transaction wil be committed. It is merely a way of informing the transaction manager of your status. For example if there is a parent transaction scope open, the ultimate committing will be done by that.*
+*Note: Calling `.Complete()` does not guarantee that the transaction will be committed. It is merely a way of informing the transaction manager of your status. For example if there is a parent transaction scope open, the ultimate committing will be done by that.*
 
 ## Example
 
 ```csharp
 using (var scope = Database.CreateTransactionScope())
 {
-      MyDataOperation1();
-      MyDataOperation2();      
+      Foo1();
+      Foo2();      
 }
 ```
 
@@ -25,8 +25,8 @@ using (var scope = Database.CreateTransactionScope())
 ```csharp
 using (var scope = Database.CreateTransactionScope())
 {
-      MyDataOperation1();
-      MyDataOperation2();
+      Foo1();
+      Foo2();
       scope.Complete();
 }
 ```

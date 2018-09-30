@@ -11,9 +11,9 @@ There is one exception which is where the type is a delegate type such as `Actio
 ## Example 1
 
 ```csharp
-public void MyMethod()
+public void Bar()
 {
-    object myObject = new object();
+    object foo = new object();
     ...
 }
 ```
@@ -21,9 +21,9 @@ public void MyMethod()
 *should be* 🡻
 
 ```csharp
-public void MyMethod()
+public void Bar()
 {
-    var myObject = new object();
+    var foo = new object();
     ...
 }
 ```
@@ -31,17 +31,17 @@ public void MyMethod()
 ## Example 2
 
 ```csharp
-public void MyMethod()
+public void Bar()
 {
-    Dictionary<int, MyLongNamedObject> dictionary = new Dictionary<int, MyLongNamedObject>();
+    Dictionary<int, Foo> dictionary = new Dictionary<int, Foo>();
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public void MyMethod()
+public void Bar()
 {
-    var dictionary = new Dictionary<int, MyLongNamedObject>();
+    var dictionary = new Dictionary<int, Foo>();
 }
 ```

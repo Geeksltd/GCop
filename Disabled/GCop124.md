@@ -1,6 +1,6 @@
 ﻿# GCop 124
 
-> *"Use **numeric string.TryParseAs< data type >()** instead of **data type.TryParse(numeric string)**"*
+> *"Use `numericString.TryParseAs<DataType>()` instead of `DataType.TryParse(numericString)`"*
 
 ## Rule description
 
@@ -9,22 +9,20 @@ The `TryParseAs<...>()` extension method on the string type allows you to make s
 ## Example 1
 
 ```csharp
-decimal myDecimal;
-
 if (decimal.TryParse(txtUserInput.Text, out myDecimal))
 {
-   someObject.SomeNullableProperty = myDecimal;
+   foo.NullableBar = myDecimal;
 }
 else
 {
-   someObject.SomeNullableProperty = null;
+   foo.NullableBar = null;
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-someObject.SomeNullableProperty = txtUserInput.Text.TryParseAs<decimal>();
+foo.NullableBar = txtUserInput.Text.TryParseAs<decimal>();
 ```
 
 ## Example 2
@@ -32,16 +30,16 @@ someObject.SomeNullableProperty = txtUserInput.Text.TryParseAs<decimal>();
 ```csharp
 try
 {
-    someObject.SomeNullableProperty = decimal.Parse(txtUserInput.Text);
+    foo.NullableBar = decimal.Parse(inputText);
 }
 catch
 {
-    someObject.SomeNullableProperty = null;
+    foo.NullableBar = null;
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-someObject.SomeNullableProperty = txtUserInput.Text.TryParseAs<decimal>();
+foo.NullableBar = inputText.TryParseAs<decimal>();
 ```

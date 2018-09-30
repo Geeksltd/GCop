@@ -1,5 +1,4 @@
-﻿
-# GCop 114
+﻿# GCop 114
 
 > *"`DateTime.Now` is not TDD friendly. Use `LocalTime.Now` instead."*
 

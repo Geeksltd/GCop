@@ -1,5 +1,4 @@
-﻿
-# GCop 119
+﻿# GCop 119
 
 > *"Don’t use `ref / out` parameters in method definition. To return several objects, define a class or struct for your method return type."*
 

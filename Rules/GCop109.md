@@ -1,5 +1,4 @@
-﻿
-# GCop 109
+﻿# GCop 109
 
 > *Use `bars.HasMany()` instead of `bars.Count() > 1`, as it will be faster and more descriptive."*
 
