@@ -1,6 +1,6 @@
 ﻿# GCop 120
 
-> *"Use someIntVariable.Hours() instead of TimeSpan.FromHours(someIntVariable)"*
+> *"Use `numberOfHours.Hours()` instead of `TimeSpan.FromHours(numberOfHours)`"*
 
 ## Rule description
 

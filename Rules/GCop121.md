@@ -1,6 +1,6 @@
 ﻿# GCop 121
 
-> *"Use **numeric string.To< data type >()** instead of **data type.Parse(numeric string)**"*
+> *"Use `numericString.To<DataType>()` instead of `DataType.Parse(numericString)`"*
 
 ## Rule description
 
@@ -9,21 +9,17 @@ The `To<...>()` extension method on the string type allows you to make type conv
 ## Example
 
 ```csharp
-public long Calc(string commision)
+public long Foo(string commision)
 {
-    var calculatedCommision = long.parse(commision);
-    ...
-    return calculatedCommision;
+    return long.Parse(commision);
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public string Calc(string commision)
+public string Foo(string commision)
 {
-    var calculatedCommision = commision.To<long>();
-    ...
-    return calculatedCommision;
+    return commision.To<long>();
 }
 ```
