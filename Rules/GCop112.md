@@ -13,7 +13,7 @@ Your ultimate goal should be to achieve a highly cohesive set of small classes.
 ## Example
 
 ```csharp
-public class BigClass
+public class Foo
 {
     // Multiple methods, and more than 1000 lines
 }
@@ -22,7 +22,12 @@ public class BigClass
 *should be* 🡻
 
 ```csharp
-public class SmallClass1
+public class Foo1
+{
+    // ...
+}
+
+public class Foo2
 {
     // ...
 }
