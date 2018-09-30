@@ -1,6 +1,6 @@
 # GCop 132
 
-> *"Since the type is inferred, use 'var' instead"*
+> *"Since the type is inferred, use `var` instead"*
 
 ## Rule description
 
@@ -33,7 +33,7 @@ public void Bar()
 ```csharp
 public void Bar()
 {
-    Dictionary<int, Foo> dictionary = new Dictionary<int, Foo>();
+    Dictionary<int, List<Foo>> dictionary = new Dictionary<int, List<Foo>>();
 }
 ```
 
@@ -42,6 +42,6 @@ public void Bar()
 ```csharp
 public void Bar()
 {
-    var dictionary = new Dictionary<int, Foo>();
+    var dictionary = new Dictionary<int, List<Foo>>();
 }
 ```

@@ -13,9 +13,9 @@ A private field is usually a better option as the compiler will enforce access r
 ## Example
 
 ```csharp
-public void MyMethod()
+public void Foo()
 {
-    if (someCondition)
+    if (condition)
     {
         lock (this)
         {
@@ -30,9 +30,9 @@ public void MyMethod()
 ```csharp
 object syncLock = new Object(); 
  
-public void MyMethod()
+public void Foo()
 {
-    if (someCondition)
+    if (condition)
     {
         lock (syncLock)
         {

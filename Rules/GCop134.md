@@ -4,7 +4,7 @@
 
 ## Rule description
 
-You should avoid writing too much logic in the event handler methods such as `OnValidating`, `OnSaving`, `OnSaved`, 'OnDeleting', etc. Instead, break the logic into one or more methods that are properly named, and just invoke them in your event handler.
+You should avoid writing too much logic in the event handler methods such as `OnValidating`, `OnSaving`, `OnSaved`, `OnDeleting`, etc. Instead, break the logic into one or more methods that are properly named, and just invoke them in your event handler.
 
 This will help *document* the logic.
 
@@ -54,4 +54,3 @@ void SendNotificationEmail()
         });        
 }
 ```
-

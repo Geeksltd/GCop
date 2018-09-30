@@ -16,5 +16,4 @@ Database.Save<Foo>(foo);
 
 ```csharp
 Database.Save(foo);
-
 ```

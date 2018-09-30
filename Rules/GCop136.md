@@ -22,13 +22,13 @@ According to the StyleCop Rules Documentation the ordering of items in a class i
 ## Example
 
 ```csharp
-public class MyClassName
+public class Bar
 {
-    public void MyMethod() 
+    public void Foo() 
     {
         ...
     }
-    private const string myConstVal = "someText";
+    private const string sampleConst = "someText";
 
 }
 ```
@@ -36,11 +36,11 @@ public class MyClassName
 *should be* 🡻
 
 ```csharp
-public class MyClassName
+public class Bar
 {
-    private const string myConstVal = "someText";
+    private const string sampleConst = "someText";
     
-    public void MyMethod() 
+    public void Foo() 
     {
         ...
     }

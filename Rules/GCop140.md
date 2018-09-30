@@ -1,10 +1,10 @@
 ﻿# GCop 140
 
-> *"Consider making it "private" as it's not used outside of this class."*
+> *"Consider making it `private` as it's not used outside of this class."*
 > 
-> *"This private method doesn't seem to be used in the solution. Consider removing it."*
+> *"This `private` method doesn't seem to be used in the solution. Consider removing it."*
 > 
-> *"Consider making it "internal" as it's not used outside of this project."*
+> *"Consider making it `internal` as it's not used outside of this project."*
 
 ## Rule description
 
@@ -19,11 +19,17 @@ GCop assumes that your code is meant to be used within the same solution only. T
 ## Example
 
 ```csharp
-public static void MyMethod() {...}
+public static void Foo()
+{
+    ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-internal static void MyMethod(){...}
+internal static void Foo()
+{
+    ...
+}
 ```

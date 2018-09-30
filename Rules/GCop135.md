@@ -1,8 +1,8 @@
 # GCop 135
 
-> *"Add a 'default' block after the last case in a switch statement. For example if you don't support anything other than your specified 'cases' throw a NotSupportedException"*
+> *"Add a `default` block after the last case in a `switch` statement. For example if you don't support anything other than your specified `cases` throw a `NotSupportedException`"*
 
-> *"Add descriptive comment if the default block is supposed to be empty or throw an NotSupportedException if that block is not supposed to be reached"*
+> *"Add descriptive comment if the `default` block is supposed to be empty or throw an `NotSupportedException` if that block is not supposed to be reached"*
 
 ## Rule description
 
@@ -16,17 +16,17 @@ It is preferred to use default statement :
 
     If a default case is not present or has an empty block and the match expression does not match any other case label, program flow falls through the switch statement.
 
-* To handle 'default' actions, where the cases are for special behavior.
+* To handle 'default' actions, where the cases are for special behaviour.
   
     it is seen a lot in menu-driven programs or when a variable is declared outside the `switch-case` but not initialized, and each case initializes it to something different. Here the default needs to initialize it too so that down the line code that accesses the variable doesn't raise an error.
 
 ## Example 1
 
-In this example we don't expect **myVar** to be anything other than the cases we handle. Just in case a different value is passed at runtime, it should explicitly throw a Not Supported Exception to prevent hard-to-find bugs.
+In this example we don't expect **myVar** to be anything other than the cases we handle. Just in case a different value is passed at run-time, it should explicitly throw a `NotSupportedException` to prevent hard-to-find bugs.
 
 ```csharp
-int myVar = 3;
-switch(myVar)
+var foo = 3;
+switch(foo)
 {
     case 1:
         //something
@@ -40,7 +40,7 @@ switch(myVar)
 *should be* 🡻
 
 ```csharp
-switch(myVar)
+switch(foo)
 {
     case 1:
         //something
