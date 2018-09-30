@@ -1,4 +1,5 @@
-﻿# GCop 116
+﻿
+# GCop 116
 
 > *"Break this down into smaller methods. If such methods would become meaningless as standalone methods in the context of the class, you can refactor this method into a Stateful Service class"*
 
@@ -11,7 +12,7 @@ Functions should do one thing. They should do it well. They should do it only, s
 ## Example
 
 ```csharp
-public bool MyMethod(int myValue)
+public bool Foo()
 {
     //more than 40 statements
 }
@@ -20,7 +21,7 @@ public bool MyMethod(int myValue)
 *should be* 🡻
 
 ```csharp
-public bool MyMethod(int myValue)
+public bool Foo()
 {
     //Call other methods
     //less than 40 statements

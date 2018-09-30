@@ -1,6 +1,6 @@
 ﻿# GCop 115
 
-> *"This IF statement is too long for one line. Break the body of the IF into another line"*
+> *"This `IF` statement is too long for one line. Break the body of the `IF` into another line"*
 
 ## Rule description
 
