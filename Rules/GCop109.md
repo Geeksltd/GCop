@@ -1,6 +1,7 @@
-﻿# GCop 109
+﻿
+# GCop 109
 
-> *"Use something.HasMany() instead of something.Count() > 1, as it will be faster and more descriptive."*
+> *Use `bars.HasMany()` instead of `bars.Count() > 1`, as it will be faster and more descriptive."*
 
 ## Rule description
 
@@ -9,8 +10,8 @@ The `Count()` method can potentially be time consuming, especially if the `IEnum
 ## Example
 
 ```csharp
-IEnumerable<Something> myCollection = ...;
-if (myCollection.Count() > 1)
+IEnumerable<Bar> bars = ...;
+if (bars.Count() > 1)
 {
     ...
 }
@@ -19,8 +20,8 @@ if (myCollection.Count() > 1)
 *should be* 🡻
 
 ```csharp
-IEnumerable<Something> myCollection = ...;
-if (myCollection.HasMany())
+IEnumerable<Bar> bars = ...;
+if (bars.HasMany())
 {
     ...
 }
