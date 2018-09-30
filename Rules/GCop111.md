@@ -9,12 +9,12 @@ When C# can infer the generic type of a method, it's cleaner to remove explicit 
 ## Example
 
 ```csharp
-Database.Save<Customer>(myCustomer);
+Database.Save<Foo>(foo);
 ```
 
 *should be* 🡻
 
 ```csharp
-Database.Save(myCustomer);
+Database.Save(foo);
 
 ```
