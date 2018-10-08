@@ -1,4 +1,4 @@
-﻿# GCop 618
+﻿# GCop 618 (OBSOLETE)
 
 > *"Use `{EntityName.FindByPropertyName("SomeValue")}` instead."*
 
