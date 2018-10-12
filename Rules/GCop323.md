@@ -13,7 +13,7 @@ while (true)
 {
     if (condition)
     {
-      SampleMethod();
+        Foo();
     }
     else
     {
@@ -27,7 +27,7 @@ while (true)
 ```csharp
 while (condition)
 {
-    SampleMethod();
+    Foo();
 }
 ```
 
@@ -40,7 +40,7 @@ while (true)
     {
       break;
     }    
-    SampleMethod();
+    Foo();
 }
 ```
 
@@ -49,7 +49,7 @@ while (true)
 ```csharp
 while (!condition)
 {
-    SampleMethod();     
+    Foo();     
 }
 ```
 
@@ -58,12 +58,12 @@ while (!condition)
 ```csharp
 do
 {
-    SampleMethod();   
+    Foo();   
     if (condition)
     {
       break;
     }    
-} while (true)
+} while (true);
 ```
 
 *should be* 🡻
@@ -71,7 +71,7 @@ do
 ```csharp
 do
 {
-  SampleMethod();
-} while (!condition)
+  Foo();
+} while (!condition);
 ```
 
