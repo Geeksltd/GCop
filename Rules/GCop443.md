@@ -9,13 +9,13 @@ C# 6 enables you to assign an initial value for the storage used by an auto-prop
 ## Example
 
 ```csharp
-public string SomeItem { get; set; } = null;
+public string Bar { get; set; } = null;
 ```
 
 *should be* 🡻
 
 ```csharp
-public string SomeItem { get; set; }
+public string Bar { get; set; }
 
 ```
 
