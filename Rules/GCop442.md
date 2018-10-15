@@ -11,11 +11,11 @@ It is recommended to avoid useless assignment to local variable. To shorten the 
 ```csharp
 if (condition)
 {
-    someVariable = 1;
+    foo = 1;
 }
 else
 {
-    someVariable = 2;
+    foo = 2;
 }
 
 return someVariable;
