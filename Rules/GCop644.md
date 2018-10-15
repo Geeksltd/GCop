@@ -9,7 +9,7 @@ If the base class contains a member that matches an interface member, the base c
 ## Example
 
 ```csharp
-public class TestClass<T> : List<T>, IEnumerable<T>
+public class Foo<T> : List<T>, IEnumerable<T>
 {
     ...
 }
@@ -18,7 +18,7 @@ public class TestClass<T> : List<T>, IEnumerable<T>
 *should be* 🡻
 
 ```csharp
-public class TestClass<T> : List<T>
+public class Foo<T> : List<T>
 {
     ...
 }
