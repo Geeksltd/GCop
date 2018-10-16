@@ -18,7 +18,7 @@ else
     foo = 2;
 }
 
-return someVariable;
+return foo;
 ```
 
 *should be* 🡻
