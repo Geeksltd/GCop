@@ -9,17 +9,23 @@ The `as` operator returns the cast value if the cast can be made successfully. T
 ## Example
 
 ```csharp
-if (foo as string != null)
+private void Bar(object foo)
 {
-    ...
+    if (foo as string != null)
+    {
+        ...
+    }
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-if (foo is string)
+private void Bar(object foo)
 {
-    ...
+    if (foo is string)
+    {
+        ...
+    }
 }
 ```
