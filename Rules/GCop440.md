@@ -9,7 +9,7 @@ The `==` Operator compares the reference identity while the `Equals()` method co
 ## Example1
 
 ```csharp
-if (someString.ToLower() == anotherString.ToLower())
+if (foo.ToLower() == bar.ToLower())
 {
     ...
 }
@@ -18,7 +18,7 @@ if (someString.ToLower() == anotherString.ToLower())
 *should be* 🡻
 
 ```csharp
-if (string.Equals(someString, anotherString, StringComparison.OrdinalIgnoreCase))
+if (string.Equals(foo, bar, StringComparison.OrdinalIgnoreCase))
 {
     ...
 }
@@ -27,7 +27,7 @@ if (string.Equals(someString, anotherString, StringComparison.OrdinalIgnoreCase)
 ## Example2
 
 ```csharp
-if (someString.ToLower() != anotherString.ToLower())
+if (foo.ToLower() != bar.ToLower())
 {
     ...
 }
@@ -36,7 +36,7 @@ if (someString.ToLower() != anotherString.ToLower())
 *should be* 🡻
 
 ```csharp
-if (!string.Equals(someString, anotherString, StringComparison.OrdinalIgnoreCase))
+if (!string.Equals(foo, bar, StringComparison.OrdinalIgnoreCase))
 {
     ...
 }
