@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The '$' special character identifies a string literal as an interpolated string. When an interpolated string is resolved to a result string, items with interpolated expressions are replaced by the string representations of the expression results. So it is redundant to use interpolated string for string without any interpolation.
+The `$` special character identifies a string literal as an interpolated string. When an interpolated string is resolved to a result string, items with interpolated expressions are replaced by the string representations of the expression results. So it is redundant to use interpolated string for string without any interpolation.
 
 ## Example1
 
