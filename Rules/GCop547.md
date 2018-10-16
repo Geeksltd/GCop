@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Because the += operator merely concatenates the internal invocation list of one delegate to another, you can use the += to add an anonymous method.
+Because the `+=` operator merely concatenates the internal invocation list of one delegate to another, you can use the `+=` to add an anonymous method.
 
 ## Example
 
