@@ -1,20 +1,35 @@
 ﻿# GCop 548
 
-> *"Remove redundant As operator"*
+> *"Remove redundant `As` operator"*
 
 ## Rule description
 
-The `as` operator is like a `cast` operation. However, if the conversion isn't possible, `as` returns `null`. So when a variable value is `null`, it is redundant to use `as`, because it is clear that the result is `null`.
+Redundant casts decrease performance. The `as` operation is like a `cast` operation, when an object type is declared, there is no need to cast it again.
 
-## Example
+## Example1
 
 ```csharp
-string someString = null;
-string anotherString = someString as string;
+string foo = null;
+var bar = foo as string;
 ```
 
 *should be* 🡻
 
 ```csharp
-string anotherString = someString;
+var foo = "";
+string bar = foo;
+```
+
+## Example2
+
+```csharp
+var foo = "";
+var bar = foo as string;
+```
+
+*should be* 🡻
+
+```csharp
+var foo = "";
+string bar = foo;
 ```
