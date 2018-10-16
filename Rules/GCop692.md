@@ -1,6 +1,6 @@
 ﻿# GCop 692
 
-> *"Merge switch sections with equivalent content."*
+> *"Merge `switch` sections with equivalent content."*
 
 ## Rule description
 
@@ -9,7 +9,7 @@ There is a valid syntax for matching multiple cases to a single executable code 
 ## Example
 
 ```csharp
-switch (someString)
+switch (foo)
 {
     case "a":
         break;
@@ -21,7 +21,7 @@ switch (someString)
 *should be* 🡻
 
 ```csharp
-switch (someString)
+switch (foo)
 {
     case "a":
     case "b":
