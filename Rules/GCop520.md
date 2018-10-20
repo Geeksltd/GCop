@@ -1,19 +1,22 @@
 ﻿# GCop 520
 
-> *"Write it as `{StringListName}.Intersects({AnotherStringListName})`"*
+> *"Write it as `foo.Intersects(bar)`"*
 
 ## Rule description
 
 The `Intersect` method returns the common elements between two collections. It is faster and more readable than a manual implementation of that logic using `Where` with `Contains`.
 
 ## Example
-> It should be tested after release. See https://github.com/Geeksltd/GCop/issues/153
 ```csharp
-someStringList.Any(rec => anotherStringList.Contains(rec));
+var foo = new List<string>();
+var bar = new List<string>();
+var res = foo.Any(f => bar.Contains(f));
 ```
 
 *should be* 🡻
 
 ```csharp
-someStringList.Intersects(anotherStringList);
+var foo = new List<string>();
+var bar = new List<string>();
+var res = foo.Intersect(bar).Any();
 ```
