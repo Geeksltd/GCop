@@ -49,7 +49,7 @@ Unfortunately Visual Studio doesn't allow you to disable analysis rules at the s
 
 You can disable GCop for specific C# classes by adding the `[EscapeGCop]` attribute on top of it. You can optionally provide a reason description as well. This is particularly useful for auto-generated code.
 
-> **Note :** For having **EscapeGCop**, you need to install **MSharp** or **Olive** from nuget for each project or solution as well.
+> **Note :** For having **EscapeGCop**, you need to install **MSharp** or **Olive** from NuGet for each project or solution as well.
 
 
 For example:
