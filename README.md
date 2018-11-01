@@ -10,18 +10,6 @@ GCop is a set up code analysis rules for improving C# code.
 
 First of all make sure you have installed visual studio 2017 version 15.5.5 or a newer one.
 
-#### NuGet configuration
-
-1. Open any solution in Visual Studio
-2. Right click on the solution, and select **Manage NuGet Packages...**
-3. At the top right corner of the window, click on the ⚙ icon.
-4. Click the ➕ icon
-   - Set Name to *GCop*
-   - Set source to [http://nuget.gcop.co/nuget](http://nuget.gcop.co/nuget)
-   - Click OK
-
-> **Note :** You need to do this only once.
-
 #### Adding GCop to a project
 
 1. Open the **Manage NuGet Packages...** window for your solution.
@@ -60,6 +48,9 @@ Unfortunately Visual Studio doesn't allow you to disable analysis rules at the s
 ### Disabling one class
 
 You can disable GCop for specific C# classes by adding the `[EscapeGCop]` attribute on top of it. You can optionally provide a reason description as well. This is particularly useful for auto-generated code.
+
+> **Note :** For having **EscapeGCop**, you need to install **MSharp** or **Olive** from nuget, for each project or solution as well.
+
 
 For example:
 
