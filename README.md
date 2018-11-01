@@ -15,7 +15,7 @@ First of all make sure you have installed visual studio 2017 version 15.5.5 or a
 1. Open the **Manage NuGet Packages...** window for your solution.
 2. Next to the ⚙ icon, change the drop-down list to ***All***
 3. If your project has a reference to M#, Zebble or Olive nuget packages, then install `GCop.All.Geeks`
-4. Otherwise, install select `GCop.All.Common`
+4. Otherwise, select `GCop.All.Common`
 5. Install it on all projects in your solution (or the ones that you need analysed)
 
 > **Note :** You need to do this once for each project / solution.
