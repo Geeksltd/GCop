@@ -27,7 +27,7 @@ public class MyClass
 ```csharp
 public class MyClass
 {
-    public static bool Add()
+    public bool Add()
     {
         DbContext.EntityName.Add(this);
         ...
