@@ -123,35 +123,3 @@ public string Foo()
     }
 }
 ```
-
-## Example 2
-
-```csharp
-public string Foo()
-{
-    try
-    {
-        ...
-    }
-    catch
-    {
-        throw new Exception("Some error message");
-    }
-}
-```
-
-*should be* 🡻
-
-```csharp
-public string Foo()
-{
-    try
-    {
-        ...
-    }
-    catch (Exception ex)
-    {
-        throw new Exception("Some error message", ex);
-    }
-}
-```
