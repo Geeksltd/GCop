@@ -1,10 +1,10 @@
 ﻿# GCop 171
 
-> *"There is no need for calling .Value. Replace with 'Paarmeter without .Value'"*
+> *"There is no need for calling `.Value`. Replace with 'foo'"*
 
 ## Rule description
 
-In some situations, there is no need to use `.Value` from nullable Value types. In those cases, for cleanness of the code, the code should be simplified.
+In some situations, there is no need to use `.Value` for nullable value types. In those cases, for cleanness of the code, the code should be simplified.
 
 ## Example
 
