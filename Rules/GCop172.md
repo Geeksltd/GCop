@@ -1,6 +1,6 @@
 ﻿# GCop 172
 
-> *"Remove the check for null. Instead use NullableObject?.Invoke()"*
+> *"Remove the check for `null`. Instead use `NullableFoo?.Invoke()`"*
 
 ## Rule description
 
