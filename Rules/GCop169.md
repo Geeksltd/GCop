@@ -1,6 +1,6 @@
 ﻿# GCop 169
 
-> *"Remove \{NullableObject.HasValue} which is redundant. If \{NullableObject.HasValue} is null, then '\{rightExpression}' will be false anyway."*
+> *"Remove `NullableObject.HasValue` which is redundant. If `NullableObject.HasValue` is null, then 'rightExpression' will be false anyway."*
 
 ## Rule description
 

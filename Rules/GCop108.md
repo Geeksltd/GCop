@@ -1,6 +1,6 @@
 ﻿# GCop 108
 
-> *"Instead of `GetValueOrDefault(defaultValue)` method use `?? defaultValue\`"*
+> *"Instead of `GetValueOrDefault(defaultValue)` method use `?? defaultValue`"*
 
 ## Rule description
 

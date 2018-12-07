@@ -1,6 +1,6 @@
 ﻿# GCop 165
 
-> *"Instead of .IndexOf(\{intendedChar}) > -1 use .Contains(\{intendedChar})."*
+> *"Instead of `.IndexOf(intendedChar) > -1` use `.Contains(intendedChar)`."*
 
 ## Rule description
 
