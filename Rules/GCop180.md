@@ -1,6 +1,6 @@
 ﻿# GCop 180
 
-> *"Double and float comparison isn't exact in .NET. Use myDouble.AlmostEquals(anotherDouble) instead."*
+> *"Double and float comparison isn't exact in .NET. Use `foo.AlmostEquals(bar)` instead."*
 
 ## Rule description
 
@@ -13,14 +13,14 @@ Note: If you want exact numbers, use the decimal type instead, which stores numb
 ## Example
 
 ```csharp
-double commission;
+double foo;
 
-public double Commission
+public double Foo
 {
-    get => commission;    
+    get => foo;    
     set
     {
-    	if (commission != value)
+    	if (foo != value)
     	{
             ...
     	}
@@ -31,14 +31,14 @@ public double Commission
 *should be* 🡻
 
 ```csharp
-double commission;
+double foo;
 
-public double Commission
+public double Foo
 {
-    get => commission;    
+    get => foo;    
     set
     {
-    	if (!commission.AlmostEquals(value))
+    	if (!foo.AlmostEquals(value))
     	{
             ...
     	}
