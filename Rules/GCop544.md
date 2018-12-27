@@ -1,6 +1,6 @@
 ﻿# GCop 544
 
-> *"It should be written as : `SomeParameter = -SomeParameter`"*
+> *"It should be written as : `foo = -foo`"*
 
 ## Rule description
 
