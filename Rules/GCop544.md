@@ -9,11 +9,11 @@ Negating a value is much simpler than normal multiplication because there is no 
 ## Example
 
 ```csharp
-myInteger = myInteger * -1;
+foo = foo * -1;
 ```
 
 *should be* 🡻
 
 ```csharp
-myInteger = -myInteger;
+foo = -foo;
 ```
