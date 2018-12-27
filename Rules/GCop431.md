@@ -1,6 +1,6 @@
 ﻿# GCop 431
 
-> *"Use \" \{expression } is \{type} \" as negative logic is taxing on the brain."*
+> *"Use `foo is Bar` as negative logic is taxing on the brain."*
 
 ## Rule description
 
@@ -9,7 +9,7 @@ Human brain can understand positive expressions and statements faster than negat
 ## Example
 
 ```csharp
-if(myObj as string != null)
+if(foo as string != null)
 {
     ...
 }
@@ -18,7 +18,7 @@ if(myObj as string != null)
 *should be* 🡻
 
 ```csharp
-if(myObj is string)
+if(foo is string)
 {
     ...
 }

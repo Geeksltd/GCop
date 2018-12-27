@@ -12,17 +12,17 @@ If all your `async` method is doing is to `await` a task, then you can drop both
 ## Example
 
 ```csharp
-async Task<bool> MyMethod(int myParam)
+async Task<bool> Foo(int bar)
 {
-    return await AnotherAsyncMethodOrExpression(myParam);
+    return await Bar(bar);
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-Task<bool> MyMethod(int myParam)
+Task<bool> Foo(int bar)
 {
-    return AnotherAsyncMethodOrExpression(myParam);
+    return Bar(bar);
 }
 ```

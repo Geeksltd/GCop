@@ -1,14 +1,15 @@
 ﻿# GCop 430
 
-> *"Use \" NotEqualsExpression.HasValue \" as negative logic is taxing on the brain."*
+> *"Use `foo.HasValue` as negative logic is taxing on the brain."*
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use *`HasValue`* rather than *`!= null`*. 
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use *`HasValue`* rather than *`!= null` for `Nullable<T>` object*. 
+
 ## Example
 
 ```csharp
-if (myVariable != null)
+if (foo != null)
 {
      ...
 }
@@ -17,7 +18,7 @@ if (myVariable != null)
 *should be* 🡻
 
 ```csharp
-if (myVariable.HasValue)
+if (foo.HasValue)
 {
     ...
 }

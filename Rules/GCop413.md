@@ -1,6 +1,6 @@
 ﻿# GCop 413
 
-> *"It should be written as 'positive expression'"*
+> *"It should be written as 'PositiveExpression'"*
 
 ## Rule description
 
@@ -9,11 +9,11 @@ Human brain can understand positive expressions and statements faster than negat
 ## Example
 
 ```csharp
-var myVar = !(something < otherthing);
+var bar = !(something < otherthing);
 ```
 
 *should be* 🡻
 
 ```csharp
-var myVar = something > otherthing;
+var bar = something >= otherthing;
 ```

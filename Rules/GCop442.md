@@ -33,3 +33,11 @@ else
     return 2;
 }
 ```
+
+*OR* 🡻
+
+```csharp
+if (condition)
+    return 1;
+return 2;
+```

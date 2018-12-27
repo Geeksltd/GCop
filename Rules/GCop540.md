@@ -1,6 +1,6 @@
 ﻿# GCop 540
 
-> *"Abastract class should not have public constructors. Make it protected instead."*
+> *"`Abstract` class should not have `public` constructors. Make it `protected` instead."*
 
 ## Rule description
 
@@ -9,9 +9,9 @@ Being public makes no sense in an abstract class. An abstract class by definitio
 ## Example
 
 ```csharp
-public abstract class AbstractBot
+public abstract class Foo
 {
-    public AbstractBot()
+    public Foo()
     {
         ...
     }
@@ -22,9 +22,9 @@ public abstract class AbstractBot
 *should be* 🡻
 
 ```csharp
-public abstract class AbstractBot
+public abstract class Foo
 {
-    protected AbstractBot()
+    protected Foo()
     {
         ...
     }
