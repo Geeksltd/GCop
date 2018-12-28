@@ -6,21 +6,7 @@
 
 Redundant casts decrease performance. The `as` operation is like a `cast` operation, when an object type is declared, there is no need to cast it again.
 
-## Example1
-
-```csharp
-string foo = null;
-var bar = foo as string;
-```
-
-*should be* 🡻
-
-```csharp
-var foo = "";
-string bar = foo;
-```
-
-## Example2
+## Example
 
 ```csharp
 var foo = "";
