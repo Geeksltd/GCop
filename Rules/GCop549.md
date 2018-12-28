@@ -9,18 +9,18 @@ In C#3.0 Lambda expressions are introduced. It provides a simple, more concise, 
 ## Example
 
 ```csharp
-var someVar = items.Select(delegate (object someObj)
+foo = items.Select(delegate (object bar)
 {
-    return someObj.ToString();
+    return bar.ToString();
 });
 ```
 
 *should be* 🡻
 
 ```csharp
-var someVar = items.Select((object someObj) =>
+foo = items.Select((object bar) =>
 {
-    return someObj.ToString();
+    return bar.ToString();
 });
 ```
 

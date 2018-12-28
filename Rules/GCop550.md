@@ -1,6 +1,6 @@
 ﻿# GCop 550
 
-> *"Return Task.FromResult instead of returning null"*
+> *"Return `Task.FromResult` instead of returning `null`"*
 
 ## Rule description
 
@@ -10,7 +10,7 @@ So, a `Task`/`Task<T>` returned from a method should never, ever be null. Howeve
 ## Example1
 
 ```csharp
-Task<object> GetAsync()
+Task<foo> Bar()
 {
     return null;
 }
@@ -19,35 +19,33 @@ Task<object> GetAsync()
 *should be* 🡻
 
 ```csharp
-Task<object> GetAsync()
+Task<foo> Bar()
 {
-    return Task.FromResult<object>(null);
+    return Task.FromResult<foo>(null);
 }
 ```
 
 ## Example2
 
 ```csharp
-Task<object> GetAsync()
+Task<foo> Bar()
 {
-    return _someThing?.GetAsync(); // RCS1210
+    return foo?.FooBar();
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-Task<object> GetAsync()
+Task<foo> Bar()
 {
-    SomeThing x = _someThing;
-    if (x != null)
+    if (foo != null)
     {
-        return _someThing.GetAsync();
+        return foo.FooBar();
     }
     else
     {
-        return Task.FromResult<object>(null);
+        return Task.FromResult<foo>(null);
     }
 }
 ```
-
