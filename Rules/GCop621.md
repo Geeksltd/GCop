@@ -1,10 +1,10 @@
 ﻿# GCop 621
 
-> *"Drop "Where" and move the condition into the "FirstOrDefault"."*
+> *"Drop `Where` and move the condition into the `FirstOrDefault`."*
 > 
-> *"Use 'Cast< yourObjectName>()' here instead."*
+> *"Use `Cast<Foo>()` here instead."*
 > 
-> *"Calling {'innerMethodSymbol'} is unnecessary here."*
+> *"Calling `Foo` is unnecessary here."*
 
 
 
@@ -31,11 +31,11 @@ var myList = details.Cast<InvoiceDetailsDto>().ToList();
 ## Example2
 
 ```csharp
-var result = myList.where(l => l.Id == someValue).FirstOrDefault();
+var result = fooBar.where(l => l.Foo == bar).FirstOrDefault();
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = myList.FirstOrDefault(l => l.Id == someValue);
+var result = fooBar.FirstOrDefault(l => l.Foo == bar);
 ```
