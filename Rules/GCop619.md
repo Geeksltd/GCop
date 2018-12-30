@@ -1,6 +1,6 @@
 ﻿# GCop 619
 
-> *"Should be written "{'conditionText'}"."*
+> *"Should be written `CorrectCondition`."*
 
 ## Rule description
 
@@ -9,7 +9,7 @@ You should use the boolean logic for shorter and more readable code. You don't n
 ## Example
 
 ```csharp
-if (someValue == 0)
+if (foo == 0)
     return false;
 else
     return true;
@@ -18,12 +18,11 @@ else
 *should be* 🡻
 
 ```csharp
-return !(someValue == 0);
+return !(foo == 0);
 ```
 
 *OR* 🡻
 
 ```csharp
-return someValue != 0;
+return foo != 0;
 ```
-
