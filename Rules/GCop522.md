@@ -36,7 +36,7 @@ private void Bar(List<int?> foo)
 *should be* 🡻
 
 ```csharp
-private void Bar(Dictionary<string, string> foo)
+private void Bar(List<int?> foo)
 {
     var result = foo?.FirstOrDefault();
 }
