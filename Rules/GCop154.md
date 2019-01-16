@@ -1,6 +1,6 @@
 ﻿# GCop 154
 
-> *"Should be written simply as \{FirstCollection}.Except(\{SecondCollection})"*
+> *"Should be written simply as `foo.Except(bar)`"*
 
 ## Rule description
 
@@ -9,23 +9,23 @@ The `Lacks` method work as opposite of `Contains()`. It gets all items of this l
 ## Example1
 
 ```csharp
-var myResult = myFirstCollection.Where(s => MySecondCollection.Lacks(s));
+var myResult = foo.Where(s => bar.Lacks(s));
 ```
 
 *should be* 🡻
 
 ```csharp
-var myResult = myFirstCollection.Except(MySecondCollection);
+var myResult = foo.Except(bar);
 ```
 
 ## Example2
 
 ```csharp
-var myResult = myFirstCollection.Except(s => MySecondCollection.Lacks(s));
+var myResult = foo.Except(s => bar.Lacks(s));
 ```
 
 *should be* 🡻
 
 ```csharp
-var myResult = myFirstCollection.Except(MySecondCollection);
+var myResult = foo.Except(bar);
 ```
