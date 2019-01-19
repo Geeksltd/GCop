@@ -4,9 +4,7 @@
 
 ## Rule description
 
-The `Task.FromResult<object>(null)` method is commonly used to generate a task whose result is null. We should never return a null Task. In the async world, a null task just doesn't make sense. Task represents the execution of the asynchronous method, so for an asynchronous method to return a null task is like telling the calling code "you didn't really just call this method" when of course it did.
-So, a `Task`/`Task<T>` returned from a method should never, ever be null. However, you still have the option of returning a null value inside a regular task.
-
+The `Task.FromResult<T>(null)` method is commonly used to generate a task whose result is null. Returning null from a non-async `Task/Task<T>` method will cause a `NullReferenceException` at runtime. This problem can be avoided by returning `Task.FromResult<T>(null)` instead.
 ## Example1
 
 ```csharp
