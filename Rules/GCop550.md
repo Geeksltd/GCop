@@ -8,7 +8,7 @@ The `Task.FromResult<T>(null)` method is commonly used to generate a task whose 
 ## Example1
 
 ```csharp
-Task<foo> Bar()
+Task<Foo> Bar()
 {
     return null;
 }
@@ -17,16 +17,16 @@ Task<foo> Bar()
 *should be* 🡻
 
 ```csharp
-Task<foo> Bar()
+Task<Foo> Bar()
 {
-    return Task.FromResult<foo>(null);
+    return Task.FromResult<Foo>(null);
 }
 ```
 
 ## Example2
 
 ```csharp
-Task<foo> Bar()
+Task<Foo> Bar(Foo foo)
 {
     return foo?.FooBar();
 }
@@ -35,7 +35,7 @@ Task<foo> Bar()
 *should be* 🡻
 
 ```csharp
-Task<foo> Bar()
+Task<Foo> Bar(Foo foo)
 {
     if (foo != null)
     {
@@ -43,7 +43,7 @@ Task<foo> Bar()
     }
     else
     {
-        return Task.FromResult<foo>(null);
+        return Task.FromResult<Foo>(null);
     }
 }
 ```
