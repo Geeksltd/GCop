@@ -1,19 +1,25 @@
 ﻿# GCop 624
 
-> *"Write it as `foo.Contains(VALUE)`"*
+> *"Write it as `foo.Except(VALUE).Any()`"*
 
 ## Rule description
 
-The `someCollection.Contains(...)` method takes an object while `Any(...)` takes a predicate. So if you want to check for existence of an element, use `Contains(...)` rather than comparing every item using `Any(...)`.
+The `Except()` method subtracts elements from a collection. It essentially subtracts all the elements in one collection from another. It is more readable to use `Except` than using negative queries.
 
 ## Example
 
 ```csharp
-var res = foo.Any(fo => fo == bar);
+if(foo.Any(fo => fo != bar))
+{
+    ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-var res = foo.Contains(fo => fo == bar);
+if(foo.Except(bar).Any())
+{
+    ...
+}
 ```

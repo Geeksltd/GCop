@@ -1,19 +1,25 @@
 ﻿# GCop 640
 
-> *"Write it as `foo.Except(VALUE).Any()` "*
+> *"Write it as `foo.Contains(VALUE)`"*
 
 ## Rule description
 
-The `Contains()` method determines whether an element is in the List. It is an instance method which takes an object, while `Any()` is an extension method which takes a predicate. So if you want to check for a specific condition, use `Any`. If you want to check for the existence of an element, use `Contains`.
+The `someCollection.Contains(...)` method takes an object while `Any(...)` takes a predicate. So if you want to check for existence of an element, use `Contains(...)` rather than comparing every item using `Any(...)`.
 
 ## Example
 
 ```csharp
-var myResult = foo.Any(fo => fo != bar);
+if(foo.Any(fo => fo == bar))
+{
+    ...
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-var myResult = foo.Except(bar).Any();
+if(foo.Contains(fo => fo == bar))
+{
+    ...
+}
 ```
