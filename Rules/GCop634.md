@@ -11,19 +11,19 @@ A private auto-property has no advantage to a simple class field. But it has two
 ## Example
 
 ```csharp
-public class MyClass
+public class Foo
 {
-    private string MyProperty{ get; set; }
+    private string Bar{ get; set; }
 }
 ```
 
 *should be* 🡻
 ```csharp
-public class MyClass
+public class Foo
 {
-     private string MyProperty;
+     private string Bar;
      
      // Or just:
-     string MyProperty;
+     string Bar;
 }
 ```

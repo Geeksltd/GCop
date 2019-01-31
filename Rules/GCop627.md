@@ -1,8 +1,8 @@
 ﻿# GCop 627
 
-> *"Instead of « ?? false » use the more readable expression of « == true »"*
+> *"Instead of `?? false` use the more readable expression of `== true`*
 > 
-> *"Instead of !(nullable expression == true) use the more readable alternative of: (nullable expression == false)."*
+> *"Instead of `!(nullable expression == true)` use the more readable alternative of: `(nullable expression == false)`."*
 
 ## Rule description
 
@@ -11,9 +11,9 @@ Human brain can understand positive phrases better than negative ones. When deal
 ## Example1
 
 ```csharp
-var nullableBool = GetSomeNullableBool(...);
+var foo = GetSomeNullableBool(...);
 ...
-if(nullableBool ?? false)
+if(foo ?? false)
 {
    ...
 }
@@ -22,9 +22,9 @@ if(nullableBool ?? false)
 *should be* 🡻
 
 ```csharp
-var nullableBool = GetSomeNullableBool(...);
+var foo = GetSomeNullableBool(...);
 ...
-if(nullableBool == true)
+if(foo == true)
 {
    ...
 }
@@ -33,7 +33,8 @@ if(nullableBool == true)
 ## Example2
 
 ```csharp
-if (!nullableBool == true)
+var foo = GetSomeNullableBool(...);
+if (!foo == true)
 {
    ...
 }
@@ -42,7 +43,8 @@ if (!nullableBool == true)
 *should be* 🡻
 
 ```csharp
-if (nullableBool == false)
+var foo = GetSomeNullableBool(...);
+if (foo == false)
 {
    ...
 }
