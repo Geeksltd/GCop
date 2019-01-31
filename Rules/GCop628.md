@@ -16,6 +16,7 @@ public class Foo
 
     private void FooMethod()
     {
+        ...
         var bar = new Bar();
         bar.BarMethod(this);
     }
@@ -25,6 +26,7 @@ public class Bar
 {
     public Foo BarMethod(Foo myFoo)
     {
+        ...
         return myFoo;
     }
 }
@@ -40,10 +42,12 @@ public class Foo
 
     private void FooMethod()
     {
+        ...
         BarMethod(this);
     }
     public Foo BarMethod(Foo myFoo)
     {
+        ...
         return myFoo;
     }
 }
