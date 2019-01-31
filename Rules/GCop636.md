@@ -1,6 +1,6 @@
 ﻿# GCop 636
 
-> *"It should be written as if ( {'NullableObject'}?.{'YourProperty'} == someValue)"*
+> *"It should be written as if ( foo?.Bar == fooBar)"*
 
 ## Rule description
 
@@ -9,7 +9,7 @@ The `?.` operator lets you access members and elements only when the receiver is
 ## Example
 
 ```csharp
-if(myObject != null && myObject.myProperty == 0)
+if(foo != null && foo.Bar == 0)
 {
     ....
 }
@@ -18,7 +18,7 @@ if(myObject != null && myObject.myProperty == 0)
 *should be* 🡻
 
 ```csharp
-if(myObject?.myProperty == 0)
+if(foo?.Bar == 0)
 {
     ....
 }
