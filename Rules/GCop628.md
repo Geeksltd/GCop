@@ -16,8 +16,6 @@ public class Foo
 
     private void FooMethod()
     {
-        this.Param1 = "something";
-        this.Param2 = "anotherthing";
         var bar = new Bar();
         bar.BarMethod(this);
     }
@@ -35,5 +33,18 @@ public class Bar
 *should be* 🡻
 
 ```csharp
-(...corrected version)
+public class Foo
+{
+    string Param1 { get; set; }
+    string Param2 { get; set; }
+
+    private void FooMethod()
+    {
+        BarMethod(this);
+    }
+    public Foo BarMethod(Foo myFoo)
+    {
+        return myFoo;
+    }
+}
 ```
