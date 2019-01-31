@@ -1,6 +1,6 @@
 ﻿# GCop 639
 
-> *"It should be written as if ({'yourObject'}?.{'Property'} != null)"*
+> *"It should be written as if (foo?.Bar != null)"*
 
 ## Rule description
 
@@ -9,7 +9,7 @@ The `?.` operator lets you access members and elements only when the receiver is
 ## Example
 
 ```csharp
-if (myCookie != null && myCookie.Value != null)
+if (foo != null && foo.Value != null)
 {
     ...
 }
@@ -18,7 +18,7 @@ if (myCookie != null && myCookie.Value != null)
 *should be* 🡻
 
 ```csharp
-if (myCookie?.Value != null)
+if (foo?.Value != null)
 {
     ...
 }
