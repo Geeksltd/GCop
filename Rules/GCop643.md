@@ -1,6 +1,6 @@
 ﻿# GCop 643
 
-> *"Change to return {something} ?? {somethingElse};"*
+> *"Change to return `foo ?? bar;`"*
 
 ## Rule description
 
@@ -9,27 +9,29 @@ When returning a value or assigning it, there are cases where you want to use a 
 ## Example1
 
 ```csharp
-if (somethig != null)
-    return something;
+if (foo != null)
+    return foo;
 else 
-    return somethingElse;
+    return bar;
 ```
 
 *should be* 🡻
 
 ```csharp
-return something ?? somethingElse;
+return foo ?? bar;
 ```
 
 ## Example2
 
 ```csharp
-if (somethig != null) result = somethig;
-else result = somethingElse;
+if (foo != null)
+    result = foo;
+else 
+    result = bar;
 ```
 
 *should be* 🡻
 
 ```csharp
-result = myBoolObj ?? somethingElse;
+result = foo ?? bar;
 ```
