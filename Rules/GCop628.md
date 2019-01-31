@@ -1,15 +1,35 @@
 ﻿# GCop 628
 
-> *"Maybe define this method on `Foo` class as it's using \{number of used methods} of its members (compared to \{number of used methods} from this type)"*
+> *"Maybe define this method on `Foo` class as it's using \{count} of its members (compared to \{count} from this type)"*
 
 ## Rule description
 
-> see: https://github.com/Geeksltd/GCop/issues/158
+The methods which have parameters of a special type and return object of that type, should be written in the class of that type. It helps the readability of the code.
 
 ## Example
 
 ```csharp
-(...some violating rule)
+public class Foo
+{
+    string Param1 { get; set; }
+    string Param2 { get; set; }
+
+    private void FooMethod()
+    {
+        this.Param1 = "something";
+        this.Param2 = "anotherthing";
+        var bar = new Bar();
+        bar.BarMethod(this);
+    }
+}
+
+public class Bar
+{
+    public Foo BarMethod(Foo myFoo)
+    {
+        return myFoo;
+    }
+}
 ```
 
 *should be* 🡻
