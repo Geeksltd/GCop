@@ -9,14 +9,14 @@ Short methods that can be written in a single line should be written as expressi
 ## Example
 
 ```csharp
-public bool Check()
+public bool Foo()
 {
-    return boolValue;
+    return bar;
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public bool Check() => boolValue;
+public bool Foo() => bar;
 ```
