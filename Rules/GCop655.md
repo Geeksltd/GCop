@@ -15,15 +15,23 @@ It’s clear that `async void` methods have several disadvantages compared to `a
 ```csharp
 public async void Foo()
 {
-    var res  = await Task.Factory.StartNew(async () => { await Bar(); });
+    await Bar();
+}
+public async Task Bar()
+{
+    await Task.Delay(1000);
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public async Task RunSequence()
+public async Task Foo()
 {
-    SequenceTask = await Task.Factory.StartNew(async () => { await doSequence(); });
+    await Bar();
+}
+public async Task Bar()
+{
+    await Task.Delay(1000);
 }
 ```
