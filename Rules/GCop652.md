@@ -1,19 +1,19 @@
 ﻿# GCop 652
 
-> *"if (\{myVariable}.Any()) is unnecessary when using foreach."*
+> *"`if (foo.Any())` is unnecessary when using `foreach`."*
 
 ## Rule description
 
-Unless you have some logic after the foreach statement that you want to avoid, that's unnecessary to use `Any()` as it will work the same.
+Unless you have some logic after the `foreach` statement that you want to avoid, that's unnecessary to use `Any()` as it will work the same.
 
-When foreach iterates over your variable, detects that there are no items and will exit the loop.
+When `foreach` iterates over your variable, detects that there are no items and will exit the loop.
 
 ## Example
 
 ```csharp
-if(myCollection.Any())
+if(foo.Any())
 {
-    foreach(var item in myCollection)
+    foreach(var item in foo)
     {
         ...
     }
@@ -23,7 +23,7 @@ if(myCollection.Any())
 *should be* 🡻
 
 ```csharp
-foreach(var item in myCollection)
+foreach(var item in foo)
 {
     ...
 }
