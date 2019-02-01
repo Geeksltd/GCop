@@ -9,11 +9,11 @@ Compound assignment operators provide two benefits. Firstly, they produce more c
 ## Example
 
 ```csharp
-someInteger = someInteger + 2;
+foo = foo + 2;
 ```
 
 *should be* 🡻
 
 ```csharp
-someInteger += 2;
+foo += 2;
 ```
