@@ -9,22 +9,20 @@ Assignment of local variable or parameter just before `return` statement is redu
 ## Example1
 
 ```csharp
-bool SampleMethod(bool sampleArg)
+bool Foo(bool bar)
 {
     ...
-
-    sampleArg = false;
-    return sampleArg;
+    bar = false;
+    return bar;
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-bool SampleMethod(bool sampleArg)
+bool Foo(bool bar)
 {
     ...
-
     return false;
 }
 ```
@@ -32,23 +30,29 @@ bool SampleMethod(bool sampleArg)
 ## Example2
 
 ```csharp
-if(someBoolVar)
+bool FooBar(bool bar)
 {
-    bool anotherBoolVar = true;
-    someBoolVar = anotherBoolVar;
-    return someBoolVar;
+    if(bar)
+    {
+        bool foo = true;
+        bar = foo;
+        return bar;
+    }
+    ...
 }
-return false;
 ```
 
 *should be* 🡻
 
 ```csharp
-if(someBoolVar)
+bool FooBar(bool bar)
 {
-    var anotherBoolVar = true;
-    return someBoolVar;
+    if(bar)
+    {
+        bool foo = true;
+        return foo;
+    }
+    ...
 }
-return false;
 ```
 
