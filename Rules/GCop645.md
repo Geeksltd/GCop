@@ -1,6 +1,6 @@
 ﻿# GCop 645
 
-> *"Use ^ operator"*
+> *"Use `^` operator"*
 
 ## Rule description
 
