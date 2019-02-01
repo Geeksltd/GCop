@@ -1,6 +1,6 @@
 ﻿# GCop 654
 
-> *"Awaiting null will throw a runtime error. Add '?? Task.CompletedTask' after the expression."*
+> *"Awaiting `null` will throw a runtime error. Add `?? Task.CompletedTask` after the expression."*
 
 ## Rule description
 
@@ -8,11 +8,11 @@ The `?.` operator returns null task instead of calling method. The null referenc
 ## Example
 
 ```csharp
-await myObject?.myMethod();
+await foo?.Bar();
 ```
 
 *should be* 🡻
 
 ```csharp
-await (myObject?.myMethod() ?? Task.CompletedTask)
+await (foo?.Bar() ?? Task.CompletedTask)
 ```
