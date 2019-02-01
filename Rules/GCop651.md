@@ -15,14 +15,14 @@ With `await` your code will asynchronously wait until the task completes. This m
 ```csharp
 public static class DeadlockDemo
 {
-  static async Task DelayAsync()
+  static async Task Foo()
   {
       await Task.Delay(1000);
   }
   
-  public static void Foo()
+  public static void Bar()
   {
-       DelayAsync.Wait(); // This method can cause a deadlock when called in a GUI or ASP.NET context.
+       Foo.Wait(); // This method can cause a deadlock when called in a GUI or ASP.NET context.
   }
 }
 ```
@@ -32,14 +32,14 @@ public static class DeadlockDemo
 ```csharp
 public static class DeadlockDemo
 {
-  static async Task DelayAsync()
+  static async Task Foo()
   {
      await Task.Delay(1000);
   }
   
-  public static async Task Foo()
+  public static async Task Bar()
   {
-      await DelayAsync();
+      await Foo();
   }
 }
 ```
