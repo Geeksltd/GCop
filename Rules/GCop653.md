@@ -10,7 +10,7 @@ As a general rule, you should use "[async all the way down](https://stackoverflo
 
 With `await` your code will asynchronously wait until the task completes. This means the current method is "paused" (its state is captured) and the method returns an incomplete task to its caller. Later, when the await expression completes, the remainder of the method is scheduled as a continuation.
 
-`GetAwaiter.GetResult()` will just throw the exception caused directly, while `Task.Result` will throw an Aggregate Exception. This tends to make exception stack traces a lot more useful while using `GetAwaiter.GetResult()`.
+`GetAwaiter().GetResult()` will just throw the exception caused directly, while `Task.Result` will throw an Aggregate Exception. This tends to make exception stack traces a lot more useful while using `GetAwaiter().GetResult()`.
 
 ## Example
 
