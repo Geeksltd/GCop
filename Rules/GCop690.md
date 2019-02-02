@@ -1,29 +1,31 @@
 ﻿# GCop 690
 
-> *"Negative logic is taxing on the brain. Use variable == null instead."*
+> *"Negative logic is taxing on the brain. Use `foo == null` instead."*
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it’s better to check for null rather than negative `HasValue`. 
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it’s better to check for `null` rather than negative `HasValue`. 
 
 ## Example
 
 ```csharp
-public bool Check(int? myVar)
+public void Bar(int? foo)
 {
-    if (!myVar.HasValue) return false;
-    ...
-    return true;
+    if (!foo.HasValue)
+    {
+        ...
+    }
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public bool Check(int? myVar)
+public void Bar(int? foo)
 {
-    if (myVar == null) return false;
-    ...
-    return true;
+    if (foo == null)
+    {
+        ...
+    }
 }
 ```
