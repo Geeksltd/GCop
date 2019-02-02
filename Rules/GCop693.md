@@ -9,9 +9,9 @@ There is no point in having empty `else` part. Unused code should be removed as 
 ## Example
 
 ```csharp
-if (someCondition)
+if (condition)
 {
-    SampleMethod();
+    Foo();
 }
 else
 {
@@ -21,9 +21,9 @@ else
 *should be* 🡻
 
 ```csharp
-if (someCondition)
+if (condition)
 {
-    SampleMethod();
+    Foo();
 }
 ```
 
