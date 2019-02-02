@@ -10,28 +10,20 @@ Callers of non-public methods are always in your control. If the method is calle
 ## Example
 
 ```csharp
-class MyClass
+private void Bar(FooBar foo)
 {
-    ...
-    private void myMethod(SomeType myParam)
-    {
-        if (myParam == null)
-            throw new ArgumentNullException(nameOf(myParam));
-        
-        // use the parameter...
-    }
+    if (foo == null)
+        throw new ArgumentNullException(nameOf(foo));
+    
+    // use the parameter...
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-class MyClass
-{
-    ...
-    private void myMethod(SomeType myParam)
-    {        
-        // use the parameter...
-    }
+private void Bar(FooBar foo)
+{        
+    // use the parameter...
 }
 ```
