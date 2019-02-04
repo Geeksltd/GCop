@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Blank partial class files are unnecessary and should be removed.
+Blank `partial` class files are unnecessary and should be removed.
 
 ## Example
 

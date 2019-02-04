@@ -1,6 +1,6 @@
 ﻿# GCop 160
 
-> *"This is not readable. Either refactor into a method, or use If / else statement."*
+> *"This is not readable. Either refactor into a method, or use `If / else` statement."*
 
 ## Rule description
 

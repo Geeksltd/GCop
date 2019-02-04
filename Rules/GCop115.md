@@ -9,19 +9,19 @@ Long statements reduce code readability. Break down the body of `if` into anothe
 ## Example1
 
 ```csharp
-if (someBooleanExpression) Response.Redirect(string.Format("~/someAddress/someFolders/anotherFolder/{0}/", CurrentShop.Domain));
+if (condition) Response.Redirect(string.Format("~/someAddress/someFolders/anotherFolder/{0}/", CurrentShop.Domain));
 ```
 
 *should be* 🡻
 
 ```csharp
-if (someBooleanExpression)
+if (condition)
    Response.Redirect(string.Format("~/someAddress/someFolders/anotherFolder/{0}/", CurrentShop.Domain));
 ```
 *OR* 🡻
 
 ```csharp
-if (someBooleanExpression)
+if (condition)
 {
    Response.Redirect(string.Format("~/someAddress/someFolders/anotherFolder/{0}/", CurrentShop.Domain));
 }
