@@ -9,11 +9,11 @@ If you call `OrderBy` multiple times, it will effectively reorder the sequence c
 ## Example
 
 ```csharp
-var result = myCollection.OrderBy(or => or.SomeElement).OrderBy(or => or.AnotherElement).ToList();
+var result = fooBar.OrderBy(or => or.Bar).OrderBy(or => or.Foo).ToList();
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = myCollection.OrderBy(or => or.SomeElement).ThenBy(or => or.AnotherElement).ToList();
+var result = fooBar.OrderBy(or => or.Bar).ThenBy(or => or.Foo).ToList();
 ```
