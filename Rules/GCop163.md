@@ -1,6 +1,6 @@
 ﻿# GCop 163
 
-> *"Subsequent OrderBy or OrderByDescending cancel each other out. Instead ThenBy or ThenByDescending should be called."*
+> *"Subsequent `OrderBy` or `OrderByDescending` cancel each other out. Instead `ThenBy` or `ThenByDescending` should be called."*
 
 ## Rule description
 

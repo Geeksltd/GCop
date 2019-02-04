@@ -1,6 +1,6 @@
 ﻿# GCop 171
 
-> *"There is no need for calling `.Value`. Replace with 'foo'"*
+> *"There is no need for calling `.Value`. Replace with `fromDate > toDate`"*
 
 ## Rule description
 
@@ -9,7 +9,7 @@ In some situations, there is no need to use `.Value` for nullable value types. I
 ## Example
 
 ```csharp
-public void MyMethod(DateTime? fromDate = null, DateTime? toDate = null)
+public void Foo(DateTime? fromDate = null, DateTime? toDate = null)
 {
     if(fromDate.Value > toDate.Value)
     {
@@ -21,7 +21,7 @@ public void MyMethod(DateTime? fromDate = null, DateTime? toDate = null)
 *should be* 🡻
 
 ```csharp
-public void MyMethod(DateTime? fromDate = null, DateTime? toDate = null)
+public void Foo(DateTime? fromDate = null, DateTime? toDate = null)
 {
     if(fromDate > toDate)
     {

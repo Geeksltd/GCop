@@ -1,6 +1,6 @@
 ﻿# GCop 169
 
-> *"Remove `NullableObject.HasValue` which is redundant. If `NullableObject.HasValue` is null, then 'rightExpression' will be false anyway."*
+> *"Remove `foo.HasValue` which is redundant. If `foo.HasValue` is null, then 'rightExpression' will be false anyway."*
 
 ## Rule description
 
@@ -8,7 +8,7 @@ When you perform comparisons with nullable types, if the value of one of the nul
 ## Example
 
 ```csharp
-if (myNullableDecimal.HasValue && myNullableDecimal.Value == decimal.Zero)
+if (foo.HasValue && foo.Value == decimal.Zero)
 {
     ...
 }
@@ -17,7 +17,7 @@ if (myNullableDecimal.HasValue && myNullableDecimal.Value == decimal.Zero)
 *should be* 🡻
 
 ```csharp
-if (myNullableDecimal == decimal.Zero)
+if (foo == decimal.Zero)
 {
     ...
 }

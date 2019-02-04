@@ -1,6 +1,6 @@
 ﻿# GCop 168
 
-> *"Don't instantiate a variable with the **new** keyword if you are going to assign it to a different object immediately."*
+> *"Don't instantiate a variable with the `new` keyword if you are going to assign it to a different object immediately."*
 
 ## Rule description
 
