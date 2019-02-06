@@ -9,20 +9,28 @@ In C#, from version 6, the `?.` expression can be used to simplify the code.
 ## Example 1
 
 ```csharp
-Delegate handler = null;
-...
-if (handler != null)
+public delegate void LogHandler(string message);
+public event LogHandler Log;
+
+protected void OnLog(string message)
 {
-    handler.Invoke();
+    if (Log != null)
+    {
+        Log(message);
+    }
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-Delegate handler = null;
-...
-handler?.Invoke();
+public delegate void LogHandler(string message);
+public event LogHandler Log;
+
+protected void OnLog(string message)
+{
+    Log?.Invoke(message);  
+}
 ```
 
 ## Example 2

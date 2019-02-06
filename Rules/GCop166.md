@@ -11,8 +11,10 @@ Using assignment within conditional statements would decrease readability. Inste
 ```csharp
 public void MyMethod()
 {
-    if ((TotalRows = Query.Count()) < 1)
+    if ((foo = items.Count()) < 1)
+    {
         ...
+    }
 }
 ```
 
@@ -21,9 +23,11 @@ public void MyMethod()
 ```csharp
 public void MyMethod()
 {
-    TotalRows = Query.Count();
-    if (TotalRows < 1)
+    var foo = items.Count();
+    if (foo < 1)
+    {
         ...
+    }
 }
 ```
 
