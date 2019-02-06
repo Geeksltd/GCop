@@ -1,6 +1,6 @@
 ﻿# GCop 218
 
-> *"For consistency and clarity, use '@this' instead of {'argumentName'} for the first parameter of extension methods"*
+> *"For consistency and clarity, use `@this` instead of `foo` for the first parameter of extension methods"*
 
 ## Rule description
 
@@ -11,7 +11,7 @@ To further clarify that the role of this parameter is indeed to specify the `thi
 ## Example
 
 ```csharp
-public static int CountUniqueWords(this string something)
+public static int Bar(this string foo)
 {
     ...
 }
@@ -20,7 +20,7 @@ public static int CountUniqueWords(this string something)
 *should be* 🡻
 
 ```csharp
-public static int CountUniqueWords(this string @this)
+public static int Bar(this string @this)
 {
     ...
 }
