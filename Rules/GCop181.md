@@ -12,7 +12,7 @@ A base class should not know about its subclasses. When your logic depends on th
 public class BaseClass
 {
     ...
-    public void SomeMethod()
+    public void Foo()
     {
         if (this is DerivedClass)
         {
@@ -32,7 +32,7 @@ public class BaseClass
 public class BaseClass
 {
     ...
-    public virtual void SomeMethod()
+    public virtual void Foo()
     {
         // Implementation B
     }
@@ -40,7 +40,7 @@ public class BaseClass
 
 public class DerivedClass : BaseClass
 {
-    public override void SomeMethod()
+    public override void Foo()
     {
         // Implementation A
     }
