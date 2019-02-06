@@ -11,7 +11,7 @@ There could be cases where the method **gets** something from someone and saves 
 ## Example
 
 ```csharp
-public void GetCreditAsync(string Username, string Password) 
+public void GetFoo(string username, string password) 
 {
     ...
 }
@@ -20,7 +20,7 @@ public void GetCreditAsync(string Username, string Password)
 *should be* 🡻
 
 ```csharp
-public void SetCreditAsync(string Username, string Password)
+public void SetFoo(string username, string password)
 {
     ...        
 }
