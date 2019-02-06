@@ -11,9 +11,9 @@ As instance methods are defined inside a class, the name of the class is already
 ## Example
 
 ```csharp
-public class SampleClass
+public class Foo
 {
-    public void BindSampleClass()
+    public void BarFoo()
     {
         ...
     }
@@ -23,9 +23,9 @@ public class SampleClass
 *should be* 🡻
 
 ```csharp
-public class SampleClass
+public class Foo
 {
-    public void Bind()
+    public void Bar()
     {
         ...
     }
