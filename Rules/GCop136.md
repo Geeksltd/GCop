@@ -28,7 +28,7 @@ public class Bar
     {
         ...
     }
-    private const string sampleConst = "someText";
+    private const string fooBar = "someText";
 
 }
 ```
@@ -38,7 +38,7 @@ public class Bar
 ```csharp
 public class Bar
 {
-    private const string sampleConst = "someText";
+    private const string fooBar = "someText";
     
     public void Foo() 
     {
