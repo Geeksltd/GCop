@@ -11,7 +11,7 @@ A single character variable name isn't descriptive enough. Sometimes it's accept
 ```csharp
 foreach (var i in items)
 {
-    ...
+    ... (many lines of code)
 }
 ```
 
@@ -20,6 +20,6 @@ foreach (var i in items)
 ```csharp
 foreach (var item in items)
 {
-    ...
+    ... (many lines of code)
 }
 ```
