@@ -15,7 +15,7 @@ Camel Casing is used for these identifiers :
 ## Example 1
 
 ```csharp
-void MyMethod(int MyParameter)
+void Foo(int Bar)
 {  
     ...
 }
@@ -24,7 +24,7 @@ void MyMethod(int MyParameter)
 *should be* 🡻
 
 ```csharp
-void MyMethod(int myParameter)
+void Foo(int bar)
 {  
     ...
 }
@@ -33,9 +33,9 @@ void MyMethod(int myParameter)
 ## Example 2
 
 ```csharp
-void myMethod()
+void Foo()
 {
-    int MyLocalVar = 3;
+    int LocalBar = 3;
     ...
 }
 ```
@@ -43,9 +43,9 @@ void myMethod()
 *should be* 🡻
 
 ```csharp
-void myMethod()
+void Foo()
 {
-    int myLocalVar = 3;
+    int localBar = 3;
     ...
 }
 ```
@@ -53,21 +53,21 @@ void myMethod()
 ## Example 3
 
 ```csharp
-int _SomeName;
-public int SomeName
+int _Foo;
+public int Foo
 { 
-    get => _SomeName;
-    set => _SomeName = value;
+    get => _Foo;
+    set => _Foo = value;
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-int someName;
-public int SomeName
+int foo;
+public int Foo
 { 
-    get => someName;
-    set => someName = value;
+    get => foo;
+    set => foo = value;
 }
 ```
