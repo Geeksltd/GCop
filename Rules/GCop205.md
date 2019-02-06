@@ -13,7 +13,7 @@ Prefix your C# interfaces with *'I'* because that is the .NET convention used an
 ## Example 1
 
 ```csharp
-public interface Sample
+public interface Foo
 {
     ...
 }
@@ -22,7 +22,7 @@ public interface Sample
 *should be* 🡻
 
 ```csharp
-public interface ISample
+public interface IFoo
 {
     ...
 }
@@ -31,7 +31,7 @@ public interface ISample
 ## Example 2
 
 ```csharp
-public interface iSample
+public interface iFoo
 {
     ...
 }
@@ -40,7 +40,7 @@ public interface iSample
 *should be* 🡻
 
 ```csharp
-public interface ISample
+public interface IFoo
 {
     ...
 }
@@ -49,7 +49,7 @@ public interface ISample
 ## Example 3
 
 ```csharp
-public interface Isample
+public interface Ifoo
 {
     ...
 }
@@ -58,7 +58,7 @@ public interface Isample
 *should be* 🡻
 
 ```csharp
-public interface ISample
+public interface IFoo
 {
     ...
 }

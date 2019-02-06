@@ -11,24 +11,24 @@ Underscore should be avoided in most cases. The only exception where it's allowe
 ## Example 1
 
 ```csharp
-void MyMethod()
+void Foo()
 {
-    var _myVariable = "someText";
+    var _bar = "someText";
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-void MyMethod()
+void Foo()
 {
-    var myVariable = "someText";
+    var bar = "someText";
 }
 ```
 
 ## Example 2
 ```csharp
-public class Some_Class
+public class Foo_Class
 {
     ...
 }
@@ -37,7 +37,7 @@ public class Some_Class
 *should be* 🡻
 
 ```csharp
-public class SomeClass
+public class FooClass
 {
     ...
 }

@@ -1,6 +1,6 @@
 ﻿# GCop 210
 
-> *"Suffix the name of a service class with 'Service' as it's inside the Services folder."*
+> *"Suffix the name of a service class with `Service` as it's inside the Services folder."*
 
 ## Rule description
 
@@ -9,9 +9,9 @@ Using "*Service*" as a suffix for a class indicates that the class represents a 
 ## Example
 
 ```csharp
-namespace MyNameSpace.Service
+namespace Foo.Service
 {
-    public class SampleClass 
+    public class Bar 
     {   
         ...   
     }
@@ -21,9 +21,9 @@ namespace MyNameSpace.Service
 *should be* 🡻
 
 ```csharp
-namespace MyNameSpace.Service
+namespace Foo.Service
 {
-    public class SampleClassService 
+    public class BarService 
     {   
         ...   
     }

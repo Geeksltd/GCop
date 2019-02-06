@@ -1,6 +1,6 @@
 ﻿# GCop 214
 
-> *"The variable defined to return the result of the method should be named **result**"*
+> *"The variable defined to return the result of the method should be named `result`"*
 
 ## Rule description
 
@@ -11,15 +11,11 @@ Often you need to define a variable that is used to hold the return value of the
 ## Example
 
 ```csharp
-public string GetTheThing()
+public string Foo()
 {
-    var anyName = "something";
+    var bar = "something";
     ...
-    if (BlahBlah())
-        anyName = "another-thing";
-    ...
-    
-    return anyName;
+    return bar;
 }
 ```
 
@@ -30,10 +26,6 @@ public string GetTheThing()
 {
     var result = "something";
     ...
-    if (BlahBlah())
-        result = "another-thing";
-    ...
-    
     return result;
 }
 ```
