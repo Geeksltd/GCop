@@ -21,7 +21,7 @@ If the nature of the value is business related, or easy to understand by a norma
 ## Example 1
 
 ```csharp
-public static void MyMethod(int maxWidth = 300)
+public static void Foo(int bar = 300)
 { 
     ...    
 }
@@ -30,8 +30,8 @@ public static void MyMethod(int maxWidth = 300)
 *should be* 🡻
 
 ```csharp
-const int DefaultMaxWidth = 300;
-public static void MyMethod(int maxWidth = DefaultMaxWidth)
+const int DefaultBar = 300;
+public static void Foo(int bar = DefaultBar)
 { 
     ...   
 }
@@ -40,7 +40,7 @@ public static void MyMethod(int maxWidth = DefaultMaxWidth)
 ## Example 2
 
 ```csharp
-public static void MyMethod()
+public static void Foo()
 {
     try
     {
@@ -56,7 +56,7 @@ public static void MyMethod()
 *should be* 🡻
 
 ```csharp
-public static void MyMethod()
+public static void Foo()
 {
     try
     {
@@ -72,7 +72,7 @@ public static void MyMethod()
 ## Example 3
 
 ```csharp
-var result = myList.Where(lai => lai.ClassID == 18).ToList();
+var result = foo.Where(lai => lai.Bar == 18).ToList();
 ```
 
 *should be* 🡻
@@ -87,5 +87,5 @@ public class Settings // Database Entity
 }
 
 ...
-var result = myList.Where(lai => lai.ClassID == Settings.Current.PrimaryClass).ToList();
+var result = foo.Where(lai => lai.Bar == Settings.Current.PrimaryClass).ToList();
 ```

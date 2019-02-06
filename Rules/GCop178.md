@@ -12,7 +12,7 @@ When you have a mix of `&&` and `||` operators, even though the parenthesis may 
 ## Example
 
 ```csharp
-if (height > 200 && height > 250 || width == 500)
+if (foo > 200 && foo > 250 || bar == 500)
 {
     ...
 }
@@ -21,7 +21,7 @@ if (height > 200 && height > 250 || width == 500)
 *should be* 🡻
 
 ```csharp
-if (height > 200 && (height > 250 || width == 500))
+if (foo > 200 && (foo > 250 || bar == 500))
 {
     ...
 }
