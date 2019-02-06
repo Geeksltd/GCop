@@ -9,9 +9,9 @@ It is a bad practice to declare a variable only to immediately `return` or `thro
 ## Example
 
 ```csharp
-public int MyMethod(int myParam)
+public int Foo(int bar)
 {
-    var amount = myParam * 200;
+    var amount = bar * 200;
     return amount;  
 }
 ```
@@ -19,12 +19,12 @@ public int MyMethod(int myParam)
 *should be* 🡻
 
 ```csharp
-public int MyMethod(int myParam)
+public int Foo(int bar)
 {
-    return myParam * 200; 
+    return bar * 200; 
 }
 ```
 *which, in this case, allows it to get even shorter* 🡻
 ```csharp
-public int MyMethod(int myParam)=> myParam * 200; 
+public int Foo(int bar)=> bar * 200; 
 ```
