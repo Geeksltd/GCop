@@ -10,7 +10,7 @@ An attribute is a class that is derived from the `Attribute` class through inher
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class)]
-public class Sample : Attribute
+public class Foo : Attribute
 {
     ...
 }
@@ -20,7 +20,7 @@ public class Sample : Attribute
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class)]
-public class SampleAttribute : Attribute
+public class FooAttribute : Attribute
 {
     ...
 }
@@ -30,7 +30,7 @@ public class SampleAttribute : Attribute
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class)]
-public class Sampleattribute : Attribute
+public class Fooattribute : Attribute
 {
     ...
 }
@@ -40,7 +40,7 @@ public class Sampleattribute : Attribute
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class)]
-public class SampleAttribute : Attribute
+public class FooAttribute : Attribute
 {
     ...
 }
