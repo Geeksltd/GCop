@@ -11,8 +11,8 @@ It is a bad practice to declare a variable only to immediately `return` or `thro
 ```csharp
 public int Foo(int bar)
 {
-    var amount = bar * 200;
-    return amount;  
+    var result = bar * 200;
+    return result;  
 }
 ```
 
