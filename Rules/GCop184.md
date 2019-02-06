@@ -1,6 +1,6 @@
 ﻿# GCop 184
 
-> *"Avoid using `Null` on the left side of comparision statement."*
+> *"Avoid using `null` on the left side of comparision statement."*
 
 ## Rule description
 
@@ -9,7 +9,9 @@ Using an exemplary value like `null` as the first (left) operand is counterintui
 ## Example
 
 ```csharp
-if (null == someNullableVar)
+bool? foo;
+...
+if (null == foo)
 {
     ...
 }
@@ -18,7 +20,9 @@ if (null == someNullableVar)
 *should be* 🡻
 
 ```csharp
-if (someNullableVar == null)
+bool? foo;
+...
+if (foo == null)
 {
     ...
 }
