@@ -9,7 +9,7 @@ It is shorter and more readable to write `CountSomething` as a method name than 
 ## Example
 
 ```csharp
-public int FooCount()
+public int GetFooCount()
 {
     ...
 }
