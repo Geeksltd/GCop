@@ -9,17 +9,17 @@ A single character variable name isn't descriptive enough. Sometimes it's accept
 ## Example
 
 ```csharp
-foreach (var c in myArray)
+foreach (var i in items)
 {
-    ... (many lines of code)
+    ...
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-foreach (var company in myArray)
+foreach (var item in items)
 {
-    ... (many lines of code)
+    ...
 }
 ```
