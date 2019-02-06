@@ -1,6 +1,6 @@
 # GCop 204
 
-> *"Rename the variable 'variable name' to something clear and meaningful."*
+> *"Rename the variable `VariableName` to something clear and meaningful."*
 
 ## Rule description
 
@@ -15,7 +15,7 @@ There are some exception in this rule:
 ## Example 1
 
 ```csharp
-void MyMethod(DateTime d)
+void Foo(DateTime d)
 {
     ...
 }
@@ -24,7 +24,7 @@ void MyMethod(DateTime d)
 *should be* 🡻
 
 ```csharp
-void MyMethod(DateTime date)
+void Foo(DateTime date)
 {
     ...
 }
@@ -33,7 +33,7 @@ void MyMethod(DateTime date)
 ## Example 2
 
 ```csharp
-void SomeMethod()
+void Foo()
 {
     var d = ...;
 }
@@ -42,7 +42,7 @@ void SomeMethod()
 *should be* 🡻
 
 ```csharp
-void SomeMethod()
+void Foo()
 {
     var date = ...;
 }
@@ -51,7 +51,7 @@ void SomeMethod()
 ## Example 3
 
 ```csharp
-public class SampleClass
+public class Foo
 {
     public string F;    
 }
@@ -60,7 +60,7 @@ public class SampleClass
 *should be* 🡻
 
 ```csharp
-public class SampleClass
+public class Foo
 {
     public string Family;   
 }
