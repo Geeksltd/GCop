@@ -11,14 +11,15 @@ To avoid such problems, if your initializatoin code can throw exceptions (either
 ## Example
 
 ```csharp
-public class MyClass
+public class Foo
 {
+    static bool IsInitialized;
     ...
-    static MyClass()
+    static Foo()
     {
         ...
         if (...)
-           throw new Exception("SomeText");
+            throw new Exception("SomeText");
     }
 }
 ```
@@ -41,7 +42,7 @@ public class MyClass
     void AnyOtherMethodThatReliesOnInitialization()
     {
         if (!IsInitialized) 
-            throw new InvalidOperationException("MyClass.Initialize() is not called...");
+            throw new InvalidOperationException("Foo.Initialize() is not called...");
         
         ...
     }
