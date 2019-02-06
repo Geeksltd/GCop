@@ -1,6 +1,6 @@
 # GCop 216
 
-> *"A method named `GetMethodName` is expected return a value. If it's meant to be void, then use a verb other than `Get` such as Read, Download, Sync, ..."*
+> *"A method named `GetFoo` is expected return a value. If it's meant to be void, then use a verb other than `Get` such as Read, Download, Sync, ..."*
 
 ## Rule description
 
