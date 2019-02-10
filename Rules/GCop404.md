@@ -1,6 +1,6 @@
 ﻿# GCop 404
 
-> *"Multiple 'if' and 'else if' on the same variable can be replaced with a 'switch'"*
+> *"Multiple `if` and `else if` on the same variable can be replaced with a 'switch'"*
 
 ## Rule description
 
@@ -11,15 +11,15 @@ A `switch` has a semantic meaning. It's saying *"pick one of these based on this
 ## Example
 
 ```csharp
-if (role == 0)
+if (foo == 0)
 {
     ...
 }
-else if (role == 1)
+else if (foo == 1)
 {
     ...
 }
-else if (role == 2)
+else if (foo == 2)
 {
     ...
 }
@@ -28,7 +28,7 @@ else if (role == 2)
 *should be* 🡻
 
 ```csharp
-switch (role)
+switch (foo)
 {
     case 0:
        ...
