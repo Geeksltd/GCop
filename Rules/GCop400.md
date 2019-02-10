@@ -9,13 +9,11 @@ Empty object initializers are just unnecessary noise and should be simplified.
 ## Example
 
 ```csharp
-var customer = new Customer
-{
-};
+var foo = new Foo {};
 ```
 
 *should be* 🡻
 
 ```csharp
-var customer = new Customer();
+var foo = new Foo();
 ```
