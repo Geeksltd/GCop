@@ -9,16 +9,16 @@ Object initializers let you assign values to any accessible fields or properties
 ## Example
 
 ```csharp
-var myObj = new MyClassName();
-myObj.Property1 = "somethings";
-myObj.Property2 = 2;
-myObj.Property3 = 1.2;
+var foo = new Foo();
+foo.Property1 = "somethings";
+foo.Property2 = 2;
+foo.Property3 = 1.2;
 ```
 
 *should be* 🡻
 
 ```csharp
-var myObj = new MyClassName
+var foo = new Foo
 {
     Property1 = "somethings";
     Property2 = 2;

@@ -10,11 +10,11 @@ Adding the parenthesis will be unnecessary noise.
 ## Example
 
 ```csharp
-var myObject = new MyClassName() { FisrtProperty = "someText" };
+var foo = new Foo() { FisrtProperty = "someText" };
 ```
 
 *should be* 🡻
 
 ```csharp
-var myObject = new MyClassName { FisrtProperty = "someText" };
+var foo = new Foo { FisrtProperty = "someText" };
 ```
