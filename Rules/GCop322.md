@@ -9,7 +9,7 @@
 ## Example
 
 ```csharp
-if (myEnumerable.Count() > someValue)
+if (foo.Count() > bar)
 {
     ...
 }
@@ -18,7 +18,7 @@ if (myEnumerable.Count() > someValue)
 *should be* 🡻
 
 ```csharp
-if (myEnumerable.Skip(someValue).Any())
+if (foo.Skip(bar).Any())
 {
     ...
 }

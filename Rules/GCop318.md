@@ -1,6 +1,6 @@
 ﻿# GCop 318
 
-> *"This will cause the query to be computed multiple times. Instead call .ToList() on the variable declaration line to avoid unwanted extra processing."*
+> *"This will cause the query to be computed multiple times. Instead call `.ToList()` on the variable declaration line to avoid unwanted extra processing."*
 
 ## Rule description
 
@@ -11,9 +11,10 @@ If you need the result of an `IEnumerable` object more than once, it's better to
 ## Example
 
 ```csharp
-private void MyMethod()
+private void Foo()
 {
-    var children = categories.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
+    ...
+    var children = bar.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
     
     if (children.Count() == ...) // Running Count() requires the above lambda expression to get executed for every item.
     {
@@ -30,9 +31,10 @@ private void MyMethod()
 *should be* 🡻
 
 ```csharp
-private void MyMethod()
+private void Foo()
 {
-    var children = allcategories.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
+    ...
+    var children = bar.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
                    .ToArray(); // the lambda expression is executed only once per item and the result is stored.
     
     if (children.Count() == ...)

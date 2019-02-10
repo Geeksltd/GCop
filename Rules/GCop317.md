@@ -11,17 +11,15 @@ We should write as short and simple code as it is possible. Repetition will redu
 CastExpression
 
 ```csharp
-public void MyMethod()
+if(condition)
 {
-    if(something == otherthing)
-    {
-        AnotherMethod((int)Status.Wait, "thisString");
-    }
-    else 
-    {
-        AnotherMethod((int)Status.Wait, "anotherString");
-    }
+    Bar((int)Status.Wait, "this");
 }
+else 
+{
+    Bar((int)Status.Wait, "that");
+}
+
 ```
 
 *should be* 🡻
@@ -31,13 +29,13 @@ public void MyMethod()
 {
     int waitStatus = (int)Status.Wait;
     
-    if(something == otherthing)
+    if(condition)
     {
-        AnotherMethod(waitStatus, "thisString");
+        Bar(waitStatus, "this");
     }
     else 
     {
-        AnotherMethod(waitStatus, "anotherString");
+        Bar(waitStatus, "that");
     }
 }
 ```
