@@ -1,6 +1,6 @@
 ﻿# GCop 405
 
-> *"You should use {'conditional access'}"*
+> *"You should use `foo?.Reverse();`"*
 
 ## Rule description
 
@@ -9,12 +9,12 @@ The null-condition operator `?.` help you write less code and much simpler code 
 ## Example
 
 ```csharp
-if (Results != null)
-    Results.Reverse();
+if (foo != null)
+    foo.Reverse();
 ```
 
 *should be* 🡻
 
 ```csharp
-Results?.Reverse();
+foo?.Reverse();
 ```
