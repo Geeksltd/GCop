@@ -9,11 +9,11 @@ Human brain can understand positive expressions and statements faster than negat
 ## Example
 
 ```csharp
-var bar = !(something < otherthing);
+var bar = !(foo < bar);
 ```
 
 *should be* 🡻
 
 ```csharp
-var bar = something >= otherthing;
+var bar = foo >= bar;
 ```
