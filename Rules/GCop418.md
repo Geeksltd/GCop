@@ -10,21 +10,27 @@ Unnecessary explicit casting is noise in code, and can even decrease performance
 ## Example1
 
 ```csharp
-var myVar = (int)intValue;
+void Foo(int foo)
+{
+    var bar = (int)foo;
+}
 ```
 
 *should be* 🡻
 
 ```csharp
-var myVar = intValue;
+void Foo(int foo)
+{
+    var bar = foo;
+}
 ```
 
 ## Example2
 
 ```csharp
-var myVar = (int)MyMethod();
+var bar = (int)Foo();
 
-public int MyMethod()
+public int Foo()
 {
     ...
 }
@@ -33,9 +39,9 @@ public int MyMethod()
 *should be* 🡻
 
 ```csharp
-var myVar = MyMethod();
+var bar = Foo();
 
-public int MyMethod()
+public int Foo()
 {
     ...
 }
