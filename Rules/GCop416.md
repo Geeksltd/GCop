@@ -11,13 +11,13 @@ To simplify the code and improve the code readability we can combine the `else` 
 ```csharp
 if (condition1)
 {
-    SomeMethod();
+    Foo();
 }
 else
 { 
     if (condition2)
     {
-        AnotherMethod();
+        Bar();
     }
 }
 ```
@@ -27,10 +27,10 @@ else
 ```csharp
 if (condition1)
 {
-    SomeMethod();
+    Foo();
 }
 else if (condition2)
 {
-    AnotherMethod();
+    Bar();
 }
 ```
