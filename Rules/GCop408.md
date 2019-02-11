@@ -1,6 +1,6 @@
 ﻿# GCop 408
 
-> *"Flag or switch parameters (bool) should go after all non-optional parameters. If the boolean parameter is not a flag or switch, split the method into two different methods, each doing one thing."*
+> *"Flag or switch parameters (`bool`) should go after all non-optional parameters. If the boolean parameter is not a flag or switch, split the method into two different methods, each doing one thing."*
 
 ## Rule description
 
@@ -33,11 +33,13 @@ public void Invite(bool telephone, User user)
 {
     if (telephone)
     {
-        // ... Send an invitation SMS
+        ...
+        //Send an invitation SMS
     }
     else 
     {
-        // ... Send an invitation email
+        ...
+        //Send an invitation email
     }
 }
 ```
@@ -47,11 +49,13 @@ public void Invite(bool telephone, User user)
 ```csharp
 public void InviteByTelephone(User user)
 {
-     // ... Send an invitation SMS
+    ... 
+    //Send an invitation SMS
 }
 
 public void InviteByEmail(User user)
 {
-     // ... Send an invitation email
+    ...
+    //Send an invitation email
 }
 ```
