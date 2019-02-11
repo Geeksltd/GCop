@@ -1,6 +1,6 @@
 # GCop 414
 
-> *"Remove .ToString() as it's unnecessary."*
+> *"Remove `.ToString()` as it's unnecessary."*
 
 ## Rule description
 
@@ -12,13 +12,13 @@ In many cases it is not necessary to call `ToString` method when using the + ope
 ## Example 1
 
 ```csharp
-var result = "someText" + myObject.ToString() + " ...";
+var result = "someText" + foo.ToString() + " ...";
 ```
 
 should be 🡻
 
 ```csharp
-var result = "someText" + myObject + " ...";
+var result = "someText" + foo + " ...";
 ```
 
 ## Example 2

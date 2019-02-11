@@ -1,6 +1,6 @@
 ﻿# GCop 413
 
-> *"It should be written as 'PositiveExpression'"*
+> *"It should be written as **PositiveExpression**"*
 
 ## Rule description
 
