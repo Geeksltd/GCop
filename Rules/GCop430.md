@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use *`HasValue`* rather than *`!= null` for `Nullable<T>` object*. 
+Human brain can understand positive expressions and statements faster than negative ones. To improve code readability it is better to use `HasValue` rather than `!= null` for nullable types object. 
 
 ## Example
 
