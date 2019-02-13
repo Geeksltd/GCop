@@ -11,11 +11,11 @@ It seems that such expressions are always incorrect and created as a result of a
 ## Example
 
 ```csharp
-var cityCode = cityName == "london" ? 100 : 100;
+var foo = bar == "something" ? 100 : 100;
 ```
 
 *should be* 🡻
 
 ```csharp
-var cityCode = cityName == "london" ? 100 : 0;
+var foo = bar == "something" ? 100 : 0;
 ```

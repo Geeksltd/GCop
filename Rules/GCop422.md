@@ -9,9 +9,9 @@ Using multiple return in a `Where` clause reduce code readability. Instead you c
 ## Example
 
 ```csharp
-myCollection.Where(rec =>
+foo.Where(rec =>
 {
-    if (rec == someValue)
+    if (rec == bar)
         return true;
     return false;
 });
@@ -20,10 +20,10 @@ myCollection.Where(rec =>
 *should be* 🡻
 
 ```csharp
-myCollection.Where(rec => DecideReturnStatement(rec));
-bool DecideReturnStatement(int rec)
+foo.Where(rec => DecideReturnStatement(rec));
+bool DecideReturnStatement(int rec, int bar)
 {
-    if (rec == someValue)
+    if (rec == bar)
         return true;
     return false;
 }
