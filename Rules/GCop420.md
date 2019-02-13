@@ -2,13 +2,13 @@
 
 > *"Methods should not be empty."*
 >
-> *"Methods should not be empty. If it's only for "interfaceName" interface compliance, use explicit interface method implementation."*
+> *"Methods should not be empty. If it's only for "IFoo" interface compliance, use explicit interface method implementation."*
 > 
 > *"Constructor should not be empty."*
 
 ## Rule description
 
-Empty methods not having any nested comments are just tolerated in Abstract classes as those empty methods are usual when implementing the visitor pattern.
+Empty methods not having any nested comments are just tolerated in `abstract` classes as those empty methods are usual when implementing the visitor pattern.
 
 ## Example1
 
@@ -30,7 +30,7 @@ public static void Log(this Exception ex)
 ## Example2
 
 ```csharp
-public class MyClass : IHttpModule
+public class Foo : IDisposable
 {
     ...
     public void Dispose()
@@ -41,27 +41,29 @@ public class MyClass : IHttpModule
 *should be* 🡻
 
 ```csharp
-public class MyClass : IHttpModule
+public class Foo : IDisposable
 {
     ...
-    void IHttpModule.Dispose() { }
+    void IDisposable.Dispose() { }
 }
 ```
 
 ## Example3
 
 ```csharp
-public class MyClass 
+public class Foo 
 {
-    public MyClass()
+    public Foo()
     {
     }
+    ...
 }
 ```
 *should be* 🡻
 
 ```csharp
-public class MyClass
+public class Foo
 {
+    ...
 }
 ```
