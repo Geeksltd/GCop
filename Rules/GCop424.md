@@ -1,6 +1,6 @@
 ﻿# GCop 424
 
-> *"This method is redundant. Callers of this method can just call \{Collection Name}.Count() which is as clean."*
+> *"This method is redundant. Callers of this method can just call `Foo.Count()` which is as clean."*
 
 ## Rule description
 
@@ -11,28 +11,28 @@ This warning is shown when the collection property is itself `public`.
 ## Example
 
 ```csharp
-public class MyClass
+public class Bar
 {
-    public IEnumerable<string> MyString { get; set; }
+    public IEnumerable<string> Foo { get; set; }
     
-    public int MyCountMethod()
+    public int CountFoo()
     {
-        return MyString.Count();
+        return Foo.Count();
     }
     ...
 }
 
-var countResult = MyClassObject.MyCountMethod();
+var result = new Bar().CountFoo();
 ```
 
 *should be* 🡻
 
 ```csharp
-public class MyClass
+public class Bar
 {
-    public IEnumerable<string> MyString { get; set; }
+    public IEnumerable<string> Foo { get; set; }
     ...
 }
 
-var countResult = MyClassObject.MyString.Count();
+var result = new Bar().Foo.Count();
 ```
