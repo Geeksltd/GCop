@@ -15,7 +15,7 @@ First of all make sure you have installed visual studio 2017 version 15.5.5 or a
 1. Open the **Manage NuGet Packages...** window for your solution.
 2. If your project has a reference to M#, Zebble or Olive nuget packages, then install `GCop.All.Geeks`
 3. Otherwise, select `GCop.All.Common`
-4. Install it on all projects in your solution (or the ones that you need analysed)
+4. Install it on all projects in your solution (or the ones that you need analyze)
 
 > **Note :** You need to do this once for each project / solution.
 
@@ -29,7 +29,7 @@ First of all make sure you have installed visual studio 2017 version 15.5.5 or a
    - If you don't see any GCop warnings, right click on each project and select **Properties** > **Code Analysis** and ensure **Enable Code Analysis on Build** is ticked.
 
 ### GCop Error
-If GCop thorws error related to NETStandard, Please update your 'Microsoft.Net.Compilers' Package, if you are using 'Microsoft.CodeDom' please update that either. 
+If GCop throws error related to NETStandard, Please update your 'Microsoft.Net.Compilers' Package, if you are using 'Microsoft.CodeDom' please update that either. 
 
 #### Disabling specific GCop rules
 

@@ -17,7 +17,7 @@ The `.GetAlreadyCompletedResult()` method should be used when you know that the 
 The benefit of this method compared to calling `.Result` is that if you've made a mistake, and the task is not indeed already completed, rather than blocking the thread or risking a deadlock, it will throw an exception, which helps you debug your assumptions.
 
 ### Special scenario B
-There might be cases where you have no choice but to syncrhronously wait for the task to be completed. This is rare, but may sometimes be inevitable. In such cases, you should call `.RiskDeadlockAndAwaitResult()` rather than simply calling `.Result` which is an explicit way of confirming that you know what you are doing.
+There might be cases where you have no choice but to synchronously wait for the task to be completed. This is rare, but may sometimes be inevitable. In such cases, you should call `.RiskDeadlockAndAwaitResult()` rather than simply calling `.Result` which is an explicit way of confirming that you know what you are doing.
 
 ## Example
 

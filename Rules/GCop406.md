@@ -4,7 +4,7 @@
 
 ## Rule description
 
-When the field is not assigned or assignment to the field is just occured as part of the declaration or in a constructor in the same class, it should be declared as a `readonly`. [Further reading](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly).
+When the field is not assigned or assignment to the field is just occurred as part of the declaration or in a constructor in the same class, it should be declared as a `readonly`. [Further reading](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly).
 
 ## Example1
 

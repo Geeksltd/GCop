@@ -9,16 +9,16 @@ The `To<...>()` extension method on the string type allows you to make type conv
 ## Example
 
 ```csharp
-public long Foo(string commision)
+public long Foo(string commission)
 {
-    return long.Parse(commision);
+    return long.Parse(commission);
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public string Foo(string commision)
+public string Foo(string commission)
 {
     return commision.To<long>();
 }

@@ -4,7 +4,7 @@
 
 ## Rule description
 
-It is more readable and expressive to use `.HasValue()` instead of `.Any()` and `.IsEmpty()` instead of `None()` to check a string value existance.
+It is more readable and expressive to use `.HasValue()` instead of `.Any()` and `.IsEmpty()` instead of `None()` to check a string value existence.
 
 ## Example1
 

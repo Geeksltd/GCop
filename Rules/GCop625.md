@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The Linq to SQL convertor in M# Framework / Olive requires this to work correctly.
+The Linq to SQL converter in M# Framework / Olive requires this to work correctly.
 
 ## Example
 

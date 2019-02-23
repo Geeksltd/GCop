@@ -1,6 +1,6 @@
 ﻿# GCop 432
 
-> *"Unnecessary paranthesis should be removed."*
+> *"Unnecessary parenthesis should be removed."*
 
 ## Rule description
 
@@ -31,7 +31,7 @@ public int MyMethod()
 ## Example 2
 
 ```csharp
-public void MyMethod(objedct arg, int myVar)
+public void MyMethod(object arg, int myVar)
 {
     int x = (5 + myVar);
     var localItem = ((MyObjectName)(arg));
@@ -41,7 +41,7 @@ public void MyMethod(objedct arg, int myVar)
 *should be* 🡻
 
 ```csharp
-public void MyMethod(objedct arg,int myVar)
+public void MyMethod(object arg, int myVar)
 {
     int x = 5 + myVar;
     var localItem = (MyObjectName)arg;

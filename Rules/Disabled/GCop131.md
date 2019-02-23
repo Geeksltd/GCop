@@ -1,6 +1,6 @@
 ﻿# GCop 131
 
-> *"Use `collection.ToString("seperator")` instead of `string.Join("seperator", collection)"*
+> *"Use `collection.ToString("separator")` instead of `string.Join("separator", collection)"*
 
 ## Rule description
 
