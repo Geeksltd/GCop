@@ -9,51 +9,49 @@ It is possible in C# to insert parenthesis around virtually any type of expressi
 ## Example 1
 
 ```csharp
-public int MyMethod()
+public int Foo()
 {
-    var localItem = 100;
+    var bar = 100;
     ...
-    return (localItem * 10);
+    return (bar * 10);
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public int MyMethod()
+public int Foo()
 {
-    var localItem = 100;
+    var bar = 100;
     ...
-    return localItem * 10;
+    return bar * 10;
 }
 ```
 
 ## Example 2
 
 ```csharp
-public void MyMethod(objedct arg, int myVar)
+public void Foo(object arg)
 {
-    int x = (5 + myVar);
-    var localItem = ((MyObjectName)(arg));
+    var bar = ((Bar)(arg));
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-public void MyMethod(objedct arg,int myVar)
+public void Foo(object arg)
 {
-    int x = 5 + myVar;
-    var localItem = (MyObjectName)arg;
+    var bar = (Bar)arg;
 }
 ```
 
 ## Example 3
 
 ```csharp
-public void MyMethod()
+public void Foo()
 {
-    if ((IsLocalFileSystemWebService(Url) == true))
+    if ((Bar() == true))
     {
         ...
     }
@@ -63,9 +61,9 @@ public void MyMethod()
 *should be* 🡻
 
 ```csharp
-public void MyMethod()
+public void Foo()
 {
-    if (IsLocalFileSystemWebService(Url) == true)
+    if (Bar() == true)
     {
         ...
     }
