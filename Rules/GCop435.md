@@ -1,6 +1,6 @@
 ﻿# GCop 435
 
-> *"Finally block should not be empty"*
+> *"`finally` block should not be empty"*
 
 ## Rule description
 

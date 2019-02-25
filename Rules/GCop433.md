@@ -55,7 +55,7 @@ public class FooBar
         set { Bar = value; }
     }  
 
-    static void Foo()
+    static int Foo()
     {
         ...
     }
@@ -73,7 +73,7 @@ public class FooBar
         set { Bar = value; }
     }  
 
-    static void Foo()
+    static int Foo()
     {
         ...
     }
