@@ -1,6 +1,6 @@
 ﻿# GCop 437
 
-> *"Complete the task associated to this \"TODO\" comment."*
+> *"Complete the task associated to this `TODO` comment."*
 
 ## Rule description
 
