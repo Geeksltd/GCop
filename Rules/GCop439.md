@@ -12,21 +12,21 @@ The following keywords on a partial-type definition are optional, but if present
 * generic constraints
 * `new` modifier (nested parts)
 
-Although the C# compiler allows duplicate definition of the same modifier, but to avoid confusion, only one partial class should declare all modifiers. The other partial classes should merely be `partial class Xyz` without any modifier.
+Although the C# compiler allows duplicate definition of the same modifier, but to avoid confusion, only one partial class should declare all modifiers. The other partial classes should merely be `partial class Foo` without any modifier.
 
 ## Example
 
 ```csharp
-public partial class Employee
+public partial class FooBar
 {
-    public void DoWork()
+    public void Bar()
     {
     }
 }
 
-public partial class Employee
+public partial class FooBar
 {
-    public void GoToLunch()
+    public void Foo()
     {
     }
 }
@@ -35,16 +35,16 @@ public partial class Employee
 *should be* 🡻
 
 ```csharp
-public partial class Employee
+public partial class FooBar
 {
-    public void DoWork()
+    public void Bar()
     {
     }
 }
 
-partial class Employee
+partial class FooBar
 {
-    public void GoToLunch()
+    public void Foo()
     {
     }
 }
