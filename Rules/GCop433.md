@@ -9,16 +9,16 @@ You can access a static member in the same class by simply specifying its name d
 ## Example
 
 ```csharp
-public class MyClass
+public class FooBar
 {
     ...
-    static void MyMethod()
+    static void Foo()
     {
         ...
-        MyClass.AnotherMethod();
+        FooBar.Bar();
     }
     
-    static void AnotherMethod()
+    static void Bar()
     {
         ...
     }
@@ -28,16 +28,16 @@ public class MyClass
 *should be* 🡻
 
 ```csharp
-public class MyClass
+public class FooBar
 {
     ...
-    static void MyMethod()
+    static void Foo()
     {
         ...
-        AnotherMethod();
+        Bar();
     }
     
-    static void AnotherMethod()
+    static void Bar()
     {
         ...
     }
@@ -47,15 +47,15 @@ public class MyClass
 ## Example2
 
 ```csharp
-public class MyClass
+public class FooBar
 {
-    public int MyProperty
+    public int Bar
     {
-        get { return MyClass.MyMethod(); }
-        set { MyProperty = value; }
+        get { return FooBar.Foo(); }
+        set { Bar = value; }
     }  
 
-    static void MyMethod()
+    static void Foo()
     {
         ...
     }
@@ -65,15 +65,15 @@ public class MyClass
 *should be* 🡻
 
 ```csharp
-public class MyClass
+public class FooBar
 {
-    public int MyProperty
+    public int Bar
     {
-        get { return MyMethod(); }
-        set { MyProperty = value; }
+        get { return Foo(); }
+        set { Bar = value; }
     }  
 
-    static void MyMethod()
+    static void Foo()
     {
         ...
     }
