@@ -1,6 +1,6 @@
 ﻿# GCop 432
 
-> *"Unnecessary paranthesis should be removed."*
+> *"Unnecessary parenthesis should be removed."*
 
 ## Rule description
 

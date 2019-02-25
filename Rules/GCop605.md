@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `string.To(...`) extension method is faster and smarter than than the standard `Convert.ChangeType`, and it's more readable.
+The `string.To(...`) extension method is faster and smarter than the standard `Convert.ChangeType`, and it's more readable.
 
 ## Example
 

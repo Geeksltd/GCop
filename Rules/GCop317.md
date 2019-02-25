@@ -1,6 +1,6 @@
 ﻿# GCop 317
 
-> *"This code is repeated 'repeatation count' times in this method. If its value remains the same during the method execution, store it in a variable. Otherwise define a method (or Func<T> variable) instead of repeating the expression. 'expression type'"*
+> *"This code is repeated 'repetition count' times in this method. If its value remains the same during the method execution, store it in a variable. Otherwise define a method (or Func<T> variable) instead of repeating the expression. 'expression type'"*
 
 ## Rule description
 

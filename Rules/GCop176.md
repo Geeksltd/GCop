@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Lambda expressions (aka anonymous methods) are a great convinience in C#, allowing you to create quick function expressions without the full ceremony of creating a method.
+Lambda expressions (aka anonymous methods) are a great convenience in C#, allowing you to create quick function expressions without the full ceremony of creating a method.
 
 However, a very long lambda expression will make the code look complex and cluttered. Therefore you should only use lambda expressions for simply functions, and revert back to a full standard method if the code is long or complex.
 

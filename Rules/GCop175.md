@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Long `if` conditions are hard to undrestand and reduce code readability. You should either:
+Long `if` conditions are hard to understand and reduce code readability. You should either:
 - Refactor that condition into a method; or
 - Define interim variables to effectively *document your purpose*, and then use the variable(s) in your `if` clause.
 

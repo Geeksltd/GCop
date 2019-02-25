@@ -17,7 +17,7 @@ Database.Update(products, s => s.ReducePriceBy(0.2));
 // discount only to the most expensive item per category, which is the first product.
 // But with this implementation, we first apply the discount to the first product, 
 // making it £80. But then the IsMostExpensiveInCategory() method is evaluated on the 
-// second product, which will now return true, meaninig it also gets a discount applied to it.
+// second product, which will now return true, meaning it also gets a discount applied to it.
 
 // What we intended was to first identify the products that are the most expensive in their
 // category before the change operation is applied, which is why we should have evaluated 

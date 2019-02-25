@@ -4,7 +4,7 @@
 
 ## Rule description
 
-The `FirstOrDefault` is almost the same as `First`. The difference is how it handles empty collections. If a collection is empty, it returns the default value for the type. It is more easy to undrestand than using `Any()` and `First` in a comnditional phrase.
+The `FirstOrDefault` is almost the same as `First`. The difference is how it handles empty collections. If a collection is empty, it returns the default value for the type. It is more easy to understand than using `Any()` and `First` in a conditional phrase.
 
 ## Example 1
 

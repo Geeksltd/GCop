@@ -1,6 +1,6 @@
 ﻿# GCop 184
 
-> *"Avoid using `null` on the left side of comparision statement."*
+> *"Avoid using `null` on the left side of comparison statement."*
 
 ## Rule description
 

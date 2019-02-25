@@ -4,7 +4,7 @@
 
 ## Rule description
 
-Some extension methods on `DateTime` such as `IsBefore(...)` and `IsBetween(...)` are not recognised by the LINQ to SQL convertor in the database engine. So you should write the simpler alternatives using standard operators instead.
+Some extension methods on `DateTime` such as `IsBefore(...)` and `IsBetween(...)` are not recognized by the LINQ to SQL converter in the database engine. So you should write the simpler alternatives using standard operators instead.
 
 ## Example
 
