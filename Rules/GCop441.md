@@ -61,7 +61,7 @@ private void FooBar(Foo foo)
 ```csharp
 private void FooBar(Foo foo)
 {
-    var bar = foo as string;
+    var bar = foo.Bar as string;
     if (bar != null)
     {
         ...
