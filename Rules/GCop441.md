@@ -11,9 +11,9 @@ In C# 7.0 and later, use the `is` operator with pattern matching to check the ty
 ## Example1
 
 ```csharp
-private void Bar(FooBar foo)
+private void FooBar(Foo foo)
 {
-    if (foo as string != null)
+    if (foo.Bar as string != null)
     {
         ...
     }
@@ -23,9 +23,9 @@ private void Bar(FooBar foo)
 *should be* 🡻
 
 ```csharp
-private void Bar(FooBar foo)
+private void FooBar(Foo foo)
 {
-    if (foo is string)
+    if (foo.Bar is string)
     {
         ...
     }
@@ -35,11 +35,11 @@ private void Bar(FooBar foo)
 ## Example2
 
 ```csharp
-private void Bar(FooBar foo)
+private void FooBar(Foo foo)
 {
-    if (foo as string != null)
+    if (foo.Bar as string != null)
     {
-        var bar = foo as string;
+        var bar = foo.Bar as string;
         ...
     }
 }
@@ -48,9 +48,9 @@ private void Bar(FooBar foo)
 *should be* 🡻
 
 ```csharp
-private void Bar(FooBar foo)
+private void FooBar(Foo foo)
 {
-    if (foo is string bar)
+    if (foo.Bar is string bar)
     {
         ...
     }
@@ -59,7 +59,7 @@ private void Bar(FooBar foo)
 
 *OR* 🡻
 ```csharp
-private void Bar(FooBar foo)
+private void FooBar(Foo foo)
 {
     var bar = foo as string;
     if (bar != null)
