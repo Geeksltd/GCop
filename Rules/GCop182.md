@@ -15,6 +15,7 @@ Also To force Web API to read a simple type from the request body, we should add
 [HttpPost]
 public void Foo(Bar bar)
 {
+    ...
 }
 ```
 
@@ -24,5 +25,6 @@ public void Foo(Bar bar)
 [HttpPost]
 public void Foo([FromBody]Bar bar)
 {
+    ...
 }
 ```
