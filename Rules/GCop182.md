@@ -1,6 +1,6 @@
 ﻿# GCop 182
 
-> *"For a `AtionType` Web Api, specify the parameter binding source explicitly. Did you mean to add [FromBody]?"*
+> *"For a `HttpPost` Web Api, specify the parameter binding source explicitly. Did you mean to add `[FromBody]`?"*
 
 ## Rule description
 
