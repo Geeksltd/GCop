@@ -1,30 +1,29 @@
 ﻿# GCop 157
 
-> *"Use == instead"*
+> *"Use `==` instead"*
 
 ## Rule description
 
-The “==” works with nulls but `Equals` crashes when you compare null values.
+The `==` works with nulls but `Equals` crashes when you compare null values.
 
-The “==” does type checking during compile time while `Equals` is more during runtime.
+The `==` does type checking during compile time while `Equals` is more during runtime.
 
 ## Example 1
 
 ```csharp
-var result = myList.SingleOrDefault(s => s.Name.Equals("onlinepayment"));
+var result = foo.SingleOrDefault(s => s.Bar.Equals("something"));
 ```
 
 *should be* 🡻
 
 ```csharp
-var result = myList.SingleOrDefault(s => s.Name == "onlinepayment");
+var result = myList.SingleOrDefault(s => s.Bar == "something");
 ```
 
 ## Example 2
 
 ```csharp
-var city = "london";
-if (city.Equals("tehran"))
+if (foo.Equals("bar"))
 {
     ...
 }
@@ -33,8 +32,7 @@ if (city.Equals("tehran"))
 *should be* 🡻
 
 ```csharp
-var city = "london";
-if (city == "tehran")
+if (foo == "bar")
 {
     ...
 }
