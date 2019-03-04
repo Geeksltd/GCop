@@ -4,7 +4,8 @@
 
 ## Rule description
 
-To find a special record we can compare the ID of objects instead of all object properties. This way is faster and eliminate unnecessary database fetches.
+To find a special record we can compare the ID of objects instead of comparing all object properties. This way is faster and eliminate unnecessary database fetches.
+
 ## Example1
 
 ```csharp
