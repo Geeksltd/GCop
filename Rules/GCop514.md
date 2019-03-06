@@ -4,7 +4,7 @@
 
 ## Rule description
 
-If you declare the method used in getter, as `private`, it's a statement of intent, saying I don't want these variables to be changed or accessed from the outside, especially when this is a calculater method.
+If you declare the method used in Getter Accessor, as `private`, it's a statement of intent, saying I don't want these variables to be changed or accessed from the outside, especially when this is a calculater method.
 
 ## Example
 >See https://github.com/Geeksltd/GCop/issues/157
