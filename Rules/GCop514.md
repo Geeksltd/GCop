@@ -1,6 +1,6 @@
 ﻿# GCop 514
 
-> *"the method '\{MethodName}' must be private as it being used in Getter Accessor."*
+> *"the method `CalculateFoo` must be private as it being used in Getter Accessor."*
 
 ## Rule description
 
