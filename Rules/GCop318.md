@@ -8,7 +8,7 @@ An object of type `IEnumerable` can be resource consuming every time that it's i
 
 If you need the result of an `IEnumerable` object more than once, it's better to call `.ToArray()` or `.Tolist()` on it once to prepare the final result, and then use that directly.
 
-## Example 1
+## Example1
 
 ```csharp
 private void Test(IEnumerable<Bar> bar)
@@ -44,7 +44,7 @@ private void Test(IEnumerable<Bar> bar)
 }
 ```
 
-## Example 2
+## Example2
 
 ```csharp
 private void Test(IEnumerable<Bar> bar)
