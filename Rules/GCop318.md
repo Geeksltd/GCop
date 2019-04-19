@@ -8,20 +8,55 @@ An object of type `IEnumerable` can be resource consuming every time that it's i
 
 If you need the result of an `IEnumerable` object more than once, it's better to call `.ToArray()` or `.Tolist()` on it once to prepare the final result, and then use that directly.
 
-## Example
+## Example 1
 
 ```csharp
-private void Foo()
+private void Test(IEnumerable<Bar> bar)
 {
+    var items = bar.Where(lai => lai.Foo == "foo" );
+    foreach (var item in items)
+    {
+        ...
+    }
     ...
-    var children = bar.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
+    foreach (var foo in items)
+    {
+        ...
+    }
+}
+```
+
+*should be* 🡻
+
+```csharp
+private void Test(IEnumerable<Bar> bar)
+{
+    var items = bar.Where(lai => lai.Foo == "foo" ).Tolist();
+    foreach (var item in items)
+    {
+        ...
+    }
+    ...
+    foreach (var foo in items)
+    {
+        ...
+    }
+}
+```
+
+## Example 2
+
+```csharp
+private void Test(IEnumerable<Bar> bar)
+{
+    var items = bar.Where(lai => lai.Foo == "foo");
     
-    if (children.Count() == ...) // Running Count() requires the above lambda expression to get executed for every item.
+    if (items.Count() == ...) // Running Count() requires the above lambda expression to get executed for every item.
     {
         ...
     }
     
-    foreach (var Child in children) // Again the lambda expression is executed for every item.
+    foreach (var item in items) // Again the lambda expression is executed for every item.
     {
         ...
     }
@@ -34,15 +69,14 @@ private void Foo()
 private void Foo()
 {
     ...
-    var children = bar.Where(lai => lai.SomethingThatIsTimeConsuming() == ...);
-                   .ToArray(); // the lambda expression is executed only once per item and the result is stored.
+    var items = bar.Where(lai => lai.Foo == "foo").ToArray(); // the lambda expression is executed only once per item and the result is stored.
     
-    if (children.Count() == ...)
+    if (items.Count() == ...)
     {
         ...
     }
     
-    foreach (var Child in children)
+    foreach (var item in items)
     {
         ...
     }

@@ -5,6 +5,7 @@
 ## Rule description
 
 The `?.` operator returns null task instead of calling method. The null reference exception is made because you can’t await on null task. The task must be initialized. You can add `??` operator so if `?.` returns null task use `CompletedTask` instead.
+
 ## Example
 
 ```csharp

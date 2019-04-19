@@ -10,23 +10,23 @@ An object of type `IEnumerable` can be resource consuming every time that it's i
 ## Example
 
 ```csharp
-var foo = bar.Where(s => s.SomethingThatTakesTime());
+var items = bar.Where(s => s.SomethingThatTakesTime());
 
 foreach(var item in items)
 {
     // The WHERE criteria declared above is executed multiple times, once for each item in someList.    
-    doSomethignWith(foo);    
+    doSomethignWith(item);    
 }
 ```
 
 *should be* 🡻
 
 ```csharp
-var foo = bar.Where(s => s.SomethingThatTakesTime()).ToArray();
+var items = bar.Where(s => s.SomethingThatTakesTime()).ToArray();
 
 foreach(var item in items)
 {
     // The WHERE criteria declared above is only executed once. 
-    doSomethignWith(foo);    
+    doSomethignWith(item);    
 }
 ```
