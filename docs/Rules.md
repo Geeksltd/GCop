@@ -69,7 +69,7 @@ GCop code | Description
 176 | [This anonymous method should not contain complex code, Instead call other focused methods to perform the complex logic](/Rules/GCop176.md)
 177 | [Variable declaration is unnecessary due to it being used only for return statement](/Rules/GCop177.md)
 178 | [Use parenthesis to clarify your boolean logic intention.](/Rules/GCop178.md)
-179 | [o not hardcode numbers, strings or other values. Use constant fields, enums, config files or database as appropriate](/Rules/GCop179.md)
+179 | [Do not hardcode numbers, strings or other values. Use constant fields, enums, config files or database as appropriate](/Rules/GCop179.md)
 180 | [Double and float comparison isn't exact in .NET. Use myDouble.AlmostEquals(anotherDouble) instead.](/Rules/GCop180.md)
 181 | [Define a virtual method and write this logic using polymorphism.](/Rules/GCop181.md)
 200 | [Since the class is an attribute, the name of the class must end with 'Attribute'](/Rules/GCop200.md)
