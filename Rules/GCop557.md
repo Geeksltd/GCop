@@ -1,4 +1,4 @@
-﻿# GCop {number}
+﻿# GCop 557
 
 > *"Use `cs()` method instead of the `c#:` prefix"*
 

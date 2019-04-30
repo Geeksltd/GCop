@@ -1,4 +1,4 @@
-﻿# GCop {number}
+﻿# GCop 556
 
 > *"Use the shortcut `.SendItemId()`"*
 
