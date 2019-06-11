@@ -13,7 +13,7 @@ Empty methods not having any nested comments are just tolerated in `abstract` cl
 ## Example1
 
 ```csharp
-public static void Log(this Exception ex)
+public void Foo()
 {
 }
 ```
@@ -21,7 +21,7 @@ public static void Log(this Exception ex)
 *should be* 🡻
 
 ```csharp
-public static void Log(this Exception ex)
+public void Foo()
 {
     // some code ...
 }
