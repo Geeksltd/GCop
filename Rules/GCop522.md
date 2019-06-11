@@ -11,7 +11,7 @@
 ```csharp
 private void Bar(Dictionary<string, string> foo)
 {
-    var result = foo.Keys.FirstOrDefault();
+    var result = foo.Keys.FirstOrDefault().Bar;
 }
 ```
 
@@ -20,25 +20,7 @@ private void Bar(Dictionary<string, string> foo)
 ```csharp
 private void Bar(Dictionary<string, string> foo)
 {
-    var result = foo?.Keys?.FirstOrDefault();
-}
-```
-
-## Example2
-
-```csharp
-private void Bar(List<int?> foo)
-{
-    var result = foo.FirstOrDefault();
-}
-```
-
-*should be* 🡻
-
-```csharp
-private void Bar(List<int?> foo)
-{
-    var result = foo?.FirstOrDefault();
+    var result = foo.Keys.FirstOrDefault()?.Bar;
 }
 ```
 
