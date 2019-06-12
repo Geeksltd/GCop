@@ -1,4 +1,4 @@
-﻿# GCop 157
+﻿# GCop 448
 
 > *"Use `==` instead"*
 
