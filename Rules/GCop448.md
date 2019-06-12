@@ -1,6 +1,6 @@
 ﻿# GCop 448
 
-> *"Use `==` instead"*
+> *"Replace `Equals` with `==` when comparing strings"*
 
 ## Rule description
 
