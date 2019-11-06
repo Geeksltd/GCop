@@ -6,7 +6,7 @@
 
 Repeated Statements will reduce code readability. To have a more meaningful code it is better to refactor these `if` conditions.
 
-## Example 1
+## Example
 
 ```csharp
 if (condition1)
@@ -33,26 +33,5 @@ if (condition1 || condition3)
 else if (condition2)
 {
     //...
-}
-```
-
-## Example 2
-
-```csharp
-switch(foo)
-{
-    case 0: Bar(); break;
-    case 1: Foo(); break;
-    default: Bar(); break;    
-}
-```
-
-*should be* 🡻
-
-```csharp
-switch(foo)
-{
-    case 1: Foo(); break;
-    default: Bar(); break;  
 }
 ```
